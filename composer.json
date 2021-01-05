@@ -1,0 +1,38 @@
+{
+    "name": "dominservice/data_locale_parser",
+    "type": "library",
+    "description": "This package uses data from the \"umpirsky/currency-list\", \"umpirsky/language-list\" and \"umpirsky/country-list\" repositories. It was based on the package \"tariq86/country-list\"",
+    "keywords": ["laravel", "php", "currencies", "languages", "countries", "data parser", "country list", "currencies list", "languages list", "umpirsky"],
+    "homepage": "https://github.com/dominservice/data_locale_parser",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dominservice",
+            "email": "biuro@dso.biz.pl",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "ext-intl": "*",
+        "ext-mbstring": "*",
+        "laravel/framework": "^7|^8",
+        "umpirsky/currency-list": "^1.1",
+        "umpirsky/language-list": "^1.1",
+        "umpirsky/country-list": "2.0.*"
+    },
+    "require-dev": {
+        "ext-pcov": "*",
+        "phpunit/phpunit": "^8.3"
+    },
+    "require-all": true,
+    "autoload": {
+        "psr-4": {
+            "Dominservice\\DataLocaleParser\\": "src/"
+        },
+        "files": [
+            "src/Helpers/helpers.php"
+        ]
+    },
+    "minimum-stability": "dev"
+}
