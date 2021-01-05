@@ -76,12 +76,14 @@ class DataParser
         if (!is_dir($countriesDir)) {
             throw new RuntimeException(sprintf('Unable to locate the country data directory at "%s"', $countriesDir));
         }
-        $currenciesDir = base_path('vendor/umpirsky/country-list/data');
+
+        $currenciesDir = base_path('vendor/umpirsky/currency-list/data');
 
         if (!is_dir($currenciesDir)) {
             throw new RuntimeException(sprintf('Unable to locate the country data directory at "%s"', $currenciesDir));
         }
-        $languagesDir = base_path('vendor/umpirsky/country-list/data');
+
+        $languagesDir = base_path('vendor/umpirsky/language-list/data');
 
         if (!is_dir($languagesDir)) {
             throw new RuntimeException(sprintf('Unable to locate the country data directory at "%s"', $languagesDir));
