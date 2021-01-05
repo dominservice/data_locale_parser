@@ -7,18 +7,18 @@
  * and "umpirsky/country-list" repositories.
  * It was based on the package "tariq86/country-list"
  *
- * @package   Dominservice\DataParser
+ * @package   Dominservice\DataLocaleParser
  * @author    DSO-IT Mateusz Domin <biuro@dso.biz.pl>
  * @copyright (c) 2021 DSO-IT Mateusz Domin
  * @license   MIT
  * @version   1.0.0
  */
 
-namespace Dominservice\DataParser\Exceptions;
+namespace Dominservice\DataLocaleParser\Exceptions;
 
 /**
  * Class CurrencyNotFoundException
- * @package   Dominservice\DataParser
+ * @package   Dominservice\DataLocaleParser
  */
 class CurrencyNotFoundException extends \Exception
 {

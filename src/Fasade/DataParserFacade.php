@@ -7,20 +7,20 @@
  * and "umpirsky/country-list" repositories.
  * It was based on the package "tariq86/country-list"
  *
- * @package   Dominservice\DataParser
+ * @package   Dominservice\DataLocaleParser
  * @author    DSO-IT Mateusz Domin <biuro@dso.biz.pl>
  * @copyright (c) 2021 DSO-IT Mateusz Domin
  * @license   MIT
  * @version   1.0.0
  */
 
-namespace Dominservice\DataParser\Fasade;
+namespace Dominservice\DataLocaleParser\Fasade;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
  * Class DataParserFacade
- * @package Dominservice\DataParser
+ * @package Dominservice\DataLocaleParser
  *
  * @method static string getCountriesDir()
  * @method static string getCurrenciesDir()
@@ -33,7 +33,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static array getListCurrencies(string $locale = 'en', string $format = 'php')
  * @method static array getListLanguages(string $locale = 'en', string $format = 'php')
  * @method static array getList(string $type, string $locale = 'en', string $format = 'php')
- * @method static \Dominservice\DataParser\DataParser setList(string $type, string $locale, array $data)
+ * @method static \Dominservice\DataLocaleParser\DataParser setList(string $type, string $locale, array $data)
  * @method static bool has(string $type, string $countryCode, string $locale = 'en')
  */
 class DataParserFacade extends Facade
@@ -45,7 +45,7 @@ class DataParserFacade extends Facade
      */
     protected static function getFacadeAccessor(): string
     {
-        return \Dominservice\DataParser\DataParser::class;
+        return \Dominservice\DataLocaleParser\DataParser::class;
     }
 
 }

@@ -18,7 +18,7 @@ Require package via Composer: `composer require dominservice/data_locale_parser`
 
 Declare ussage
 ```php
-use \Dominservice\DataParser\DataParser;
+use \Dominservice\DataLocaleParser\DataParser;
 ```
 (...)
 ```php
