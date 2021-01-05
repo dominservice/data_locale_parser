@@ -7,24 +7,24 @@
  * and "umpirsky/country-list" repositories.
  * It was based on the package "tariq86/country-list"
  *
- * @package   Dominservice\CountryList
+ * @package   Dominservice\DataParser
  * @author    DSO-IT Mateusz Domin <biuro@dso.biz.pl>
  * @copyright (c) 2021 DSO-IT Mateusz Domin
  * @license   MIT
  * @version   1.0.0
  */
 
-namespace Dominservice\CountryList;
+namespace Dominservice\DataParser;
 
 use Collator;
 use RuntimeException;
-use Dominservice\CountryList\Exceptions\CountryNotFoundException;
-use Dominservice\CountryList\Exceptions\CurrencyNotFoundException;
-use Dominservice\CountryList\Exceptions\LanguageNotFoundException;
+use Dominservice\DataParser\Exceptions\CountryNotFoundException;
+use Dominservice\DataParser\Exceptions\CurrencyNotFoundException;
+use Dominservice\DataParser\Exceptions\LanguageNotFoundException;
 
 /**
  * Class DataParser
- * @package Dominservice\CountryList
+ * @package Dominservice\DataParser
  */
 class DataParser
 {

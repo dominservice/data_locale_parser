@@ -7,7 +7,7 @@
  * and "umpirsky/country-list" repositories.
  * It was based on the package "tariq86/country-list"
  *
- * @package   Dominservice\CountryList
+ * @package   Dominservice\DataParser
  * @author    DSO-IT Mateusz Domin <biuro@dso.biz.pl>
  * @copyright (c) 2021 DSO-IT Mateusz Domin
  * @license   MIT
