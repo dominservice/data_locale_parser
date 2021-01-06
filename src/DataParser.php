@@ -123,6 +123,35 @@ class DataParser
     {
         return $this->languagesDir;
     }
+    
+    public function parseAllDataPerCountry(string $locale = 'en')
+    {
+        $countries = $this->getListCountries($locale);
+        $currencies = $this->getListCurrencies($locale);
+        $languages = $this->getListLanguages($locale);
+        
+        $data = require base_path('vendor/dominservice/data_locale_parser/data/countries_full_data.php');
+        $localeToCode = require base_path('vendor/dominservice/data_locale_parser/data/locale_countries_data.php');
+
+        foreach($languages as $code=>$lang) {
+            if (!empty($localeToCode[$code])) {
+                foreach ($localeToCode[$code] as $k) {
+                    if (empty($data[$k]->languages)) {$data[$k]->languages = [];}
+                    $data[$k]->languages[$code] = $lang;
+                }
+            }
+        }
+        foreach($data as $id=>&$item) {
+            $item->country = $countries[$id];
+            $item->currency->name = !empty($currencies[$item->currency->code]) ? $currencies[$item->currency->code] : null;
+        }
+
+        return collect(array_values($data));
+    }
+
+
+
+
 
     /**
      * @param string $countryCode
@@ -161,33 +190,33 @@ class DataParser
      * @param string $locale
      * @param string $format
      * @param bool $sorted
-     * @return array
+     * @return \Illuminate\Support\Collection
      */
-    public function getListCountries(string $locale = 'en', string $format = 'php', bool $sorted = true): array
+    public function getListCountries(string $locale = 'en', string $format = 'php', bool $sorted = true)
     {
-        return $this->getList('countries',  $locale, $format, $sorted);
+        return collect((array)$this->getList('countries',  $locale, $format, $sorted));
     }
 
     /**
      * @param string $locale
      * @param string $format
      * @param bool $sorted
-     * @return array
+     * @return \Illuminate\Support\Collection
      */
-    public function getListCurrencies(string $locale = 'en', string $format = 'php', bool $sorted = true): array
+    public function getListCurrencies(string $locale = 'en', string $format = 'php', bool $sorted = true)
     {
-        return $this->getList('currencies',  $locale, $format, $sorted);
+        return collect((array)$this->getList('currencies',  $locale, $format, $sorted));
     }
 
     /**
      * @param string $locale
      * @param string $format
      * @param bool $sorted
-     * @return array
+     * @return \Illuminate\Support\Collection
      */
-    public function getListLanguages(string $locale = 'en', string $format = 'php', bool $sorted = true): array
+    public function getListLanguages(string $locale = 'en', string $format = 'php', bool $sorted = true)
     {
-        return $this->getList('languages',  $locale, $format, $sorted);
+        return collect((array)$this->getList('languages',  $locale, $format, $sorted));
     }
 
     /**

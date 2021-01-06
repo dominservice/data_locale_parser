@@ -43,6 +43,9 @@ Get all Languages
 $this->dataParser->getListLanguages('en', 'json');
 ```
 
+All lists return a collection
+___
+
 Get country
 ```php
 $this->dataParser->getCountry('PL', 'en');
@@ -55,4 +58,34 @@ Get Language
 ```php
 $this->dataParser->geLanguage('pl_PL', 'en');
 ```
-
+If you have collected all data, you make use this code
+```php
+ $this->dataParser->parseAllDataPerCountry('pl_PL');
+```
+Then You get 
+```php
+Illuminate\Support\Collection {#1039 ▼
+  #items: array:249 [▼
+    0 => {#541 ▼
+      +"SO": "AD"
+      +"ISO3": "AND"
+      +"ISO-Numeric": "20"
+      +"fips": "AN"
+      +"Continent": "EU"
+      +"tld": ".ad"
+      +"Phone": "376"
+      +"Postal Code Format": "AD###"
+      +"Postal Code Regex": "^(?:AD)*(\d{3})$"
+      +"currency": {#540
+        +"name": "euro"
+        +"code": "EUR"
+        +"symbol": "€"
+      }
+      +"languages": array:1 [
+        "ca" => "kataloński"
+      ]
+      +"country": "Andora"
+    }
+    ...
+}
+```
