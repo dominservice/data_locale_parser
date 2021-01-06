@@ -149,10 +149,6 @@ class DataParser
         return collect(array_values($data));
     }
 
-
-
-
-
     /**
      * @param string $countryCode
      * @param string $locale
