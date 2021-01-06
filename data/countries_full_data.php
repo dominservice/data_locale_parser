@@ -3708,7 +3708,7 @@
        'symbol' => 'Fr',
     ),
   ),
-  'so' => 
+  'SO' =>
   (object) array(
      'so' => 'so',
      'iso3' => 'SOM',
