@@ -16,10 +16,7 @@
         "php": ">=7.2",
         "ext-intl": "*",
         "ext-mbstring": "*",
-        "laravel/framework": "^7|^8",
-        "umpirsky/currency-list": "^1.1",
-        "umpirsky/language-list": "^1.1",
-        "umpirsky/country-list": "2.0.*"
+        "laravel/framework": "^7|^8"
     },
     "require-all": true,
     "autoload": {

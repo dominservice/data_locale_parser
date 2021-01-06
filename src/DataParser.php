@@ -71,19 +71,19 @@ class DataParser
      */
     public function __construct()
     {
-        $countriesDir = base_path('vendor/umpirsky/country-list/data');
+        $countriesDir = base_path('vendor/dominservice/data_locale_parser/data/country');
 
         if (!is_dir($countriesDir)) {
             throw new RuntimeException(sprintf('Unable to locate the country data directory at "%s"', $countriesDir));
         }
 
-        $currenciesDir = base_path('vendor/umpirsky/currency-list/data');
+        $currenciesDir = base_path('vendor/dominservice/data_locale_parser/data/currency');
 
         if (!is_dir($currenciesDir)) {
             throw new RuntimeException(sprintf('Unable to locate the country data directory at "%s"', $currenciesDir));
         }
 
-        $languagesDir = base_path('vendor/umpirsky/language-list/data');
+        $languagesDir = base_path('vendor/dominservice/data_locale_parser/data/language');
 
         if (!is_dir($languagesDir)) {
             throw new RuntimeException(sprintf('Unable to locate the country data directory at "%s"', $languagesDir));
@@ -123,30 +123,39 @@ class DataParser
     {
         return $this->languagesDir;
     }
-    
+
+    /**
+     * @param string $locale
+     * @return \Illuminate\Support\Collection
+     */
     public function parseAllDataPerCountry(string $locale = 'en')
     {
-        $countries = $this->getListCountries($locale);
-        $currencies = $this->getListCurrencies($locale);
-        $languages = $this->getListLanguages($locale);
-        
-        $data = require base_path('vendor/dominservice/data_locale_parser/data/countries_full_data.php');
-        $localeToCode = require base_path('vendor/dominservice/data_locale_parser/data/locale_countries_data.php');
+        if (empty($this->fullData)) {
+            $countries = $this->getListCountries($locale);
+            $currencies = $this->getListCurrencies($locale);
+            $languages = $this->getListLanguages($locale);
 
-        foreach($languages as $code=>$lang) {
-            if (!empty($localeToCode[$code])) {
-                foreach ($localeToCode[$code] as $k) {
-                    if (empty($data[$k]->languages)) {$data[$k]->languages = [];}
-                    $data[$k]->languages[$code] = $lang;
+            $data = require base_path('vendor/dominservice/data_locale_parser/data/countries_full_data.php');
+            $localeToCode = require base_path('vendor/dominservice/data_locale_parser/data/locale_countries_data.php');
+
+            foreach ($languages as $code => $lang) {
+                if (!empty($localeToCode[$code])) {
+                    foreach ($localeToCode[$code] as $k) {
+                        if (empty($data[$k]->languages)) {
+                            $data[$k]->languages = [];
+                        }
+                        $data[$k]->languages[$code] = $lang;
+                    }
                 }
             }
-        }
-        foreach($data as $id=>&$item) {
-            $item->country = $countries[$id];
-            $item->currency->name = !empty($currencies[$item->currency->code]) ? $currencies[$item->currency->code] : null;
+            foreach ($data as $id => &$item) {
+                $item->country = $countries[$id];
+                $item->currency->name = !empty($currencies[$item->currency->code]) ? $currencies[$item->currency->code] : null;
+            }
+            $this->fullData = collect(array_values($data));
         }
 
-        return collect(array_values($data));
+        return $this->fullData;
     }
 
     /**
@@ -184,35 +193,32 @@ class DataParser
 
     /**
      * @param string $locale
-     * @param string $format
      * @param bool $sorted
      * @return \Illuminate\Support\Collection
      */
-    public function getListCountries(string $locale = 'en', string $format = 'php', bool $sorted = true)
+    public function getListCountries(string $locale = 'en', bool $sorted = true)
     {
-        return collect((array)$this->getList('countries',  $locale, $format, $sorted));
+        return collect((array)$this->getList('countries',  $locale, $sorted));
     }
 
     /**
      * @param string $locale
-     * @param string $format
      * @param bool $sorted
      * @return \Illuminate\Support\Collection
      */
-    public function getListCurrencies(string $locale = 'en', string $format = 'php', bool $sorted = true)
+    public function getListCurrencies(string $locale = 'en', bool $sorted = true)
     {
-        return collect((array)$this->getList('currencies',  $locale, $format, $sorted));
+        return collect((array)$this->getList('currencies',  $locale, $sorted));
     }
 
     /**
      * @param string $locale
-     * @param string $format
      * @param bool $sorted
      * @return \Illuminate\Support\Collection
      */
-    public function getListLanguages(string $locale = 'en', string $format = 'php', bool $sorted = true)
+    public function getListLanguages(string $locale = 'en', bool $sorted = true)
     {
-        return collect((array)$this->getList('languages',  $locale, $format, $sorted));
+        return collect((array)$this->getList('languages',  $locale, $sorted));
     }
 
     /**
@@ -227,7 +233,7 @@ class DataParser
     public function getOne(string $type, string $id, string $locale = 'en'): string
     {
         $id = mb_strtoupper($id);
-        $locales = $this->loadData($type, $locale, 'php', false);
+        $locales = $this->loadData($type, $locale, false);
 
         if (!$this->has($type, $id, $locale)) {
             if ($type == 'countries') {
@@ -249,13 +255,12 @@ class DataParser
      *
      * @param string $type The type data
      * @param string $locale The locale (default: en)
-     * @param string $format The format (default: php)
      * @param bool $sorted Sort the list? (default: true)
      * @return mixed         An array (list) with country or raw data
      */
-    public function getList(string $type, string $locale = 'en', string $format = 'php', bool $sorted = true): array
+    public function getList(string $type, string $locale = 'en', bool $sorted = true): array
     {
-        return $this->loadData($type, $locale, $format, $sorted);
+        return $this->loadData($type, $locale, $sorted);
     }
 
     /**
@@ -276,33 +281,32 @@ class DataParser
      *
      * @param string $type The type data
      * @param string $locale The locale
-     * @param string $format The format (default: php)
      * @param bool $sorted Should we sort the country list? (default: true)
      * @return mixed         An array (list) with country or raw data
      */
-    protected function loadData(string $type, string $locale, string $format, bool $sorted = true): array
+    protected function loadData(string $type, string $locale, bool $sorted = true): array
     {
         $locale = str_replace('-', '_', $locale);
 
-        if (!isset($this->{$type}[$locale][$format])) {
+        if (!isset($this->{$type}[$locale])) {
             // Customization - "source" does not matter anymore because umpirsky refactored his library.
             if ($type == 'countries') {$text = 'country';}
             elseif ($type == 'currencies') {$text = 'currency';}
             elseif ($type == 'languages') {$text = 'language';}
             else {$text = '__';}
 
-            $file = sprintf('%s/%s/'.$text.'.%s', $this->{$type.'Dir'}, $locale, $format);
+            $file = sprintf('%s/%s/'.$text.'.php', $this->{$type.'Dir'}, $locale);
 
             if (!is_file($file)) {
                 throw new RuntimeException(sprintf('Unable to load the country data file "%s"', $file));
             }
 
-            $this->{$type}[$locale][$format] = ($format === 'php') ? require $file : file_get_contents($file);
+            $this->{$type}[$locale] = require $file;
         }
         if ($sorted) {
-            return $this->sortData($locale, $this->{$type}[$locale][$format]);
+            return $this->sortData($locale, $this->{$type}[$locale]);
         }
-        return $this->{$type}[$locale][$format];
+        return $this->{$type}[$locale];
     }
 
     /**
