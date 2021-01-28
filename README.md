@@ -32,15 +32,15 @@ public function __construct() {
 ```
 Get all countries
 ```php
-$this->dataParser->getListCountries('en', 'json');
+$this->dataParser->getListCountries('en');
 ```
 Get all currencies
 ```php
-$this->dataParser->getListCurrencies('en', 'json');
+$this->dataParser->getListCurrencies('en');
 ```
 Get all Languages
 ```php
-$this->dataParser->getListLanguages('en', 'json');
+$this->dataParser->getListLanguages('en');
 ```
 
 All lists return a collection
