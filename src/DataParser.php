@@ -134,7 +134,7 @@ class DataParser
      * @param string $locale
      * @return \Illuminate\Support\Collection
      */
-    public function parseAllDataPerCountry(string $locale = 'en')
+    public function parseAllDataPerCountry(string $locale = 'en'): \Illuminate\Support\Collection
     {
         if (empty($this->fullData)) {
             $countries = $this->getListCountries($locale);
@@ -204,7 +204,7 @@ class DataParser
      * @param bool $sorted
      * @return \Illuminate\Support\Collection
      */
-    public function getListCountries(string $locale = 'en', bool $sorted = true)
+    public function getListCountries(string $locale = 'en', bool $sorted = true): \Illuminate\Support\Collection
     {
         return collect((array)$this->getList('countries',  $locale, $sorted));
     }
@@ -214,7 +214,7 @@ class DataParser
      * @param bool $sorted
      * @return \Illuminate\Support\Collection
      */
-    public function getListCurrencies(string $locale = 'en', bool $sorted = true)
+    public function getListCurrencies(string $locale = 'en', bool $sorted = true): \Illuminate\Support\Collection
     {
         return collect((array)$this->getList('currencies',  $locale, $sorted));
     }
@@ -224,7 +224,7 @@ class DataParser
      * @param bool $sorted
      * @return \Illuminate\Support\Collection
      */
-    public function getListLanguages(string $locale = 'en', bool $sorted = true)
+    public function getListLanguages(string $locale = 'en', bool $sorted = true): \Illuminate\Support\Collection
     {
         return collect((array)$this->getList('languages',  $locale, $sorted));
     }
@@ -280,7 +280,6 @@ class DataParser
     public function setList(string $type, string $locale, array $data): DataParser
     {
         $this->{$type}[$locale] = $data;
-
         return $this;
     }
 
@@ -346,7 +345,6 @@ class DataParser
     public function has(string $type, string $id, string $locale = 'en'): bool
     {
         $locales = $this->loadData($type, $locale, false);
-
         return isset($locales[mb_strtoupper($id)]);
     }
 
