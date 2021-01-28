@@ -11,7 +11,7 @@
  * @author    DSO-IT Mateusz Domin <biuro@dso.biz.pl>
  * @copyright (c) 2021 DSO-IT Mateusz Domin
  * @license   MIT
- * @version   1.0.0
+ * @version   1.2.0
  */
 
 namespace Dominservice\DataLocaleParser;
@@ -30,21 +30,27 @@ class DataParser
 {
     /**
      * countries list.
-     * @var array
+     * @var \Illuminate\Support\Collection
      */
     private $countries;
 
     /**
      * currencies list.
-     * @var array
+     * @var \Illuminate\Support\Collection
      */
     private $currencies;
 
     /**
      * languages list.
-     * @var array
+     * @var \Illuminate\Support\Collection
      */
     private $languages;
+
+    /**
+     * languages list.
+     * @var \Illuminate\Support\Collection
+     */
+    private $fullData;
 
     /**
      * Path to the directory containing countries data.
@@ -137,6 +143,7 @@ class DataParser
 
             $data = require base_path('vendor/dominservice/data_locale_parser/data/countries_full_data.php');
             $localeToCode = require base_path('vendor/dominservice/data_locale_parser/data/locale_countries_data.php');
+            $states = require base_path('vendor/dominservice/data_locale_parser/data/states_utf8.php');
 
             foreach ($languages as $code => $lang) {
                 if (!empty($localeToCode[$code])) {
@@ -151,6 +158,7 @@ class DataParser
             foreach ($data as $id => &$item) {
                 $item->country = $countries[$id];
                 $item->currency->name = !empty($currencies[$item->currency->code]) ? $currencies[$item->currency->code] : null;
+                $item->states = !empty($states[$item->so]['states']) ? $states[$item->so]['states'] : null;
             }
             $this->fullData = collect(array_values($data));
         }
@@ -236,11 +244,11 @@ class DataParser
         $locales = $this->loadData($type, $locale, false);
 
         if (!$this->has($type, $id, $locale)) {
-            if ($type == 'countries') {
+            if ($type === 'countries') {
                 throw new CountryNotFoundException($id);
-            } elseif ($type == 'currencies') {
+            } elseif ($type === 'currencies') {
                 throw new CurrencyNotFoundException($id);
-            } elseif ($type == 'languages') {
+            } elseif ($type === 'languages') {
                 throw new LanguageNotFoundException($id);
             } else {
                 throw new \Exception('Incorrect data type selected');
@@ -290,9 +298,9 @@ class DataParser
 
         if (!isset($this->{$type}[$locale])) {
             // Customization - "source" does not matter anymore because umpirsky refactored his library.
-            if ($type == 'countries') {$text = 'country';}
-            elseif ($type == 'currencies') {$text = 'currency';}
-            elseif ($type == 'languages') {$text = 'language';}
+            if ($type === 'countries') {$text = 'country';}
+            elseif ($type === 'currencies') {$text = 'currency';}
+            elseif ($type === 'languages') {$text = 'language';}
             else {$text = '__';}
 
             $file = sprintf('%s/%s/'.$text.'.php', $this->{$type.'Dir'}, $locale);
@@ -337,7 +345,7 @@ class DataParser
      */
     public function has(string $type, string $id, string $locale = 'en'): bool
     {
-        $locales = $this->loadData($type, $locale, 'php', false);
+        $locales = $this->loadData($type, $locale, false);
 
         return isset($locales[mb_strtoupper($id)]);
     }
