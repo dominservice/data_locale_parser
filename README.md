@@ -4,7 +4,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/dominservice/data_locale_parser.svg?style=flat-square)](https://packagist.org/packages/dominservice/data_locale_parser)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 
-Data Locale Parser is a package for Laravel 5.6, 7.* and 8.*, which lists all countries, currencies and languages, with names and ISO 3166-1 codes in all languages and data formats.
+Data Locale Parser is a package for Laravel 5.6, 5.7, 5.8, 6.*, 7.* and 8.*, which lists all countries, currencies and languages, with names and ISO 3166-1 codes in all languages and data formats.
 
 ## Installation
 
@@ -64,27 +64,36 @@ If you have collected all data, you make use this code
 ```
 Then You get 
 ```php
-Illuminate\Support\Collection {#1039 ▼
-  #items: array:249 [▼
-    0 => {#541 ▼
-      +"SO": "AD"
-      +"ISO3": "AND"
-      +"ISO-Numeric": "20"
+Illuminate\Support\Collection {
+  #items: [
+    0 => {
+       +"so": "AD"
+      +"iso3": "AND"
+      +"iso_nr": "20"
       +"fips": "AN"
-      +"Continent": "EU"
+      +"continent": "EU"
       +"tld": ".ad"
-      +"Phone": "376"
-      +"Postal Code Format": "AD###"
-      +"Postal Code Regex": "^(?:AD)*(\d{3})$"
-      +"currency": {#540
+      +"phone": "376"
+      +"postal_code_format": "AD###"
+      +"postal_code_regex": "^(?:AD)*(\d{3})$"
+      +"currency": {
         +"name": "euro"
         +"code": "EUR"
         +"symbol": "€"
       }
-      +"languages": array:1 [
+      +"languages": array: [
         "ca" => "kataloński"
       ]
       +"country": "Andora"
+      +"states": array: [
+        "02" => "Canillo"
+        "03" => "Encamp"
+        "04" => "La Massana"
+        "05" => "Ordino"
+        "06" => "Sant Julià de Lòria"
+        "07" => "Andorra la Vella"
+        "08" => "Escaldes-Engordany"
+      ]
     }
     ...
 }
