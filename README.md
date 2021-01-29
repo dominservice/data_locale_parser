@@ -98,3 +98,10 @@ Illuminate\Support\Collection {
     ...
 }
 ```
+
+## Credits
+
+- [UN/LOCODE Country Subdivisions ISO 3166-2](https://unece.org/trade/uncefact/unlocode-country-subdivisions-iso-3166-2)
+- [Monarobase/country-list](https://github.com/Monarobase/country-list)
+- [umpirsky/language-list](https://github.com/umpirsky/language-list)
+- [umpirsky/locale-list](https://github.com/umpirsky/locale-list)
