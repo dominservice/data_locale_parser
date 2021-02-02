@@ -168,3 +168,4 @@ You make take one country full data
 - [Monarobase/country-list](https://github.com/Monarobase/country-list)
 - [umpirsky/language-list](https://github.com/umpirsky/language-list)
 - [umpirsky/locale-list](https://github.com/umpirsky/locale-list)
+- [ipregistry/iso3166](https://github.com/ipregistry/iso3166)
