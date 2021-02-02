@@ -64,39 +64,102 @@ If you have collected all data, you make use this code
 ```
 Then You get 
 ```php
-Illuminate\Support\Collection {
+Illuminate\Support\Collection {▼
   #items: [
-    0 => {
-       +"so": "AD"
-      +"iso3": "AND"
-      +"iso_nr": "20"
-      +"fips": "AN"
+    0 => {#1992 ▼
+      +"so": "PL"
+      +"iso3": "POL"
+      +"iso_nr": "616"
+      +"fips": "PL"
       +"continent": "EU"
-      +"tld": ".ad"
-      +"phone": "376"
-      +"postal_code_format": "AD###"
-      +"postal_code_regex": "^(?:AD)*(\d{3})$"
-      +"currency": {
-        +"name": "euro"
-        +"code": "EUR"
-        +"symbol": "€"
+      +"tld": ".pl"
+      +"phone": "48"
+      +"postal_code_format": "##-###"
+      +"postal_code_regex": "^\d{2}-\d{3}$"
+      +"currency": {#1991 ▼
+        +"name": "złoty polski"
+        +"code": "PLN"
+        +"symbol": "zł"
       }
-      +"languages": array: [
-        "ca" => "kataloński"
+      +"languages": array:1 [▼
+        "pl" => "polski"
       ]
-      +"country": "Andora"
-      +"states": array: [
-        "02" => "Canillo"
-        "03" => "Encamp"
-        "04" => "La Massana"
-        "05" => "Ordino"
-        "06" => "Sant Julià de Lòria"
-        "07" => "Andorra la Vella"
-        "08" => "Escaldes-Engordany"
-      ]
+      +"country": "Polska"
+      +"subdivision_iso3166": Illuminate\Support\Collection {#2275 ▼
+        #items: array:16 [▼
+          "PL-02" => array:2 [▼
+            "name" => "Dolnośląskie"
+            "name_ascii" => "Dolnoslaskie"
+          ]
+          "PL-04" => array:2 [▼
+            "name" => "Kujawsko-pomorskie"
+            "name_ascii" => "Kujawsko-pomorskie"
+          ]
+          "PL-06" => array:2 [▼
+            "name" => "Lubelskie"
+            "name_ascii" => "Lubelskie"
+          ]
+          "PL-08" => array:2 [▼
+            "name" => "Lubuskie"
+            "name_ascii" => "Lubuskie"
+          ]
+          "PL-10" => array:2 [▼
+            "name" => "Łódzkie"
+            "name_ascii" => "Lodzkie"
+          ]
+          "PL-12" => array:2 [▼
+            "name" => "Małopolskie"
+            "name_ascii" => "Malopolskie"
+          ]
+          "PL-14" => array:2 [▼
+            "name" => "Mazowieckie"
+            "name_ascii" => "Mazowieckie"
+          ]
+          "PL-16" => array:2 [▼
+            "name" => "Opolskie"
+            "name_ascii" => "Opolskie"
+          ]
+          "PL-18" => array:2 [▼
+            "name" => "Podkarpackie"
+            "name_ascii" => "Podkarpackie"
+          ]
+          "PL-20" => array:2 [▼
+            "name" => "Podlaskie"
+            "name_ascii" => "Podlaskie"
+          ]
+          "PL-22" => array:2 [▼
+            "name" => "Pomorskie"
+            "name_ascii" => "Pomorskie"
+          ]
+          "PL-24" => array:2 [▼
+            "name" => "Śląskie"
+            "name_ascii" => "Slaskie"
+          ]
+          "PL-26" => array:2 [▶]
+          "PL-28" => array:2 [▼
+            "name" => "Warmińsko-mazurskie"
+            "name_ascii" => "Warminsko-mazurskie"
+          ]
+          "PL-30" => array:2 [▼
+            "name" => "Wielkopolskie"
+            "name_ascii" => "Wielkopolskie"
+          ]
+          "PL-32" => array:2 [▼
+            "name" => "Zachodniopomorskie"
+            "name_ascii" => "Zachodniopomorskie"
+          ]
+        ]
+      }
     }
+
     ...
 }
+```
+You make take one country full data 
+
+```php
+
+ $this->dataParser->parseAllDataPerCountry('pl_PL', 'PL');
 ```
 
 ## Credits

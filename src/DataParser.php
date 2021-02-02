@@ -11,7 +11,7 @@
  * @author    DSO-IT Mateusz Domin <biuro@dso.biz.pl>
  * @copyright (c) 2021 DSO-IT Mateusz Domin
  * @license   MIT
- * @version   1.2.0
+ * @version   1.3.0
  */
 
 namespace Dominservice\DataLocaleParser;
@@ -134,7 +134,7 @@ class DataParser
      * @param string $locale
      * @return \Illuminate\Support\Collection
      */
-    public function parseAllDataPerCountry(string $locale = 'en'): \Illuminate\Support\Collection
+    public function parseAllDataPerCountry(string $locale = 'en', $country = null)
     {
         if (empty($this->fullData)) {
             $countries = $this->getListCountries($locale);
@@ -143,7 +143,7 @@ class DataParser
 
             $data = require base_path('vendor/dominservice/data_locale_parser/data/countries_full_data.php');
             $localeToCode = require base_path('vendor/dominservice/data_locale_parser/data/locale_countries_data.php');
-            $states = require base_path('vendor/dominservice/data_locale_parser/data/states_utf8.php');
+            $subdivision = require base_path('vendor/dominservice/data_locale_parser/data/subdivision_iso3166.php');
 
             foreach ($languages as $code => $lang) {
                 if (!empty($localeToCode[$code])) {
@@ -158,12 +158,16 @@ class DataParser
             foreach ($data as $id => &$item) {
                 $item->country = $countries[$id];
                 $item->currency->name = !empty($currencies[$item->currency->code]) ? $currencies[$item->currency->code] : null;
-                $item->states = !empty($states[$item->so]['states']) ? $states[$item->so]['states'] : null;
+                $item->subdivision_iso3166 = !empty($subdivision[$item->so]) ? collect($subdivision[$item->so]) : null;
             }
-            $this->fullData = collect(array_values($data));
+            $this->fullData = $data;
         }
 
-        return $this->fullData;
+        if ($country && !empty($this->fullData[strtoupper($country)])) {
+            return $this->fullData[strtoupper($country)];
+        }
+
+        return collect(array_values($this->fullData));
     }
 
     /**

@@ -11,7 +11,7 @@
  * @author    DSO-IT Mateusz Domin <biuro@dso.biz.pl>
  * @copyright (c) 2021 DSO-IT Mateusz Domin
  * @license   MIT
- * @version   1.2.0
+ * @version   1.3.0
  */
 
 namespace Dominservice\DataLocaleParser\Fasade;
