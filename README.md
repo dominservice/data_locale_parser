@@ -155,7 +155,7 @@ Illuminate\Support\Collection {▼
     ...
 }
 ```
-You make take one country full data 
+You may get one country full data 
 
 ```php
 
