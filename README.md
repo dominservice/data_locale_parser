@@ -14,7 +14,6 @@ Require package via Composer: `composer require dominservice/data_locale_parser`
 
 - Locale (en, en_US, fr, fr_CA...)
     - If no locale is given (or if it is set to null), then it will default to 'en'
-- Format (csv, flags.html, html, json, mysql.sql, php, postgresql.sql, sqlite.sql, sqlserver.sql, txt, xml, yaml)
 
 Declare ussage
 ```php
