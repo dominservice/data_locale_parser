@@ -164,7 +164,7 @@ class DataParser
             }
             $this->fullData = $data;
         }
-        
+
         if ($country && !empty($this->fullData[strtoupper($country)])) {
             return $this->fullData[strtoupper($country)];
         }
@@ -246,7 +246,7 @@ class DataParser
      */
     public function getOne(string $type, string $id, string $locale = 'en'): string
     {
-        $id = mb_strtoupper($id);
+        $id = $type!='languages' ? mb_strtoupper($id) : $id;
         $locales = $this->loadData($type, $locale, false);
 
         if (!$this->has($type, $id, $locale)) {
@@ -261,7 +261,7 @@ class DataParser
             }
         }
 
-        return $locales[mb_strtoupper($id)];
+        return $locales[$id];
     }
 
     /**
@@ -350,8 +350,9 @@ class DataParser
      */
     public function has(string $type, string $id, string $locale = 'en'): bool
     {
+        $id = $type!='languages' ? mb_strtoupper($id) : $id;
         $locales = $this->loadData($type, $locale, false);
-        return isset($locales[mb_strtoupper($id)]);
+        return isset($locales[$id]);
     }
 
 }
