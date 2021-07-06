@@ -148,10 +148,12 @@ class DataParser
             foreach ($languages as $code => $lang) {
                 if (!empty($localeToCode[$code])) {
                     foreach ($localeToCode[$code] as $k) {
-                        if (empty($data[$k]->languages)) {
+                        if (isset($data[$k]) && !isset($data[$k]->languages)) {
                             $data[$k]->languages = [];
                         }
-                        $data[$k]->languages[$code] = $lang;
+                        if (isset($data[$k]->languages)) {
+                            $data[$k]->languages[$code] = $lang;
+                        }
                     }
                 }
             }
@@ -162,7 +164,7 @@ class DataParser
             }
             $this->fullData = $data;
         }
-
+        
         if ($country && !empty($this->fullData[strtoupper($country)])) {
             return $this->fullData[strtoupper($country)];
         }
