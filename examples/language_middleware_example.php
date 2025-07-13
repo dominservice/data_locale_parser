@@ -89,7 +89,7 @@ In your app/Http/Kernel.php file:
 
 protected $routeMiddleware = [
     // Other middleware...
-    'language' => \Dominservice\DataLocaleParser\Middleware\LanguageMiddleware::class,
+    'language' => \Dominservice\DataLocaleParser\Http\Middleware\LanguageMiddleware::class,
 ];
 */
 

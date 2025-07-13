@@ -321,6 +321,105 @@ Route::prefix('de')->name('de.')->middleware(['language'])->group(function () {
 
 With this setup, when a user switches from Polish to English while on the `/pl/kontakt` page, they will be redirected to `/en/contact` instead of just changing the language prefix.
 
+## Helper Functions
+
+This package includes several helper functions to make working with localized routes and URLs easier. These functions are automatically loaded when you install the package.
+
+### RTL Detection
+
+```php
+locale_is_rtl(?string $locale = null): bool
+```
+
+Checks if a locale is RTL (Right-to-Left). If no locale is provided, it uses the current application locale.
+
+```php
+if (locale_is_rtl('ar')) {
+    // Arabic is an RTL language
+}
+
+if (locale_is_rtl()) {
+    // The current locale is an RTL language
+}
+```
+
+You can configure which locales are considered RTL in the `config/data_locale_parser.php` file:
+
+```php
+'locale_rtl' => [
+    'ar',    // Arabic
+    'fa',    // Persian (Farsi)
+    'he',    // Hebrew
+    'ur',    // Urdu
+    'yi',    // Yiddish
+    // ... other RTL languages
+],
+```
+
+### Route Translation
+
+```php
+get_translated_route(string $locale, string $key): string
+```
+
+Gets a translated route key for a specific locale. This is useful for translating route names or segments.
+
+```php
+$translatedKey = get_translated_route('pl', 'contact');
+// Returns 'kontakt' if a translation exists, otherwise 'pl.contact'
+```
+
+### Localized Routes
+
+```php
+route_current_locale(string $route, mixed $parameters = [], bool $absolute = true): string
+```
+
+Generates a URL to a named route for the current locale.
+
+```php
+$url = route_current_locale('contact');
+// If the current locale is 'en', returns URL for 'en.contact'
+```
+
+```php
+route_locale(string $locale, string $route, mixed $parameters = [], bool $absolute = true): string
+```
+
+Generates a URL to a named route for a specific locale.
+
+```php
+$url = route_locale('pl', 'contact');
+// Returns URL for 'pl.contact'
+```
+
+### Route Checking
+
+```php
+is_route_current_locale(mixed ...$patterns): bool
+```
+
+Checks if the current route name matches any of the given patterns for the current locale.
+
+```php
+if (is_route_current_locale('contact', 'about')) {
+    // Current route is either 'en.contact' or 'en.about' (assuming current locale is 'en')
+}
+```
+
+### URL Localization
+
+```php
+get_localized_url(string $locale): string
+```
+
+Gets the URL for the current page in a different locale. This function tries to use route name-based redirection first, and falls back to URL segment manipulation if that fails.
+
+```php
+$plUrl = get_localized_url('pl');
+// If current URL is '/en/contact', returns '/pl/kontakt' (if route names are properly set up)
+```
+
 ## Examples
 
 For more advanced usage examples, check out the [examples directory](examples/). It contains sample code demonstrating various features of the library, including:

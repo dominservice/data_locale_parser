@@ -85,6 +85,31 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | RTL Locales
+    |--------------------------------------------------------------------------
+    |
+    | The list of locales that use Right-to-Left (RTL) text direction.
+    | This is used by the locale_is_rtl() helper function.
+    |
+    */
+    'locale_rtl' => [
+        'ar',    // Arabic
+        'fa',    // Persian (Farsi)
+        'he',    // Hebrew
+        'ur',    // Urdu
+        'yi',    // Yiddish
+        'dv',    // Divehi
+        'ha',    // Hausa
+        'khw',   // Khowar
+        'ks',    // Kashmiri
+        'ku',    // Kurdish
+        'ps',    // Pashto
+        'sd',    // Sindhi
+        'ug',    // Uyghur
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | API Prefixes
     |--------------------------------------------------------------------------
     |
