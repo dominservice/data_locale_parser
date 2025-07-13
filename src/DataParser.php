@@ -236,6 +236,60 @@ class DataParser
     }
 
     /**
+     * Get full language data including script, native name, and regional code
+     * 
+     * @param array|string|null $locales Filter languages by these locale codes
+     * @return \Illuminate\Support\Collection
+     */
+    public function getLanguagesFullData($locales = null): \Illuminate\Support\Collection
+    {
+        $data = require base_path('vendor/dominservice/data_locale_parser/data/languages_full_data.php');
+        $data = collect($data);
+
+        if ($locales) {
+            $locales = is_string($locales) ? [$locales] : $locales;
+
+            // Convert locales to use hyphens instead of underscores for comparison
+            $normalizedLocales = array_map(function($locale) {
+                return str_replace('_', '-', $locale);
+            }, $locales);
+
+            $data = $data->filter(function ($item, $key) use ($normalizedLocales) {
+                return in_array($key, $normalizedLocales);
+            });
+        }
+
+        // Get the current locale from the application
+        $currentLocale = app()->currentLocale();
+
+        // Load language names for the current locale
+        try {
+            $languageNames = $this->getListLanguages($currentLocale);
+
+            // Update the 'name' field with the name in the current locale
+            $data = $data->map(function ($item, $key) use ($languageNames) {
+                // Extract the base language code (without region)
+                $baseCode = explode('-', $key)[0];
+
+                // If we have a translation for this language in the current locale, use it
+                if ($languageNames->has($baseCode)) {
+                    $item['name'] = $languageNames[$baseCode];
+                }
+
+                return $item;
+            });
+        } catch (\Exception $e) {
+            // If there's an error loading the language names, just continue with the original data
+        }
+
+        return $data;
+
+        /*
+         * Czy da się tu jeszcze coś usprawnić albo dodać coś co może być przydatne, ale nie zmieniając dotychczasowego użycia i nie zmieniając struktury zwracanych danych, a przynajmniej żeby to co jest pozostało a najwyżej coś może zostać dołożone. 
+         * */
+    }
+
+    /**
      * @param string $type
      * @param string $id
      * @param string $locale
