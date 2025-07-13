@@ -35,7 +35,7 @@ class DataLocaleParserServiceProvider extends ServiceProvider
     {
         // Publish configuration
         $this->publishes([
-            __DIR__ . '/config/data_locale_parser.php' => config_path('data_locale_parser.php'),
+            __DIR__ . '/../config/data_locale_parser.php' => config_path('data_locale_parser.php'),
         ], 'config');
 
         // Register middleware
