@@ -236,16 +236,30 @@ class DataParser
     }
 
     /**
+     * Cached full language data
+     * @var \Illuminate\Support\Collection
+     */
+    private $languagesFullData;
+
+    /**
      * Get full language data including script, native name, and regional code
      * 
      * @param array|string|null $locales Filter languages by these locale codes
+     * @param string|null $displayLocale Locale to use for language names (defaults to current app locale)
+     * @param bool $sorted Sort the list? (default: true)
+     * @param array $filters Additional filters (script, regional, etc.)
      * @return \Illuminate\Support\Collection
      */
-    public function getLanguagesFullData($locales = null): \Illuminate\Support\Collection
+    public function getLanguagesFullData($locales = null, ?string $displayLocale = null, bool $sorted = true, array $filters = []): \Illuminate\Support\Collection
     {
-        $data = require base_path('vendor/dominservice/data_locale_parser/data/languages_full_data.php');
-        $data = collect($data);
+        // Load data from cache if available
+        if (!$this->languagesFullData) {
+            $this->languagesFullData = collect(require base_path('vendor/dominservice/data_locale_parser/data/languages_full_data.php'));
+        }
 
+        $data = $this->languagesFullData;
+
+        // Apply locale filtering
         if ($locales) {
             $locales = is_string($locales) ? [$locales] : $locales;
 
@@ -259,21 +273,58 @@ class DataParser
             });
         }
 
-        // Get the current locale from the application
-        $currentLocale = app()->currentLocale();
+        // Apply additional filters
+        if (!empty($filters)) {
+            $data = $data->filter(function ($item) use ($filters) {
+                foreach ($filters as $key => $value) {
+                    // Skip if the filter key doesn't exist in the item
+                    if (!isset($item[$key])) {
+                        continue;
+                    }
 
-        // Load language names for the current locale
+                    // If the filter value is an array, check if the item value is in the array
+                    if (is_array($value)) {
+                        if (!in_array($item[$key], $value)) {
+                            return false;
+                        }
+                    } 
+                    // Otherwise, check if the item value equals the filter value
+                    else if ($item[$key] !== $value) {
+                        return false;
+                    }
+                }
+                return true;
+            });
+        }
+
+        // Determine which locale to use for language names
+        $displayLocale = $displayLocale ?: app()->currentLocale();
+        $fallbackLocale = 'en'; // Default fallback locale
+
+        // Load language names for the specified locale
         try {
-            $languageNames = $this->getListLanguages($currentLocale);
+            $languageNames = $this->getListLanguages($displayLocale);
+            $hasFallback = false;
 
-            // Update the 'name' field with the name in the current locale
-            $data = $data->map(function ($item, $key) use ($languageNames) {
+            // If we couldn't get language names for the requested locale, try the fallback
+            if ($languageNames->isEmpty() && $displayLocale !== $fallbackLocale) {
+                $languageNames = $this->getListLanguages($fallbackLocale);
+                $hasFallback = true;
+            }
+
+            // Update the 'name' field with the name in the specified locale
+            $data = $data->map(function ($item, $key) use ($languageNames, $hasFallback) {
                 // Extract the base language code (without region)
                 $baseCode = explode('-', $key)[0];
 
                 // If we have a translation for this language in the current locale, use it
                 if ($languageNames->has($baseCode)) {
                     $item['name'] = $languageNames[$baseCode];
+
+                    // Add a flag indicating if we're using fallback translation
+                    if ($hasFallback) {
+                        $item['using_fallback_name'] = true;
+                    }
                 }
 
                 return $item;
@@ -282,11 +333,51 @@ class DataParser
             // If there's an error loading the language names, just continue with the original data
         }
 
-        return $data;
+        // Sort the data if requested
+        if ($sorted && $data->count() > 0) {
+            $data = $this->sortLanguagesFullData($data, $displayLocale);
+        }
 
-        /*
-         * Czy da się tu jeszcze coś usprawnić albo dodać coś co może być przydatne, ale nie zmieniając dotychczasowego użycia i nie zmieniając struktury zwracanych danych, a przynajmniej żeby to co jest pozostało a najwyżej coś może zostać dołożone. 
-         * */
+        return $data;
+    }
+
+    /**
+     * Get full data for a single language
+     *
+     * @param string $code Language code
+     * @param string|null $displayLocale Locale to use for language name (defaults to current app locale)
+     * @return array|null Language data or null if not found
+     */
+    public function getLanguageFullData(string $code, ?string $displayLocale = null): ?array
+    {
+        $code = str_replace('_', '-', $code);
+        $result = $this->getLanguagesFullData([$code], $displayLocale, false);
+
+        return $result->has($code) ? $result->get($code) : null;
+    }
+
+    /**
+     * Sort the full language data collection
+     *
+     * @param \Illuminate\Support\Collection $data The language data collection
+     * @param string $locale The locale to use for sorting
+     * @return \Illuminate\Support\Collection Sorted collection
+     */
+    protected function sortLanguagesFullData(\Illuminate\Support\Collection $data, string $locale): \Illuminate\Support\Collection
+    {
+        // Extract to array for sorting
+        $array = $data->all();
+
+        // Create a collator for proper locale-aware sorting
+        $collator = new Collator($locale);
+
+        // Sort by name
+        uasort($array, function ($a, $b) use ($collator) {
+            return $collator->compare($a['name'], $b['name']);
+        });
+
+        // Return as collection
+        return collect($array);
     }
 
     /**

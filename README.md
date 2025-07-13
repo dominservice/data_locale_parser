@@ -161,6 +161,175 @@ You may get one country full data
  $this->dataParser->parseAllDataPerCountry('pl_PL', 'PL');
 ```
 
+## Language Handling Middleware
+
+This package includes a middleware for handling language detection from URL paths and request headers. This allows you to create routes with language prefixes (e.g., `/en/page`, `/pl/page`) and automatically set the application locale based on the URL or header.
+
+### Configuration
+
+Publish the configuration file:
+
+```bash
+php artisan vendor:publish --provider="Dominservice\DataLocaleParser\DataLocaleParserServiceProvider" --tag="config"
+```
+
+This will create a `config/data_locale_parser.php` file with the following options:
+
+```php
+return [
+    // Whether to detect language from URL
+    'detect_from_url' => true,
+
+    // Whether to use cookies for language storage
+    // If true, the language preference will be stored in a cookie
+    // This allows the language to persist across requests without showing it in the URL
+    'use_cookies' => false,
+
+    // Whether to detect language from header
+    'detect_from_header' => true,
+
+    // The name of the header to check for language
+    'header_name' => 'Accept-Language',
+
+    // Default locale if no language is detected
+    'default_locale' => 'en',
+
+    // Allowed locales
+    'allowed_locales' => [
+        'en',
+        'pl',
+        'de',
+        'fr',
+        'es',
+        'en_GB',
+        'en_US',
+    ],
+
+    // API prefixes
+    'api_prefixes' => [
+        'api',
+    ],
+
+    // Cookie settings
+    'cookie_name' => 'language',
+    'cookie_lifetime' => 43200, // 30 days
+
+    // Language change route
+    // This route will be registered automatically by the service provider
+    'language_change_route' => 'change-language',
+];
+```
+
+### Usage
+
+Register the middleware in your `app/Http/Kernel.php` file:
+
+```php
+protected $routeMiddleware = [
+    // Other middleware...
+    'language' => \Dominservice\DataLocaleParser\Http\Middleware\LanguageMiddleware::class,
+];
+```
+
+Apply the middleware to your routes:
+
+```php
+// Apply to specific routes
+Route::get('/{any}', 'HomeController@index')->middleware('language')->where('any', '.*');
+
+// Apply to route groups
+Route::middleware(['language'])->group(function () {
+    Route::get('/', 'HomeController@index');
+    Route::get('/{any}', 'HomeController@index')->where('any', '.*');
+});
+
+// Apply to API routes
+Route::prefix('api')->middleware(['language'])->group(function () {
+    Route::get('/{lang}/users', 'Api\UserController@index');
+});
+```
+
+### How It Works
+
+1. **URL Detection**: The middleware checks if the first segment of the URL path is a valid language code. For API routes (URLs starting with a prefix defined in `api_prefixes`), it checks the second segment.
+
+2. **Header Detection**: If URL detection is disabled or fails, the middleware checks the request header specified in the configuration.
+
+3. **Default Locale**: If no language is detected from the URL or header, the middleware uses the default locale specified in the configuration.
+
+4. **Cookie Storage**: If `use_cookies` is enabled, the language preference will be stored in a cookie. This allows the language to persist across requests without showing it in the URL. For non-API routes, the middleware will check for the language in the cookie before checking the URL.
+
+### Changing the Language
+
+The package automatically registers a route for changing the language. By default, this route is `/change-language/{language}`, but you can customize it in the configuration.
+
+To create a language switcher in your application, you can use the following example:
+
+```php
+<ul class="language-switcher">
+    @foreach(config('data_locale_parser.allowed_locales') as $locale)
+        <li>
+            <a href="{{ route('language.change', ['language' => $locale]) }}">
+                {{ strtoupper($locale) }}
+            </a>
+        </li>
+    @endforeach
+</ul>
+```
+
+When a user clicks on a language link, the following happens:
+
+1. The language is validated against the allowed locales and the language database.
+2. If valid, the language is set as the application locale.
+3. If `use_cookies` is enabled, the language preference is stored in a cookie.
+4. The user is redirected back to the previous page using one of the following methods:
+   - **Route Name-Based Redirection**: If the previous page has a named route with a locale prefix (e.g., `en.contact`), the controller will replace the locale in the route name and redirect to the new route with the same parameters. This allows for path translation (e.g., `/kontakt` to `/contact`) when your routes are properly localized.
+   - **URL Segment Manipulation**: If route name-based redirection fails or the route doesn't have a name, the controller falls back to URL segment manipulation:
+     - If `use_cookies` is enabled, the language prefix is removed from the URL.
+     - If `use_cookies` is disabled, the language prefix is updated or added to the URL.
+
+This allows you to create a seamless language switching experience for your users, with or without showing the language in the URL, and with support for path translation when using named routes.
+
+### Setting Up Localized Routes
+
+To take advantage of the route name-based redirection and path translation, you need to set up your routes with locale prefixes in their names. Here's an example:
+
+```php
+// routes/web.php
+
+// English routes
+Route::prefix('en')->name('en.')->middleware(['language'])->group(function () {
+    Route::get('/', 'HomeController@index')->name('home');
+    Route::get('/contact', 'ContactController@index')->name('contact');
+    Route::get('/about', 'AboutController@index')->name('about');
+});
+
+// Polish routes
+Route::prefix('pl')->name('pl.')->middleware(['language'])->group(function () {
+    Route::get('/', 'HomeController@index')->name('home');
+    Route::get('/kontakt', 'ContactController@index')->name('contact');
+    Route::get('/o-nas', 'AboutController@index')->name('about');
+});
+
+// German routes
+Route::prefix('de')->name('de.')->middleware(['language'])->group(function () {
+    Route::get('/', 'HomeController@index')->name('home');
+    Route::get('/kontakt', 'ContactController@index')->name('contact');
+    Route::get('/uber-uns', 'AboutController@index')->name('about');
+});
+```
+
+With this setup, when a user switches from Polish to English while on the `/pl/kontakt` page, they will be redirected to `/en/contact` instead of just changing the language prefix.
+
+## Examples
+
+For more advanced usage examples, check out the [examples directory](examples/). It contains sample code demonstrating various features of the library, including:
+
+- Enhanced language full data methods with caching, custom display locales, and advanced filtering
+- Single language data retrieval
+- Language handling middleware usage
+- And more
+
 ## Credits
 
 - [UN/LOCODE Country Subdivisions ISO 3166-2](https://unece.org/trade/uncefact/unlocode-country-subdivisions-iso-3166-2)

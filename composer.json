@@ -27,5 +27,12 @@
             "src/Helpers/helpers.php"
         ]
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dominservice\\DataLocaleParser\\DataLocaleParserServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "dev"
 }
