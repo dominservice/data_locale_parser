@@ -47,15 +47,19 @@ class LanguageController
         // Set the application locale
         App::setLocale($language);
 
-        // Store in cookie if configured to use cookies
-        if ($config['use_cookies']) {
-            Cookie::queue($config['cookie_name'], $language, $config['cookie_lifetime']);
-        }
-
         // Get the URL to redirect to
         $redirectUrl = $this->getRedirectUrl($request, $language, $config);
 
-        return Redirect::to($redirectUrl);
+        // Create redirect response
+        $redirect = Redirect::to($redirectUrl);
+
+        // Store in cookie if configured to use cookies
+        if ($config['use_cookies']) {
+            $cookie = cookie($config['cookie_name'], $language, $config['cookie_lifetime']);
+            $redirect = $redirect->withCookie($cookie);
+        }
+
+        return $redirect;
     }
 
     /**

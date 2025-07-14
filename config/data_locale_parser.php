@@ -31,7 +31,7 @@ return [
     | showing it in the URL for non-API routes.
     |
     */
-    'use_cookies' => false,
+    'use_cookies' => true,
 
     /*
     |--------------------------------------------------------------------------

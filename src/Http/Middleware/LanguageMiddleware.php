@@ -34,12 +34,16 @@ class LanguageMiddleware
             if ($language) {
                 App::setLocale($language);
 
+                // Process the request
+                $response = $next($request);
+
                 // Store in cookie if configured to use cookies
                 if ($config['use_cookies']) {
-                    Cookie::queue($config['cookie_name'], $language, $config['cookie_lifetime']);
+                    $cookie = cookie($config['cookie_name'], $language, $config['cookie_lifetime']);
+                    $response = $response->withCookie($cookie);
                 }
 
-                return $next($request);
+                return $response;
             }
         } 
         // For non-API routes, use cookie or URL based on configuration
@@ -59,12 +63,16 @@ class LanguageMiddleware
                 if ($language) {
                     App::setLocale($language);
 
+                    // Process the request
+                    $response = $next($request);
+
                     // Store in cookie if configured to use cookies
                     if ($config['use_cookies']) {
-                        Cookie::queue($config['cookie_name'], $language, $config['cookie_lifetime']);
+                        $cookie = cookie($config['cookie_name'], $language, $config['cookie_lifetime']);
+                        $response = $response->withCookie($cookie);
                     }
 
-                    return $next($request);
+                    return $response;
                 }
             }
         }
@@ -75,12 +83,16 @@ class LanguageMiddleware
             if ($language) {
                 App::setLocale($language);
 
+                // Process the request
+                $response = $next($request);
+
                 // Store in cookie if configured to use cookies
                 if ($config['use_cookies']) {
-                    Cookie::queue($config['cookie_name'], $language, $config['cookie_lifetime']);
+                    $cookie = cookie($config['cookie_name'], $language, $config['cookie_lifetime']);
+                    $response = $response->withCookie($cookie);
                 }
 
-                return $next($request);
+                return $response;
             }
         }
 
