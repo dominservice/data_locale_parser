@@ -231,6 +231,36 @@ protected $routeMiddleware = [
 ];
 ```
 
+#### Cookie Encryption
+
+By default, Laravel encrypts all cookies. If you're using cookies for language storage (`use_cookies` set to `true`), you need to exclude the language cookie from encryption. Otherwise, the middleware might not be able to read the cookie correctly.
+
+Add the language cookie name to the `$except` array in your `app/Http/Middleware/EncryptCookies.php` file:
+
+```php
+namespace App\Http\Middleware;
+
+use Illuminate\Cookie\Middleware\EncryptCookies as Middleware;
+
+class EncryptCookies extends Middleware
+{
+    /**
+     * The names of the cookies that should not be encrypted.
+     *
+     * @var array<int, string>
+     */
+    protected $except = [
+        'language', // Add the language cookie name here (use the value from your config)
+    ];
+}
+```
+
+If you've changed the cookie name in your configuration, make sure to use that name instead of 'language'.
+
+#### Cookie Handling
+
+This package sets cookies directly on the response object to ensure they are properly included in the response. The package automatically applies the `web` middleware group to its routes to ensure that cookies work correctly.
+
 Apply the middleware to your routes:
 
 ```php

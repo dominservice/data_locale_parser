@@ -55,9 +55,13 @@ class DataLocaleParserServiceProvider extends ServiceProvider
         // Get the language change route from config
         $routeName = Config::get('data_locale_parser.language_change_route', 'change-language');
 
-        // Register the route
-        Route::get($routeName . '/{language}', [LanguageController::class, 'changeLanguage'])
-            ->name('language.change');
+        // Register the route with web middleware group to ensure cookies work
+        Route::middleware('web')
+            ->namespace('Dominservice\DataLocaleParser\Http\Controllers')
+            ->group(function () use ($routeName) {
+            Route::get($routeName . '/{language}', [LanguageController::class, 'changeLanguage'])
+                ->name('language.change');
+        });
     }
 
     /**

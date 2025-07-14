@@ -55,8 +55,7 @@ class LanguageController
 
         // Store in cookie if configured to use cookies
         if ($config['use_cookies']) {
-            $cookie = cookie($config['cookie_name'], $language, $config['cookie_lifetime']);
-            $redirect = $redirect->withCookie($cookie);
+            Cookie::queue($config['cookie_name'], $language, $config['cookie_lifetime']);
         }
 
         return $redirect;

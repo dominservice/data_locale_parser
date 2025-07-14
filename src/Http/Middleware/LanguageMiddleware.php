@@ -34,23 +34,20 @@ class LanguageMiddleware
             if ($language) {
                 App::setLocale($language);
 
-                // Process the request
-                $response = $next($request);
-
                 // Store in cookie if configured to use cookies
                 if ($config['use_cookies']) {
-                    $cookie = cookie($config['cookie_name'], $language, $config['cookie_lifetime']);
-                    $response = $response->withCookie($cookie);
+                    Cookie::queue($config['cookie_name'], $language, $config['cookie_lifetime']);
                 }
 
-                return $response;
+                return $next($request);
             }
-        } 
+        }
         // For non-API routes, use cookie or URL based on configuration
         else {
             // Check cookie first if enabled
             if ($config['use_cookies']) {
-                $language = $this->getLanguageFromCookie($config);
+                $language = $this->getLanguageFromCookie($request, $config);
+
                 if ($language) {
                     App::setLocale($language);
                     return $next($request);
@@ -63,16 +60,12 @@ class LanguageMiddleware
                 if ($language) {
                     App::setLocale($language);
 
-                    // Process the request
-                    $response = $next($request);
-
                     // Store in cookie if configured to use cookies
                     if ($config['use_cookies']) {
-                        $cookie = cookie($config['cookie_name'], $language, $config['cookie_lifetime']);
-                        $response = $response->withCookie($cookie);
+                        Cookie::queue($config['cookie_name'], $language, $config['cookie_lifetime']);
                     }
 
-                    return $response;
+                    return $next($request);
                 }
             }
         }
@@ -83,16 +76,12 @@ class LanguageMiddleware
             if ($language) {
                 App::setLocale($language);
 
-                // Process the request
-                $response = $next($request);
-
                 // Store in cookie if configured to use cookies
                 if ($config['use_cookies']) {
-                    $cookie = cookie($config['cookie_name'], $language, $config['cookie_lifetime']);
-                    $response = $response->withCookie($cookie);
+                    Cookie::queue($config['cookie_name'], $language, $config['cookie_lifetime']);
                 }
 
-                return $response;
+                return $next($request);
             }
         }
 
@@ -191,9 +180,9 @@ class LanguageMiddleware
      * @param  array  $config
      * @return string|null
      */
-    protected function getLanguageFromCookie(array $config)
+    protected function getLanguageFromCookie($request, array $config)
     {
-        $language = Cookie::get($config['cookie_name']);
+        $language = $request->hasCookie($config['cookie_name']) ? $request->cookie($config['cookie_name']) : null;
 
         if ($language) {
             // Check if the language is in the allowed locales
