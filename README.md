@@ -57,6 +57,25 @@ Get Language
 ```php
 $this->dataParser->geLanguage('pl_PL', 'en');
 ```
+
+Format an address based on country-specific format
+```php
+// Address data with keys like address, address2, city, subdivision, postalCode, countryCode
+$addressData = [
+    'address' => '1234 Some St.',
+    'address2' => 'Floor #67',
+    'city' => 'San Francisco',
+    'subdivision' => 'CA',
+    'postalCode' => '94105',
+    'countryCode' => 'US'
+];
+
+// Format address (returns an array of address lines)
+$formattedAddress = $this->dataParser->formatAddress($addressData);
+
+// Format address with phone number
+$formattedAddressWithPhone = $this->dataParser->formatAddress($addressData, '+1 (123) 456-7890');
+```
 If you have collected all data, you make use this code
 ```php
  $this->dataParser->parseAllDataPerCountry('pl_PL');

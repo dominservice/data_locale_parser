@@ -145,6 +145,16 @@ class DataParser
             $localeToCode = require base_path('vendor/dominservice/data_locale_parser/data/locale_countries_data.php');
             $subdivision = require base_path('vendor/dominservice/data_locale_parser/data/subdivision_iso3166.php');
 
+            // Get available address formats from the package
+            $formats = new \ReflectionClass('\AddressFormat\Formats');
+            $addressFormats = [];
+            foreach ($formats->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_STATIC) as $method) {
+                if (strpos($method->name, 'country') === 0) {
+                    $countryCode = substr($method->name, 7); // Remove 'country' prefix
+                    $addressFormats[strtoupper($countryCode)] = true;
+                }
+            }
+
             foreach ($languages as $code => $lang) {
                 if (!empty($localeToCode[$code])) {
                     foreach ($localeToCode[$code] as $k) {
@@ -161,6 +171,9 @@ class DataParser
                 $item->country = $countries[$id];
                 $item->currency->name = !empty($currencies[$item->currency->code]) ? $currencies[$item->currency->code] : null;
                 $item->subdivision_iso3166 = !empty($subdivision[$item->so]) ? collect($subdivision[$item->so]) : null;
+                
+                // Add address format information
+                $item->address_format = isset($addressFormats[$id]) ? $id : 'INTERNATIONAL';
             }
             $this->fullData = $data;
         }
@@ -498,6 +511,37 @@ class DataParser
         $id = $type!='languages' ? mb_strtoupper($id) : $id;
         $locales = $this->loadData($type, $locale, false);
         return isset($locales[$id]);
+    }
+
+    /**
+     * Format an address based on country-specific format
+     *
+     * @param array $addressData Address data with keys like address, address2, city, subdivision, postalCode, countryCode
+     * @param string|null $phoneNumber Optional phone number to include in the formatted address
+     * @return array Formatted address as an array of lines
+     */
+    public function formatAddress(array $addressData, ?string $phoneNumber = null): array
+    {
+        // Ensure countryCode is set
+        if (!isset($addressData['countryCode'])) {
+            throw new \InvalidArgumentException('Country code is required for address formatting');
+        }
+
+        // Create a new instance of AddressFormat
+        $formatter = new \AddressFormat\AddressFormat();
+        
+        // Get formatted address lines
+        $result = $formatter->format($addressData);
+        
+        // Ensure we have an array
+        $addressLines = is_array($result) ? $result : [$result];
+        
+        // Add phone number if provided
+        if ($phoneNumber !== null && $phoneNumber !== '') {
+            $addressLines = array_merge($addressLines, [$phoneNumber]);
+        }
+        
+        return $addressLines;
     }
 
 }
