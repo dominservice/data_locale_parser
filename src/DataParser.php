@@ -517,10 +517,21 @@ class DataParser
      * Format an address based on country-specific format
      *
      * @param array $addressData Address data with keys like address, address2, city, subdivision, postalCode, countryCode
+     * @param string|null $name Optional name (person name) to include at the beginning of the formatted address
+     * @param string|null $companyName Optional company name to include in the formatted address
+     * @param string|null $vatNumber Optional VAT number to include in the formatted address
      * @param string|null $phoneNumber Optional phone number to include in the formatted address
+     * @param array $additionalFields Optional array of additional fields to include in the formatted address
      * @return array Formatted address as an array of lines
      */
-    public function formatAddress(array $addressData, ?string $phoneNumber = null): array
+    public function formatAddress(
+        array $addressData, 
+        ?string $name = null, 
+        ?string $companyName = null, 
+        ?string $vatNumber = null, 
+        ?string $phoneNumber = null, 
+        array $additionalFields = []
+    ): array
     {
         // Ensure countryCode is set
         if (!isset($addressData['countryCode'])) {
@@ -536,12 +547,40 @@ class DataParser
         // Ensure we have an array
         $addressLines = is_array($result) ? $result : [$result];
         
-        // Add phone number if provided
-        if ($phoneNumber !== null && $phoneNumber !== '') {
-            $addressLines = array_merge($addressLines, [$phoneNumber]);
+        // Prepare the final address lines with additional fields
+        $finalAddressLines = [];
+        
+        // Add name if provided
+        if ($name !== null && $name !== '') {
+            $finalAddressLines[] = $name;
         }
         
-        return $addressLines;
+        // Add company name if provided
+        if ($companyName !== null && $companyName !== '') {
+            $finalAddressLines[] = $companyName;
+        }
+        
+        // Add VAT number if provided
+        if ($vatNumber !== null && $vatNumber !== '') {
+            $finalAddressLines[] = 'VAT: ' . $vatNumber;
+        }
+        
+        // Add the formatted address lines
+        $finalAddressLines = array_merge($finalAddressLines, $addressLines);
+        
+        // Add phone number if provided
+        if ($phoneNumber !== null && $phoneNumber !== '') {
+            $finalAddressLines[] = $phoneNumber;
+        }
+        
+        // Add any additional fields
+        foreach ($additionalFields as $field) {
+            if (!empty($field)) {
+                $finalAddressLines[] = $field;
+            }
+        }
+        
+        return $finalAddressLines;
     }
 
 }

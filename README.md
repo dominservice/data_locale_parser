@@ -70,12 +70,65 @@ $addressData = [
     'countryCode' => 'US'
 ];
 
-// Format address (returns an array of address lines)
+// Basic address formatting (returns an array of address lines)
 $formattedAddress = $this->dataParser->formatAddress($addressData);
 
-// Format address with phone number
-$formattedAddressWithPhone = $this->dataParser->formatAddress($addressData, '+1 (123) 456-7890');
+// Format address with additional parameters
+$formattedAddressComplete = $this->dataParser->formatAddress(
+    $addressData,                    // Address data
+    'John Doe',                      // Name
+    'Example Company Ltd.',          // Company name
+    'GB123456789',                   // VAT number
+    '+1 (123) 456-7890',             // Phone number
+    ['Customer ID: 12345']           // Additional fields
+);
+
+// Format address with just some parameters (others will be null)
+$formattedAddressPartial = $this->dataParser->formatAddress(
+    $addressData,                    // Address data
+    null,                            // No name
+    'Example Company Ltd.',          // Company name
+    null,                            // No VAT number
+    '+1 (123) 456-7890'              // Phone number
+);
 ```
+
+### Address Format Keys
+
+The following keys can be used in the address data array for the `formatAddress` function:
+
+| Key | Description | Example |
+|-----|-------------|---------|
+| `address` | Primary address line (street address) | 1234 Some St. |
+| `address2` | Secondary address line | Floor #67 |
+| `address3` | Tertiary address line | Unit #123 |
+| `city` | City name | San Francisco |
+| `subdivision` | State, province, or region | CA |
+| `postalCode` | Postal or ZIP code | 94105 |
+| `countryCode` | ISO 3166-1 Alpha-2 country code (required) | US |
+
+The function will format the address according to the country-specific format based on the `countryCode`. If a specific country format is not available, it will use the international format.
+
+### Additional Address Parameters
+
+The `formatAddress` function accepts several additional parameters beyond the basic address data:
+
+| Parameter | Type | Description | Example |
+|-----------|------|-------------|---------|
+| `name` | string | Person's name to include at the beginning of the address | John Doe |
+| `companyName` | string | Company name to include in the address | Example Company Ltd. |
+| `vatNumber` | string | VAT identification number | GB123456789 |
+| `phoneNumber` | string | Contact phone number | +1 (123) 456-7890 |
+| `additionalFields` | array | Array of additional text lines to include | ['Customer ID: 12345'] |
+
+These additional parameters will be included in the formatted address in the following order:
+1. Name (if provided)
+2. Company name (if provided)
+3. VAT number (if provided, prefixed with "VAT: ")
+4. Standard address lines (formatted according to country format)
+5. Phone number (if provided)
+6. Any additional fields (in the order they appear in the array)
+
 If you have collected all data, you make use this code
 ```php
  $this->dataParser->parseAllDataPerCountry('pl_PL');
