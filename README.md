@@ -538,3 +538,15 @@ For more advanced usage examples, check out the [examples directory](examples/).
 - [umpirsky/language-list](https://github.com/umpirsky/language-list)
 - [umpirsky/locale-list](https://github.com/umpirsky/locale-list)
 - [ipregistry/iso3166](https://github.com/ipregistry/iso3166)
+
+---
+
+## Support
+### Support this project (Ko‑fi)
+If this package saves you time, consider buying me a coffee: https://ko-fi.com/dominservice — thank you!
+
+---
+
+## License
+
+MIT © Dominservice
