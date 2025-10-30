@@ -302,6 +302,15 @@ protected $routeMiddleware = [
     'language' => \Dominservice\DataLocaleParser\Http\Middleware\LanguageMiddleware::class,
 ];
 ```
+and
+```php
+protected $middlewareGroups = [
+    'web' => [
+        // Other middleware...
+        \Dominservice\DataLocaleParser\Http\Middleware\SetLocaleMiddleware::class,
+    ],
+];
+````
 
 #### Cookie Encryption
 
