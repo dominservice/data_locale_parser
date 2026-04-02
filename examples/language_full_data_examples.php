@@ -4,7 +4,7 @@
  * Examples of using the enhanced getLanguagesFullData() and getLanguageFullData() methods
  */
 
-use Dominservice\DataLocaleParser\Fasade\DataParserFacade as DataLocale;
+use Dominservice\DataLocaleParser\Facade\DataParserFacade as DataLocale;
 
 // Example 1: Basic usage (backward compatible)
 // This will return all languages with names in the current application locale

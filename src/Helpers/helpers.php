@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Route;
-use Dominservice\DataLocaleParser\Fasade\DataParserFacade;
+use Dominservice\DataLocaleParser\Facade\DataParserFacade;
 
 if (! function_exists('is_ssl')) {
     /**

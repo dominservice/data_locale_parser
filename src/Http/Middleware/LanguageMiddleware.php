@@ -3,7 +3,7 @@
 namespace Dominservice\DataLocaleParser\Http\Middleware;
 
 use Closure;
-use Dominservice\DataLocaleParser\Fasade\DataParserFacade;
+use Dominservice\DataLocaleParser\Facade\DataParserFacade;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;

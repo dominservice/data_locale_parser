@@ -14,7 +14,7 @@
  * @version   1.4.0
  */
 
-namespace Dominservice\DataLocaleParser\Fasade;
+namespace Dominservice\DataLocaleParser\Facade;
 
 use Illuminate\Support\Facades\Facade;
 
