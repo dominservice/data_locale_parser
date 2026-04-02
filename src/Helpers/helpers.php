@@ -101,6 +101,28 @@ if (! function_exists('route_locale')) {
                 return route($route, $parameters, $absolute);
             }
 
+            $translatedKey = 'routes.'.$route;
+            $translatedPath = __($translatedKey, [], $locale);
+
+            if ($translatedPath !== $translatedKey) {
+                $locales = Config::get('data_locale_parser.allowed_locales', []);
+
+                foreach ($locales as $fallbackLocale) {
+                    if ($fallbackLocale === $locale) {
+                        continue;
+                    }
+
+                    if (__($translatedKey, [], $fallbackLocale) !== $translatedPath) {
+                        continue;
+                    }
+
+                    $fallbackRouteName = $fallbackLocale.'.'.$route;
+                    if (Route::has($fallbackRouteName)) {
+                        return route($fallbackRouteName, $parameters, $absolute);
+                    }
+                }
+            }
+
             // If neither exists, log a warning and return a fallback
             \Log::warning("Route not found: {$routeName} or {$route}");
             return url($locale.'/'.$route);
