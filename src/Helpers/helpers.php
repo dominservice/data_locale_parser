@@ -93,6 +93,12 @@ if (! function_exists('route_locale')) {
      */
     function route_locale(string $locale, string $route, mixed $parameters = [], bool $absolute = true): string
     {
+        $unprefixedLocale = Config::get('data_locale_parser.unprefixed_locale', $locale);
+
+        if ($locale === $unprefixedLocale && Route::has($route)) {
+            return route($route, $parameters, $absolute);
+        }
+
         // Check if the route exists with the locale prefix
         $routeName = $locale.'.'.$route;
         if (!Route::has($routeName)) {
@@ -168,10 +174,11 @@ if (! function_exists('get_localized_url')) {
      */
     function get_localized_url(string $locale): string
     {
+        $unprefixedLocale = Config::get('data_locale_parser.unprefixed_locale', Config::get('data_locale_parser.default_locale', 'en'));
         // Get the current route
         $route = Route::current();
         if (!$route) {
-            return url($locale);
+            return $locale === $unprefixedLocale ? url('/') : url($locale);
         }
 
         // Get the current route name and parameters
@@ -201,6 +208,10 @@ if (! function_exists('get_localized_url')) {
                 $newRouteName = preg_replace('/^' . $currentLocale . '\./', $locale . '.', $routeName);
 
                 // Check if the new route exists
+                if ($locale === $unprefixedLocale && Route::has(implode('.', array_slice($routeParts, 1)))) {
+                    return route(implode('.', array_slice($routeParts, 1)), $routeParameters);
+                }
+
                 if (Route::has($newRouteName)) {
                     return route($newRouteName, $routeParameters);
                 }
@@ -233,7 +244,11 @@ if (! function_exists('get_localized_url')) {
 
             // If it's a language segment, replace it
             if ($isLanguageSegment) {
-                $segments[0] = $locale;
+                if ($locale === $unprefixedLocale) {
+                    array_shift($segments);
+                } else {
+                    $segments[0] = $locale;
+                }
                 $newPath = '/' . implode('/', $segments);
 
                 // Reconstruct the URL
@@ -248,6 +263,8 @@ if (! function_exists('get_localized_url')) {
         }
 
         // If no language segment found, add the locale to the beginning
-        return url($locale . $path);
+        return $locale === $unprefixedLocale
+            ? url($path)
+            : url($locale . $path);
     }
 }

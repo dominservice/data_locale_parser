@@ -66,6 +66,17 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Unprefixed Locale
+    |--------------------------------------------------------------------------
+    |
+    | The locale that should be treated as the language without a URL prefix.
+    | If null, the package falls back to the value from default_locale.
+    |
+    */
+    'unprefixed_locale' => null,
+
+    /*
+    |--------------------------------------------------------------------------
     | Allowed Locales
     |--------------------------------------------------------------------------
     |

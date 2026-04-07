@@ -116,6 +116,18 @@ class LanguageController
 
                 // If the first part is a locale, replace it with the new locale
                 if ($isLocaleInName) {
+                    $targetLocale = $language === $this->getUnprefixedLocale($config)
+                        ? null
+                        : $language;
+
+                    if ($targetLocale === null) {
+                        $newRouteName = preg_replace('/^' . $currentLocale . '\./', '', $currentRouteName);
+
+                        if (app('router')->has($newRouteName)) {
+                            return route($newRouteName, $currentRouteParameters);
+                        }
+                    }
+
                     $newRouteName = preg_replace('/^' . $currentLocale . '\./', $language . '.', $currentRouteName);
 
                     // Redirect to the new route with the same parameters
@@ -159,7 +171,11 @@ class LanguageController
 
             // If it's a language segment and we're not using cookies, replace it
             if ($isLanguageSegment && !$config['use_cookies']) {
-                $segments[0] = $language;
+                if ($language === $this->getUnprefixedLocale($config)) {
+                    array_shift($segments);
+                } else {
+                    $segments[0] = $language;
+                }
                 $newPath = '/' . implode('/', $segments);
 
                 // Reconstruct the URL
@@ -171,7 +187,9 @@ class LanguageController
 
         // If we're not using cookies, add the language to the path
         if (!$config['use_cookies']) {
-            $newPath = '/' . $language . $path;
+            $newPath = $language === $this->getUnprefixedLocale($config)
+                ? $path
+                : '/' . $language . $path;
 
             // Reconstruct the URL
             $newUrl = $this->reconstructUrl($parsedUrl, $newPath);
@@ -214,11 +232,17 @@ class LanguageController
             'detect_from_header' => Config::get('data_locale_parser.detect_from_header', true),
             'header_name' => Config::get('data_locale_parser.header_name', 'Accept-Language'),
             'default_locale' => Config::get('data_locale_parser.default_locale', 'en'),
+            'unprefixed_locale' => Config::get('data_locale_parser.unprefixed_locale'),
             'allowed_locales' => Config::get('data_locale_parser.allowed_locales', ['en', 'pl', 'de', 'fr', 'es']),
             'api_prefixes' => Config::get('data_locale_parser.api_prefixes', ['api']),
             'cookie_name' => Config::get('data_locale_parser.cookie_name', 'language'),
             'cookie_lifetime' => Config::get('data_locale_parser.cookie_lifetime', 43200), // 30 days
             'language_change_route' => Config::get('data_locale_parser.language_change_route', 'change-language'),
         ];
+    }
+
+    protected function getUnprefixedLocale(array $config): string
+    {
+        return (string) ($config['unprefixed_locale'] ?: $config['default_locale']);
     }
 }

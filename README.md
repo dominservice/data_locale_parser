@@ -267,7 +267,7 @@ return [
 
     // Whether to use cookies for language storage
     // If true, the language preference will be stored in a cookie
-    // This allows the language to persist across requests without showing it in the URL
+    // URL locale detection still has priority over cookies
     'use_cookies' => false,
 
     // Whether to detect language from header
@@ -278,6 +278,9 @@ return [
 
     // Default locale if no language is detected
     'default_locale' => 'en',
+
+    // Locale without URL prefix. If null, default_locale is used.
+    'unprefixed_locale' => null,
 
     // Allowed locales
     'allowed_locales' => [
@@ -381,7 +384,7 @@ Route::prefix('api')->middleware(['language'])->group(function () {
 
 3. **Default Locale**: If no language is detected from the URL or header, the middleware uses the default locale specified in the configuration.
 
-4. **Cookie Storage**: If `use_cookies` is enabled, the language preference will be stored in a cookie. This allows the language to persist across requests without showing it in the URL. For non-API routes, the middleware will check for the language in the cookie before checking the URL.
+4. **Cookie Storage**: If `use_cookies` is enabled, the language preference will be stored in a cookie. Explicit locale from URL still has priority over the cookie. If the current request has no locale prefix, the package uses `unprefixed_locale` or falls back to `default_locale`.
 
 ### Changing the Language
 
@@ -409,8 +412,8 @@ When a user clicks on a language link, the following happens:
 4. The user is redirected back to the previous page using one of the following methods:
    - **Route Name-Based Redirection**: If the previous page has a named route with a locale prefix (e.g., `en.contact`), the controller will replace the locale in the route name and redirect to the new route with the same parameters. This allows for path translation (e.g., `/kontakt` to `/contact`) when your routes are properly localized.
    - **URL Segment Manipulation**: If route name-based redirection fails or the route doesn't have a name, the controller falls back to URL segment manipulation:
-     - If `use_cookies` is enabled, the language prefix is removed from the URL.
-     - If `use_cookies` is disabled, the language prefix is updated or added to the URL.
+     - If the target language is the unprefixed locale, the language prefix is removed from the URL.
+     - Otherwise, the language prefix is updated or added to the URL.
 
 This allows you to create a seamless language switching experience for your users, with or without showing the language in the URL, and with support for path translation when using named routes.
 

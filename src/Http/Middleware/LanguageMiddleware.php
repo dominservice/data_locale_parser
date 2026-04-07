@@ -44,17 +44,7 @@ class LanguageMiddleware
         }
         // For non-API routes, use cookie or URL based on configuration
         else {
-            // Check cookie first if enabled
-            if ($config['use_cookies']) {
-                $language = $this->getLanguageFromCookie($request, $config);
-
-                if ($language) {
-                    App::setLocale($language);
-                    return $next($request);
-                }
-            }
-
-            // Then check URL if enabled
+            // Check URL first so explicit locale paths always win over cookies.
             if ($config['detect_from_url']) {
                 $language = $this->getLanguageFromUrl($request, $config);
                 if ($language) {
@@ -65,6 +55,27 @@ class LanguageMiddleware
                         Cookie::queue($config['cookie_name'], $language, $config['cookie_lifetime']);
                     }
 
+                    return $next($request);
+                }
+
+                if ($this->isUnprefixedRouteRequest($request, $config)) {
+                    $unprefixedLocale = $this->getUnprefixedLocale($config);
+                    App::setLocale($unprefixedLocale);
+
+                    if ($config['use_cookies']) {
+                        Cookie::queue($config['cookie_name'], $unprefixedLocale, $config['cookie_lifetime']);
+                    }
+
+                    return $next($request);
+                }
+            }
+
+            // Then check cookie if enabled.
+            if ($config['use_cookies']) {
+                $language = $this->getLanguageFromCookie($request, $config);
+
+                if ($language) {
+                    App::setLocale($language);
                     return $next($request);
                 }
             }
@@ -202,6 +213,33 @@ class LanguageMiddleware
         return null;
     }
 
+    protected function getUnprefixedLocale(array $config): string
+    {
+        return (string) ($config['unprefixed_locale'] ?: $config['default_locale']);
+    }
+
+    protected function isUnprefixedRouteRequest(Request $request, array $config): bool
+    {
+        $path = trim($request->path(), '/');
+
+        if ($path === '') {
+            return true;
+        }
+
+        $segments = explode('/', $path);
+        $firstSegment = $segments[0] ?? null;
+
+        if ($firstSegment !== null && in_array($firstSegment, $config['allowed_locales'], true)) {
+            return false;
+        }
+
+        if ($firstSegment !== null && in_array($firstSegment, $config['api_prefixes'], true)) {
+            return false;
+        }
+
+        return true;
+    }
+
     /**
      * Get configuration
      *
@@ -215,6 +253,7 @@ class LanguageMiddleware
             'detect_from_header' => Config::get('data_locale_parser.detect_from_header', true),
             'header_name' => Config::get('data_locale_parser.header_name', 'Accept-Language'),
             'default_locale' => Config::get('data_locale_parser.default_locale', 'en'),
+            'unprefixed_locale' => Config::get('data_locale_parser.unprefixed_locale'),
             'allowed_locales' => Config::get('data_locale_parser.allowed_locales', ['en', 'pl', 'de', 'fr', 'es']),
             'api_prefixes' => Config::get('data_locale_parser.api_prefixes', ['api']),
             'cookie_name' => Config::get('data_locale_parser.cookie_name', 'language'),
