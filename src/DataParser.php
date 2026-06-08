@@ -28,6 +28,19 @@ use Dominservice\DataLocaleParser\Exceptions\LanguageNotFoundException;
  */
 class DataParser
 {
+    private function sharedVendorPath(): string
+    {
+        $configured = function_exists('optimize_config')
+            ? trim((string) optimize_config('SHARED_VENDOR_PATH', ''))
+            : '';
+
+        if ($configured !== '') {
+            return rtrim($configured, '/');
+        }
+
+        return base_path('vendor');
+    }
+
     /**
      * countries list.
      * @var \Illuminate\Support\Collection
@@ -77,19 +90,20 @@ class DataParser
      */
     public function __construct()
     {
-        $countriesDir = base_path('vendor/dominservice/data_locale_parser/data/country');
+        $vendorPath = $this->sharedVendorPath();
+        $countriesDir = $vendorPath.'/dominservice/data_locale_parser/data/country';
 
         if (!is_dir($countriesDir)) {
             throw new RuntimeException(sprintf('Unable to locate the country data directory at "%s"', $countriesDir));
         }
 
-        $currenciesDir = base_path('vendor/dominservice/data_locale_parser/data/currency');
+        $currenciesDir = $vendorPath.'/dominservice/data_locale_parser/data/currency';
 
         if (!is_dir($currenciesDir)) {
             throw new RuntimeException(sprintf('Unable to locate the country data directory at "%s"', $currenciesDir));
         }
 
-        $languagesDir = base_path('vendor/dominservice/data_locale_parser/data/language');
+        $languagesDir = $vendorPath.'/dominservice/data_locale_parser/data/language';
 
         if (!is_dir($languagesDir)) {
             throw new RuntimeException(sprintf('Unable to locate the country data directory at "%s"', $languagesDir));
@@ -141,9 +155,10 @@ class DataParser
             $currencies = $this->getListCurrencies($locale);
             $languages = $this->getListLanguages($locale);
 
-            $data = require base_path('vendor/dominservice/data_locale_parser/data/countries_full_data.php');
-            $localeToCode = require base_path('vendor/dominservice/data_locale_parser/data/locale_countries_data.php');
-            $subdivision = require base_path('vendor/dominservice/data_locale_parser/data/subdivision_iso3166.php');
+            $vendorPath = $this->sharedVendorPath();
+            $data = require $vendorPath.'/dominservice/data_locale_parser/data/countries_full_data.php';
+            $localeToCode = require $vendorPath.'/dominservice/data_locale_parser/data/locale_countries_data.php';
+            $subdivision = require $vendorPath.'/dominservice/data_locale_parser/data/subdivision_iso3166.php';
 
             // Get available address formats from the package
             $formats = new \ReflectionClass('\AddressFormat\Formats');
@@ -267,7 +282,8 @@ class DataParser
     {
         // Load data from cache if available
         if (!$this->languagesFullData) {
-            $this->languagesFullData = collect(require base_path('vendor/dominservice/data_locale_parser/data/languages_full_data.php'));
+            $vendorPath = $this->sharedVendorPath();
+            $this->languagesFullData = collect(require $vendorPath.'/dominservice/data_locale_parser/data/languages_full_data.php');
         }
 
         $data = $this->languagesFullData;
