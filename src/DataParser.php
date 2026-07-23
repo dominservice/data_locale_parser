@@ -84,6 +84,18 @@ class DataParser
     private $languagesDir;
 
     /**
+     * Compiled runtime data loader backed by shared canonical locale files.
+     */
+    private CompiledDataRepository $dataRepository;
+
+    /**
+     * Sorted variants are cached separately from immutable raw payloads.
+     *
+     * @var array<string, array<string, array<string, string>>>
+     */
+    private array $sortedData = [];
+
+    /**
      * Constructor.
      *
      * @param string|null $dataDir Path to the directory containing countries data
@@ -112,6 +124,7 @@ class DataParser
         $this->countriesDir = realpath($countriesDir);
         $this->currenciesDir = realpath($currenciesDir);
         $this->languagesDir = realpath($languagesDir);
+        $this->dataRepository = new CompiledDataRepository(dirname($this->countriesDir));
     }
 
     /**
@@ -460,6 +473,7 @@ class DataParser
     public function setList(string $type, string $locale, array $data): DataParser
     {
         $this->{$type}[$locale] = $data;
+        unset($this->sortedData[$type][$locale]);
         return $this;
     }
 
@@ -476,22 +490,21 @@ class DataParser
         $locale = str_replace('-', '_', $locale);
 
         if (!isset($this->{$type}[$locale])) {
-            // Customization - "source" does not matter anymore because umpirsky refactored his library.
-            if ($type === 'countries') {$text = 'country';}
-            elseif ($type === 'currencies') {$text = 'currency';}
-            elseif ($type === 'languages') {$text = 'language';}
-            else {$text = '__';}
-
-            $file = sprintf('%s/%s/'.$text.'.php', $this->{$type.'Dir'}, $locale);
-
-            if (!is_file($file)) {
-                throw new RuntimeException(sprintf('Unable to load the country data file "%s"', $file));
-            }
-
-            $this->{$type}[$locale] = require $file;
+            // Accessing the directory property here preserves the historical
+            // error contract for an invalid type while valid types use the
+            // compiled canonical-locale repository.
+            $this->{$type.'Dir'};
+            $this->{$type}[$locale] = $this->dataRepository->load($type, $locale);
         }
         if ($sorted) {
-            return $this->sortData($locale, $this->{$type}[$locale]);
+            if (!isset($this->sortedData[$type][$locale])) {
+                $this->sortedData[$type][$locale] = $this->sortData(
+                    $locale,
+                    $this->{$type}[$locale]
+                );
+            }
+
+            return $this->sortedData[$type][$locale];
         }
         return $this->{$type}[$locale];
     }

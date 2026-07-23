@@ -556,8 +556,57 @@ For more advanced usage examples, check out the [examples directory](examples/).
 - Language handling middleware usage
 - And more
 
+## Tests and compatibility snapshots
+
+The package includes unit tests and versioned regression snapshots for all
+available data locales, parser behavior, address formatting, helpers, routes,
+middleware, and the language controller.
+
+```bash
+composer test
+composer test:report
+```
+
+When rebuilding the input dataset, record candidate results without replacing
+the accepted baseline:
+
+```bash
+composer test:snapshots:record
+diff -ru tests/Fixtures/snapshots build/snapshots/current
+```
+
+See [tests/README.md](tests/README.md) for the snapshot review and update
+workflow.
+
+## Rebuilding locale data
+
+Runtime locale names are generated from checksummed Unicode CLDR sources.
+The generator preserves the package's locale coverage, per-locale key sets,
+raw key order and public return types, then stores identical payloads only
+once behind a compiled manifest. Shared files use canonical locale names
+(`pl_PL` can map to `country/pl.php`) rather than opaque hashes.
+
+```bash
+# Build a candidate in build/runtime-data
+composer data:build
+
+# Validate the committed runtime data
+composer data:validate
+
+# Publish a validated candidate; the previous data is kept in build/
+composer data:publish
+```
+
+Source versions and checksums are pinned in
+`tools/data-builder/data-sources.lock.json`. The accepted legacy snapshots
+are retained under `tests/Fixtures/legacy/umpirsky-v3`, and the latest size,
+compatibility and performance measurements are documented in
+`reports/data-optimization-cldr-48.2.0.md`.
+
 ## Credits
 
+- [Unicode Common Locale Data Repository (CLDR)](https://cldr.unicode.org/) —
+  locale names are distributed under the [Unicode License V3](CLDR-LICENSE)
 - [UN/LOCODE Country Subdivisions ISO 3166-2](https://unece.org/trade/uncefact/unlocode-country-subdivisions-iso-3166-2)
 - [Monarobase/country-list](https://github.com/Monarobase/country-list)
 - [umpirsky/language-list](https://github.com/umpirsky/language-list)

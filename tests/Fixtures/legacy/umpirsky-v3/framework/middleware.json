@@ -1,0 +1,70 @@
+{
+    "schema": 1,
+    "language_middleware": {
+        "url": {
+            "locale": "pl",
+            "status": 207,
+            "content": "pl",
+            "queued_cookies": []
+        },
+        "api_url": {
+            "locale": "de",
+            "status": 207,
+            "content": "de",
+            "queued_cookies": []
+        },
+        "dynamic_valid_language": {
+            "locale": "ja",
+            "status": 207,
+            "content": "ja",
+            "queued_cookies": []
+        },
+        "unprefixed": {
+            "locale": "en",
+            "status": 207,
+            "content": "en",
+            "queued_cookies": []
+        },
+        "cookie": {
+            "locale": "de",
+            "status": 207,
+            "content": "de",
+            "queued_cookies": []
+        },
+        "header": {
+            "locale": "fr",
+            "status": 207,
+            "content": "fr",
+            "queued_cookies": [
+                {
+                    "name": "language",
+                    "value": "fr"
+                }
+            ]
+        },
+        "complex_header": {
+            "locale": "en",
+            "status": 207,
+            "content": "en",
+            "queued_cookies": []
+        },
+        "invalid": {
+            "locale": "en",
+            "status": 207,
+            "content": "en",
+            "queued_cookies": []
+        }
+    },
+    "set_locale_middleware": {
+        "cookie": {
+            "locale": "pl",
+            "status": 209,
+            "content": "pl"
+        },
+        "without_cookie": {
+            "locale": "de",
+            "status": 210,
+            "content": "de"
+        }
+    }
+}

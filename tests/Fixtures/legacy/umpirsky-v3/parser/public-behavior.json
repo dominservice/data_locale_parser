@@ -1,0 +1,140 @@
+{
+    "schema": 1,
+    "directories": {
+        "countries": {
+            "exists": true,
+            "basename": "country",
+            "parent_basename": "data"
+        },
+        "currencies": {
+            "exists": true,
+            "basename": "currency",
+            "parent_basename": "data"
+        },
+        "languages": {
+            "exists": true,
+            "basename": "language",
+            "parent_basename": "data"
+        }
+    },
+    "single_values": {
+        "countries": {
+            "US/en": "United States",
+            "PL/pl": "Polska",
+            "DE/de": "Deutschland",
+            "JP/ja": "日本",
+            "EG/ar": "مصر",
+            "CN/zh_Hans": "中国",
+            "IN/hi": "भारत",
+            "UA/uk": "Україна",
+            "BR/pt_BR": "Brasil",
+            "RS/sr_Latn": "Srbija",
+            "AF/as": "আফগানিস্তান",
+            "PH/tl": "Philippines"
+        },
+        "currencies": {
+            "USD/en": "US Dollar",
+            "PLN/pl": "złoty polski",
+            "EUR/de": "Euro",
+            "JPY/ja": "日本円",
+            "EGP/ar": "جنيه مصري",
+            "CNY/zh_Hans": "人民币",
+            "INR/hi": "भारतीय रुपया",
+            "UAH/uk": "українська гривня",
+            "BRL/pt_BR": "Real brasileiro",
+            "RSD/sr_Latn": "Srpski dinar",
+            "AFN/as": "Afghan Afghani",
+            "AFN/eo": "Afghan Afghani"
+        },
+        "languages": {
+            "pl/en": "Polish",
+            "pl/pl": "polski",
+            "de/de": "Deutsch",
+            "ja/ja": "日本語",
+            "ar/ar": "العربية",
+            "zh/zh_Hans": "中文",
+            "hi/hi": "हिन्दी",
+            "uk/uk": "українська",
+            "pt_BR/pt_BR": "português do Brasil",
+            "sr/sr_Latn": "srpski"
+        }
+    },
+    "normalization": {
+        "pt-BR_equals_pt_BR": true,
+        "lowercase_country_code": "Polska",
+        "lowercase_currency_code": "złoty polski"
+    },
+    "has": {
+        "country_pl": true,
+        "country_invalid": false,
+        "currency_pln": true,
+        "currency_invalid": false,
+        "language_pl": true,
+        "language_uppercase_is_case_sensitive": false
+    },
+    "exceptions": {
+        "country": {
+            "class": "Dominservice\\DataLocaleParser\\Exceptions\\CountryNotFoundException",
+            "message": "Country 'ZZ' not found.",
+            "code": 0
+        },
+        "currency": {
+            "class": "Dominservice\\DataLocaleParser\\Exceptions\\CurrencyNotFoundException",
+            "message": "Currency 'ZZZ' not found.",
+            "code": 0
+        },
+        "language": {
+            "class": "Dominservice\\DataLocaleParser\\Exceptions\\LanguageNotFoundException",
+            "message": "Language '__missing__' not found.",
+            "code": 0
+        },
+        "locale": {
+            "class": "RuntimeException",
+            "message": "Unable to load the country data file \"<package>/data/country/__missing__/country.php\"",
+            "code": 0
+        },
+        "type": {
+            "class": "ErrorException",
+            "message": "Undefined property: Dominservice\\DataLocaleParser\\DataParser::$__missing__Dir",
+            "code": 0
+        }
+    },
+    "custom_lists": {
+        "fluent_return": true,
+        "raw": {
+            "AA": "Zulu",
+            "BB": "Alpha"
+        },
+        "sorted": {
+            "BB": "Alpha",
+            "AA": "Zulu"
+        },
+        "one": "Zulu",
+        "has": true
+    },
+    "addresses": {
+        "us": [
+            "Jane Doe",
+            "Example Inc.",
+            "VAT: US123",
+            "123 Main Street",
+            "Suite 4",
+            "New York, NY 10001",
+            "+1 555 0100",
+            "Customer 42"
+        ],
+        "dk": [
+            "Testvej 1",
+            "2100 København"
+        ],
+        "international": [
+            "ul. Testowa 1",
+            "Warszawa Mazowieckie 00-001"
+        ],
+        "missing_country": {
+            "class": "InvalidArgumentException",
+            "message": "Country code is required for address formatting",
+            "code": 0
+        }
+    }
+}

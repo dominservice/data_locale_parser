@@ -1,0 +1,116 @@
+{
+    "schema": 1,
+    "all": {
+        "type": "Illuminate\\Support\\Collection",
+        "count": 564,
+        "sha256": "a0049b79bb709dbff128705eed00f1607c256597087ee7db453b22b9bbc7bb2f",
+        "first_key": "af",
+        "last_key": "zu-ZA"
+    },
+    "selected": {
+        "__type": "Illuminate\\Support\\Collection",
+        "items": {
+            "ar": {
+                "name": "arabski",
+                "script": "Arab",
+                "native": "العربية",
+                "regional": "ar_AE"
+            },
+            "en": {
+                "name": "angielski",
+                "script": "Latn",
+                "native": "English",
+                "regional": "en"
+            },
+            "en-US": {
+                "name": "angielski",
+                "script": "Latn",
+                "native": "American English",
+                "regional": "en_US"
+            },
+            "pl-PL": {
+                "name": "polski",
+                "script": "Latn",
+                "native": "Polski",
+                "regional": "pl_PL"
+            },
+            "sr-Latn": {
+                "name": "serbski",
+                "script": "Latn",
+                "native": "Srpski",
+                "regional": "sr_Latn"
+            },
+            "zh-Hant": {
+                "name": "chiński",
+                "script": "Hant",
+                "native": "繁體中文",
+                "regional": "zh_Hant"
+            }
+        }
+    },
+    "single": {
+        "pl_PL": {
+            "name": "Polish",
+            "script": "Latn",
+            "native": "Polski",
+            "regional": "pl_PL"
+        },
+        "zh_Hant": {
+            "name": "chiński",
+            "script": "Hant",
+            "native": "繁體中文",
+            "regional": "zh_Hant"
+        },
+        "missing": null
+    },
+    "missing_display_locale": {
+        "__type": "Illuminate\\Support\\Collection",
+        "items": {
+            "pl-PL": {
+                "name": "Polish",
+                "script": "Latn",
+                "native": "Polski",
+                "regional": "pl_PL"
+            }
+        }
+    },
+    "filters": {
+        "regional_boolean": {
+            "count": 0,
+            "sha256": "60790d0ef107ead23be214f2efadb39eef251f162ca2944db214b525212aceb3"
+        },
+        "regional_codes": {
+            "__type": "Illuminate\\Support\\Collection",
+            "items": {
+                "en-US": {
+                    "name": "angielski",
+                    "script": "Latn",
+                    "native": "American English",
+                    "regional": "en_US"
+                },
+                "pl-PL": {
+                    "name": "polski",
+                    "script": "Latn",
+                    "native": "Polski",
+                    "regional": "pl_PL"
+                },
+                "pt-BR": {
+                    "name": "portugalski",
+                    "script": "Latn",
+                    "native": "Português do Brasil",
+                    "regional": "pt_BR"
+                },
+                "zh-Hant": {
+                    "name": "chiński",
+                    "script": "Hant",
+                    "native": "繁體中文",
+                    "regional": "zh_Hant"
+                }
+            }
+        },
+        "latin": {
+            "count": 404,
+            "sha256": "520f0915c9a0720e7d55873b689afe73694aadfde6efec7d17942c345a1da91c"
+        }
+    }
+}

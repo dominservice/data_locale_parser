@@ -1,0 +1,43 @@
+{
+    "schema": 1,
+    "ssl": {
+        "no_indicators": false,
+        "https_on": true,
+        "https_one": true,
+        "port_443": true,
+        "forwarded_proto": true,
+        "forwarded_ssl": true,
+        "http": false
+    },
+    "rtl": {
+        "ar": true,
+        "he": true,
+        "pl": false,
+        "current_pl": false
+    },
+    "translated_route": {
+        "default": "routes.contact",
+        "missing_translation": "pl.routes.contact"
+    },
+    "route_locale": {
+        "unprefixed": "http://localhost/contact",
+        "localized": "http://localhost/pl/kontakt",
+        "localized_relative": "/pl/kontakt",
+        "fallback_to_base": "http://localhost/contact",
+        "missing": "http://localhost/de/missing",
+        "current": "http://localhost/pl/kontakt"
+    },
+    "localized_url_request": {
+        "slug": "test-slug",
+        "localized_en": "http://localhost/article/test-slug",
+        "localized_de": "http://localhost/de/artikel/test-slug",
+        "current_route_matches": true,
+        "current_locale_url": "http://localhost/pl/artykul/test-slug"
+    },
+    "provider": {
+        "language_change_route_exists": true,
+        "language_change_uri": "change-language/{language}",
+        "language_middleware_alias": "Dominservice\\DataLocaleParser\\Http\\Middleware\\LanguageMiddleware",
+        "parser_is_singleton": true
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "schema": 1,
+    "localized_named_route": {
+        "locale": "pl",
+        "status": 302,
+        "target": "http://localhost/pl/kontakt",
+        "queued_cookies": []
+    },
+    "unprefixed_named_route": {
+        "locale": "en",
+        "status": 302,
+        "target": "http://localhost/contact",
+        "queued_cookies": []
+    },
+    "path_fallback": {
+        "locale": "de",
+        "status": 302,
+        "target": "https://example.test/de/not-a-route?from=test#section",
+        "queued_cookies": []
+    },
+    "without_referer": {
+        "locale": "pl",
+        "status": 302,
+        "target": "http://localhost",
+        "queued_cookies": []
+    },
+    "invalid_language": {
+        "locale": "__before__",
+        "status": 302,
+        "target": "http://localhost",
+        "queued_cookies": []
+    },
+    "cookie_mode": {
+        "locale": "de",
+        "status": 302,
+        "target": "https://example.test/not-a-route?from=test",
+        "queued_cookies": [
+            {
+                "name": "language",
+                "value": "de"
+            }
+        ]
+    }
+}

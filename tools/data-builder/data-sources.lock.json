@@ -1,0 +1,24 @@
+{
+    "schema": 1,
+    "cldr_version": "48.2.0",
+    "sources": {
+        "cldr-localenames-full": {
+            "url": "https://registry.npmjs.org/cldr-localenames-full/-/cldr-localenames-full-48.2.0.tgz",
+            "sha256": "7f2ac7fd3b5d90f56ad127f9ed5ae67b58b3e556818f55530b9f47bb81bcde57"
+        },
+        "cldr-numbers-full": {
+            "url": "https://registry.npmjs.org/cldr-numbers-full/-/cldr-numbers-full-48.2.0.tgz",
+            "sha256": "2d17a1453c559a62112caeed52e0bcfe3cb8539c99d239ae7b7ed4d0827679d9"
+        },
+        "cldr-core": {
+            "url": "https://registry.npmjs.org/cldr-core/-/cldr-core-48.2.0.tgz",
+            "sha256": "5310e0c7a06c1feb83dc8e54c8584bbe0b9c2ea8320172a18d541986b124585d"
+        }
+    },
+    "maintained_runtime_sources": {
+        "countries_full_data.php": "84960e53d549b1dcccefd9ba14c1cb8112f8226e0bc845fb69a89083d8dcd956",
+        "languages_full_data.php": "de28df66c0b6d94581b4cd8dbb112fac678c758d465375afa53be48c304c3349",
+        "locale_countries_data.php": "73c13d6767a596f45010ed7b5f3daacd0a5414e557d175d8ca53b7f53d1adc07",
+        "subdivision_iso3166.php": "542aa8b43682055de3ca2b47f9d37d331ed0c1e44765b9e4a97ccc5d0c4b6279"
+    }
+}

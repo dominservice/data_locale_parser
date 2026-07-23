@@ -1,0 +1,3969 @@
+{
+    "schema": 1,
+    "locales": {
+        "en": {
+            "collection_type": "Illuminate\\Support\\Collection",
+            "count": 249,
+            "sha256": "3ccacbb3e20c7a7ee81ad698ed4eaa83ca4a775d2d659c7adf2f640922182e70",
+            "countries": {
+                "PL": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "INTERNATIONAL",
+                        "continent": "EU",
+                        "country": "Poland",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "PLN",
+                                "name": "Polish Zloty",
+                                "symbol": "zł"
+                            }
+                        },
+                        "fips": "PL",
+                        "iso3": "POL",
+                        "iso_nr": "616",
+                        "languages": {
+                            "pl": "Polish"
+                        },
+                        "phone": "48",
+                        "postal_code_format": "##-###",
+                        "postal_code_regex": "^\\d{2}-\\d{3}$",
+                        "so": "PL",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "PL-02": {
+                                    "name": "Dolnośląskie",
+                                    "name_ascii": "Dolnoslaskie"
+                                },
+                                "PL-04": {
+                                    "name": "Kujawsko-pomorskie",
+                                    "name_ascii": "Kujawsko-pomorskie"
+                                },
+                                "PL-06": {
+                                    "name": "Lubelskie",
+                                    "name_ascii": "Lubelskie"
+                                },
+                                "PL-08": {
+                                    "name": "Lubuskie",
+                                    "name_ascii": "Lubuskie"
+                                },
+                                "PL-10": {
+                                    "name": "Łódzkie",
+                                    "name_ascii": "Lodzkie"
+                                },
+                                "PL-12": {
+                                    "name": "Małopolskie",
+                                    "name_ascii": "Malopolskie"
+                                },
+                                "PL-14": {
+                                    "name": "Mazowieckie",
+                                    "name_ascii": "Mazowieckie"
+                                },
+                                "PL-16": {
+                                    "name": "Opolskie",
+                                    "name_ascii": "Opolskie"
+                                },
+                                "PL-18": {
+                                    "name": "Podkarpackie",
+                                    "name_ascii": "Podkarpackie"
+                                },
+                                "PL-20": {
+                                    "name": "Podlaskie",
+                                    "name_ascii": "Podlaskie"
+                                },
+                                "PL-22": {
+                                    "name": "Pomorskie",
+                                    "name_ascii": "Pomorskie"
+                                },
+                                "PL-24": {
+                                    "name": "Śląskie",
+                                    "name_ascii": "Slaskie"
+                                },
+                                "PL-26": {
+                                    "name": "Świętokrzyskie",
+                                    "name_ascii": "Swietokrzyskie"
+                                },
+                                "PL-28": {
+                                    "name": "Warmińsko-mazurskie",
+                                    "name_ascii": "Warminsko-mazurskie"
+                                },
+                                "PL-30": {
+                                    "name": "Wielkopolskie",
+                                    "name_ascii": "Wielkopolskie"
+                                },
+                                "PL-32": {
+                                    "name": "Zachodniopomorskie",
+                                    "name_ascii": "Zachodniopomorskie"
+                                }
+                            }
+                        },
+                        "tld": ".pl"
+                    }
+                },
+                "US": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "US",
+                        "continent": "NA",
+                        "country": "United States",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "USD",
+                                "name": "US Dollar",
+                                "symbol": "$"
+                            }
+                        },
+                        "fips": "US",
+                        "iso3": "USA",
+                        "iso_nr": "840",
+                        "languages": {
+                            "en_US": "American English",
+                            "fr": "French",
+                            "haw": "Hawaiian"
+                        },
+                        "phone": "1",
+                        "postal_code_format": "#####-####",
+                        "postal_code_regex": "^\\d{5}(-\\d{4})?$",
+                        "so": "US",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "US-AK": {
+                                    "name": "Alaska",
+                                    "name_ascii": "Alaska"
+                                },
+                                "US-AL": {
+                                    "name": "Alabama",
+                                    "name_ascii": "Alabama"
+                                },
+                                "US-AR": {
+                                    "name": "Arkansas",
+                                    "name_ascii": "Arkansas"
+                                },
+                                "US-AS": {
+                                    "name": "American Samoa",
+                                    "name_ascii": "American Samoa"
+                                },
+                                "US-AZ": {
+                                    "name": "Arizona",
+                                    "name_ascii": "Arizona"
+                                },
+                                "US-CA": {
+                                    "name": "California",
+                                    "name_ascii": "California"
+                                },
+                                "US-CO": {
+                                    "name": "Colorado",
+                                    "name_ascii": "Colorado"
+                                },
+                                "US-CT": {
+                                    "name": "Connecticut",
+                                    "name_ascii": "Connecticut"
+                                },
+                                "US-DC": {
+                                    "name": "District of Columbia",
+                                    "name_ascii": "District of Columbia"
+                                },
+                                "US-DE": {
+                                    "name": "Delaware",
+                                    "name_ascii": "Delaware"
+                                },
+                                "US-FL": {
+                                    "name": "Florida",
+                                    "name_ascii": "Florida"
+                                },
+                                "US-GA": {
+                                    "name": "Georgia",
+                                    "name_ascii": "Georgia"
+                                },
+                                "US-GU": {
+                                    "name": "Guam",
+                                    "name_ascii": "Guam"
+                                },
+                                "US-HI": {
+                                    "name": "Hawaii",
+                                    "name_ascii": "Hawaii"
+                                },
+                                "US-IA": {
+                                    "name": "Iowa",
+                                    "name_ascii": "Iowa"
+                                },
+                                "US-ID": {
+                                    "name": "Idaho",
+                                    "name_ascii": "Idaho"
+                                },
+                                "US-IL": {
+                                    "name": "Illinois",
+                                    "name_ascii": "Illinois"
+                                },
+                                "US-IN": {
+                                    "name": "Indiana",
+                                    "name_ascii": "Indiana"
+                                },
+                                "US-KS": {
+                                    "name": "Kansas",
+                                    "name_ascii": "Kansas"
+                                },
+                                "US-KY": {
+                                    "name": "Kentucky",
+                                    "name_ascii": "Kentucky"
+                                },
+                                "US-LA": {
+                                    "name": "Louisiana",
+                                    "name_ascii": "Louisiana"
+                                },
+                                "US-MA": {
+                                    "name": "Massachusetts",
+                                    "name_ascii": "Massachusetts"
+                                },
+                                "US-MD": {
+                                    "name": "Maryland",
+                                    "name_ascii": "Maryland"
+                                },
+                                "US-ME": {
+                                    "name": "Maine",
+                                    "name_ascii": "Maine"
+                                },
+                                "US-MI": {
+                                    "name": "Michigan",
+                                    "name_ascii": "Michigan"
+                                },
+                                "US-MN": {
+                                    "name": "Minnesota",
+                                    "name_ascii": "Minnesota"
+                                },
+                                "US-MO": {
+                                    "name": "Missouri",
+                                    "name_ascii": "Missouri"
+                                },
+                                "US-MP": {
+                                    "name": "Northern Mariana Islands",
+                                    "name_ascii": "Northern Mariana Islands"
+                                },
+                                "US-MS": {
+                                    "name": "Mississippi",
+                                    "name_ascii": "Mississippi"
+                                },
+                                "US-MT": {
+                                    "name": "Montana",
+                                    "name_ascii": "Montana"
+                                },
+                                "US-NC": {
+                                    "name": "North Carolina",
+                                    "name_ascii": "North Carolina"
+                                },
+                                "US-ND": {
+                                    "name": "North Dakota",
+                                    "name_ascii": "North Dakota"
+                                },
+                                "US-NE": {
+                                    "name": "Nebraska",
+                                    "name_ascii": "Nebraska"
+                                },
+                                "US-NH": {
+                                    "name": "New Hampshire",
+                                    "name_ascii": "New Hampshire"
+                                },
+                                "US-NJ": {
+                                    "name": "New Jersey",
+                                    "name_ascii": "New Jersey"
+                                },
+                                "US-NM": {
+                                    "name": "New Mexico",
+                                    "name_ascii": "New Mexico"
+                                },
+                                "US-NV": {
+                                    "name": "Nevada",
+                                    "name_ascii": "Nevada"
+                                },
+                                "US-NY": {
+                                    "name": "New York",
+                                    "name_ascii": "New York"
+                                },
+                                "US-OH": {
+                                    "name": "Ohio",
+                                    "name_ascii": "Ohio"
+                                },
+                                "US-OK": {
+                                    "name": "Oklahoma",
+                                    "name_ascii": "Oklahoma"
+                                },
+                                "US-OR": {
+                                    "name": "Oregon",
+                                    "name_ascii": "Oregon"
+                                },
+                                "US-PA": {
+                                    "name": "Pennsylvania",
+                                    "name_ascii": "Pennsylvania"
+                                },
+                                "US-PR": {
+                                    "name": "Puerto Rico",
+                                    "name_ascii": "Puerto Rico"
+                                },
+                                "US-RI": {
+                                    "name": "Rhode Island",
+                                    "name_ascii": "Rhode Island"
+                                },
+                                "US-SC": {
+                                    "name": "South Carolina",
+                                    "name_ascii": "South Carolina"
+                                },
+                                "US-SD": {
+                                    "name": "South Dakota",
+                                    "name_ascii": "South Dakota"
+                                },
+                                "US-TN": {
+                                    "name": "Tennessee",
+                                    "name_ascii": "Tennessee"
+                                },
+                                "US-TX": {
+                                    "name": "Texas",
+                                    "name_ascii": "Texas"
+                                },
+                                "US-UM": {
+                                    "name": "United States Minor Outlying Islands",
+                                    "name_ascii": "United States Minor Outlying Islands"
+                                },
+                                "US-UT": {
+                                    "name": "Utah",
+                                    "name_ascii": "Utah"
+                                },
+                                "US-VA": {
+                                    "name": "Virginia",
+                                    "name_ascii": "Virginia"
+                                },
+                                "US-VI": {
+                                    "name": "Virgin Islands",
+                                    "name_ascii": "Virgin Islands"
+                                },
+                                "US-VT": {
+                                    "name": "Vermont",
+                                    "name_ascii": "Vermont"
+                                },
+                                "US-WA": {
+                                    "name": "Washington",
+                                    "name_ascii": "Washington"
+                                },
+                                "US-WI": {
+                                    "name": "Wisconsin",
+                                    "name_ascii": "Wisconsin"
+                                },
+                                "US-WV": {
+                                    "name": "West Virginia",
+                                    "name_ascii": "West Virginia"
+                                },
+                                "US-WY": {
+                                    "name": "Wyoming",
+                                    "name_ascii": "Wyoming"
+                                }
+                            }
+                        },
+                        "tld": ".us"
+                    }
+                },
+                "JP": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "INTERNATIONAL",
+                        "continent": "AS",
+                        "country": "Japan",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "JPY",
+                                "name": "Japanese Yen",
+                                "symbol": "¥"
+                            }
+                        },
+                        "fips": "JA",
+                        "iso3": "JPN",
+                        "iso_nr": "392",
+                        "languages": {
+                            "ja": "Japanese"
+                        },
+                        "phone": "81",
+                        "postal_code_format": "###-####",
+                        "postal_code_regex": "^\\d{3}-\\d{4}$",
+                        "so": "JP",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "JP-01": {
+                                    "name": "Hokkaido",
+                                    "name_ascii": "Hokkaido"
+                                },
+                                "JP-02": {
+                                    "name": "Aomori",
+                                    "name_ascii": "Aomori"
+                                },
+                                "JP-03": {
+                                    "name": "Iwate",
+                                    "name_ascii": "Iwate"
+                                },
+                                "JP-04": {
+                                    "name": "Miyagi",
+                                    "name_ascii": "Miyagi"
+                                },
+                                "JP-05": {
+                                    "name": "Akita",
+                                    "name_ascii": "Akita"
+                                },
+                                "JP-06": {
+                                    "name": "Yamagata",
+                                    "name_ascii": "Yamagata"
+                                },
+                                "JP-07": {
+                                    "name": "Fukushima",
+                                    "name_ascii": "Fukushima"
+                                },
+                                "JP-08": {
+                                    "name": "Ibaraki",
+                                    "name_ascii": "Ibaraki"
+                                },
+                                "JP-09": {
+                                    "name": "Tochigi",
+                                    "name_ascii": "Tochigi"
+                                },
+                                "JP-10": {
+                                    "name": "Gunma",
+                                    "name_ascii": "Gunma"
+                                },
+                                "JP-11": {
+                                    "name": "Saitama",
+                                    "name_ascii": "Saitama"
+                                },
+                                "JP-12": {
+                                    "name": "Chiba",
+                                    "name_ascii": "Chiba"
+                                },
+                                "JP-13": {
+                                    "name": "Tokyo",
+                                    "name_ascii": "Tokyo"
+                                },
+                                "JP-14": {
+                                    "name": "Kanagawa",
+                                    "name_ascii": "Kanagawa"
+                                },
+                                "JP-15": {
+                                    "name": "Niigata",
+                                    "name_ascii": "Niigata"
+                                },
+                                "JP-16": {
+                                    "name": "Toyama",
+                                    "name_ascii": "Toyama"
+                                },
+                                "JP-17": {
+                                    "name": "Ishikawa",
+                                    "name_ascii": "Ishikawa"
+                                },
+                                "JP-18": {
+                                    "name": "Fukui",
+                                    "name_ascii": "Fukui"
+                                },
+                                "JP-19": {
+                                    "name": "Yamanashi",
+                                    "name_ascii": "Yamanashi"
+                                },
+                                "JP-20": {
+                                    "name": "Nagano",
+                                    "name_ascii": "Nagano"
+                                },
+                                "JP-21": {
+                                    "name": "Gifu",
+                                    "name_ascii": "Gifu"
+                                },
+                                "JP-22": {
+                                    "name": "Shizuoka",
+                                    "name_ascii": "Shizuoka"
+                                },
+                                "JP-23": {
+                                    "name": "Aichi",
+                                    "name_ascii": "Aichi"
+                                },
+                                "JP-24": {
+                                    "name": "Mie",
+                                    "name_ascii": "Mie"
+                                },
+                                "JP-25": {
+                                    "name": "Shiga",
+                                    "name_ascii": "Shiga"
+                                },
+                                "JP-26": {
+                                    "name": "Kyoto",
+                                    "name_ascii": "Kyoto"
+                                },
+                                "JP-27": {
+                                    "name": "Osaka",
+                                    "name_ascii": "Osaka"
+                                },
+                                "JP-28": {
+                                    "name": "Hyogo",
+                                    "name_ascii": "Hyogo"
+                                },
+                                "JP-29": {
+                                    "name": "Nara",
+                                    "name_ascii": "Nara"
+                                },
+                                "JP-30": {
+                                    "name": "Wakayama",
+                                    "name_ascii": "Wakayama"
+                                },
+                                "JP-31": {
+                                    "name": "Tottori",
+                                    "name_ascii": "Tottori"
+                                },
+                                "JP-32": {
+                                    "name": "Shimane",
+                                    "name_ascii": "Shimane"
+                                },
+                                "JP-33": {
+                                    "name": "Okayama",
+                                    "name_ascii": "Okayama"
+                                },
+                                "JP-34": {
+                                    "name": "Hiroshima",
+                                    "name_ascii": "Hiroshima"
+                                },
+                                "JP-35": {
+                                    "name": "Yamaguchi",
+                                    "name_ascii": "Yamaguchi"
+                                },
+                                "JP-36": {
+                                    "name": "Tokushima",
+                                    "name_ascii": "Tokushima"
+                                },
+                                "JP-37": {
+                                    "name": "Kagawa",
+                                    "name_ascii": "Kagawa"
+                                },
+                                "JP-38": {
+                                    "name": "Ehime",
+                                    "name_ascii": "Ehime"
+                                },
+                                "JP-39": {
+                                    "name": "Kochi",
+                                    "name_ascii": "Kochi"
+                                },
+                                "JP-40": {
+                                    "name": "Fukuoka",
+                                    "name_ascii": "Fukuoka"
+                                },
+                                "JP-41": {
+                                    "name": "Saga",
+                                    "name_ascii": "Saga"
+                                },
+                                "JP-42": {
+                                    "name": "Nagasaki",
+                                    "name_ascii": "Nagasaki"
+                                },
+                                "JP-43": {
+                                    "name": "Kumamoto",
+                                    "name_ascii": "Kumamoto"
+                                },
+                                "JP-44": {
+                                    "name": "Oita",
+                                    "name_ascii": "Oita"
+                                },
+                                "JP-45": {
+                                    "name": "Miyazaki",
+                                    "name_ascii": "Miyazaki"
+                                },
+                                "JP-46": {
+                                    "name": "Kagoshima",
+                                    "name_ascii": "Kagoshima"
+                                },
+                                "JP-47": {
+                                    "name": "Okinawa",
+                                    "name_ascii": "Okinawa"
+                                }
+                            }
+                        },
+                        "tld": ".jp"
+                    }
+                },
+                "AE": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "INTERNATIONAL",
+                        "continent": "AS",
+                        "country": "United Arab Emirates",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "AED",
+                                "name": "United Arab Emirates Dirham",
+                                "symbol": "د.إ"
+                            }
+                        },
+                        "fips": "AE",
+                        "iso3": "ARE",
+                        "iso_nr": "784",
+                        "languages": {
+                            "en": "English",
+                            "fa": "Persian",
+                            "hi": "Hindi",
+                            "ur": "Urdu"
+                        },
+                        "phone": "971",
+                        "postal_code_format": "",
+                        "postal_code_regex": "",
+                        "so": "AE",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "AE-AJ": {
+                                    "name": "‘Ajmān",
+                                    "name_ascii": "'Ajman"
+                                },
+                                "AE-AZ": {
+                                    "name": "Abū Z̧aby",
+                                    "name_ascii": "Abu Zaby"
+                                },
+                                "AE-DU": {
+                                    "name": "Dubayy",
+                                    "name_ascii": "Dubayy"
+                                },
+                                "AE-FU": {
+                                    "name": "Al Fujayrah",
+                                    "name_ascii": "Al Fujayrah"
+                                },
+                                "AE-RK": {
+                                    "name": "Ra’s al Khaymah",
+                                    "name_ascii": "Ra's al Khaymah"
+                                },
+                                "AE-SH": {
+                                    "name": "Ash Shāriqah",
+                                    "name_ascii": "Ash Shariqah"
+                                },
+                                "AE-UQ": {
+                                    "name": "Umm al Qaywayn",
+                                    "name_ascii": "Umm al Qaywayn"
+                                }
+                            }
+                        },
+                        "tld": ".ae"
+                    }
+                },
+                "BR": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "INTERNATIONAL",
+                        "continent": "SA",
+                        "country": "Brazil",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "BRL",
+                                "name": "Brazilian Real",
+                                "symbol": "R$"
+                            }
+                        },
+                        "fips": "BR",
+                        "iso3": "BRA",
+                        "iso_nr": "76",
+                        "languages": {
+                            "en": "English",
+                            "es": "Spanish",
+                            "fr": "French",
+                            "pt_BR": "Brazilian Portuguese"
+                        },
+                        "phone": "55",
+                        "postal_code_format": "#####-###",
+                        "postal_code_regex": "^\\d{5}-\\d{3}$",
+                        "so": "BR",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "BR-AC": {
+                                    "name": "Acre",
+                                    "name_ascii": "Acre"
+                                },
+                                "BR-AL": {
+                                    "name": "Alagoas",
+                                    "name_ascii": "Alagoas"
+                                },
+                                "BR-AM": {
+                                    "name": "Amazonas",
+                                    "name_ascii": "Amazonas"
+                                },
+                                "BR-AP": {
+                                    "name": "Amapá",
+                                    "name_ascii": "Amapa"
+                                },
+                                "BR-BA": {
+                                    "name": "Bahia",
+                                    "name_ascii": "Bahia"
+                                },
+                                "BR-CE": {
+                                    "name": "Ceará",
+                                    "name_ascii": "Ceara"
+                                },
+                                "BR-DF": {
+                                    "name": "Distrito Federal",
+                                    "name_ascii": "Distrito Federal"
+                                },
+                                "BR-ES": {
+                                    "name": "Espírito Santo",
+                                    "name_ascii": "Espirito Santo"
+                                },
+                                "BR-GO": {
+                                    "name": "Goiás",
+                                    "name_ascii": "Goias"
+                                },
+                                "BR-MA": {
+                                    "name": "Maranhão",
+                                    "name_ascii": "Maranhao"
+                                },
+                                "BR-MG": {
+                                    "name": "Minas Gerais",
+                                    "name_ascii": "Minas Gerais"
+                                },
+                                "BR-MS": {
+                                    "name": "Mato Grosso do Sul",
+                                    "name_ascii": "Mato Grosso do Sul"
+                                },
+                                "BR-MT": {
+                                    "name": "Mato Grosso",
+                                    "name_ascii": "Mato Grosso"
+                                },
+                                "BR-PA": {
+                                    "name": "Pará",
+                                    "name_ascii": "Para"
+                                },
+                                "BR-PB": {
+                                    "name": "Paraíba",
+                                    "name_ascii": "Paraiba"
+                                },
+                                "BR-PE": {
+                                    "name": "Pernambuco",
+                                    "name_ascii": "Pernambuco"
+                                },
+                                "BR-PI": {
+                                    "name": "Piauí",
+                                    "name_ascii": "Piaui"
+                                },
+                                "BR-PR": {
+                                    "name": "Paraná",
+                                    "name_ascii": "Parana"
+                                },
+                                "BR-RJ": {
+                                    "name": "Rio de Janeiro",
+                                    "name_ascii": "Rio de Janeiro"
+                                },
+                                "BR-RN": {
+                                    "name": "Rio Grande do Norte",
+                                    "name_ascii": "Rio Grande do Norte"
+                                },
+                                "BR-RO": {
+                                    "name": "Rondônia",
+                                    "name_ascii": "Rondonia"
+                                },
+                                "BR-RR": {
+                                    "name": "Roraima",
+                                    "name_ascii": "Roraima"
+                                },
+                                "BR-RS": {
+                                    "name": "Rio Grande do Sul",
+                                    "name_ascii": "Rio Grande do Sul"
+                                },
+                                "BR-SC": {
+                                    "name": "Santa Catarina",
+                                    "name_ascii": "Santa Catarina"
+                                },
+                                "BR-SE": {
+                                    "name": "Sergipe",
+                                    "name_ascii": "Sergipe"
+                                },
+                                "BR-SP": {
+                                    "name": "São Paulo",
+                                    "name_ascii": "Sao Paulo"
+                                },
+                                "BR-TO": {
+                                    "name": "Tocantins",
+                                    "name_ascii": "Tocantins"
+                                }
+                            }
+                        },
+                        "tld": ".br"
+                    }
+                }
+            }
+        },
+        "pl": {
+            "collection_type": "Illuminate\\Support\\Collection",
+            "count": 249,
+            "sha256": "fbf70a00e413f315307bcbb4fd660ee9000c57ea9e203253b5d7efcf3dfec59b",
+            "countries": {
+                "PL": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "INTERNATIONAL",
+                        "continent": "EU",
+                        "country": "Polska",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "PLN",
+                                "name": "złoty polski",
+                                "symbol": "zł"
+                            }
+                        },
+                        "fips": "PL",
+                        "iso3": "POL",
+                        "iso_nr": "616",
+                        "languages": {
+                            "pl": "polski"
+                        },
+                        "phone": "48",
+                        "postal_code_format": "##-###",
+                        "postal_code_regex": "^\\d{2}-\\d{3}$",
+                        "so": "PL",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "PL-02": {
+                                    "name": "Dolnośląskie",
+                                    "name_ascii": "Dolnoslaskie"
+                                },
+                                "PL-04": {
+                                    "name": "Kujawsko-pomorskie",
+                                    "name_ascii": "Kujawsko-pomorskie"
+                                },
+                                "PL-06": {
+                                    "name": "Lubelskie",
+                                    "name_ascii": "Lubelskie"
+                                },
+                                "PL-08": {
+                                    "name": "Lubuskie",
+                                    "name_ascii": "Lubuskie"
+                                },
+                                "PL-10": {
+                                    "name": "Łódzkie",
+                                    "name_ascii": "Lodzkie"
+                                },
+                                "PL-12": {
+                                    "name": "Małopolskie",
+                                    "name_ascii": "Malopolskie"
+                                },
+                                "PL-14": {
+                                    "name": "Mazowieckie",
+                                    "name_ascii": "Mazowieckie"
+                                },
+                                "PL-16": {
+                                    "name": "Opolskie",
+                                    "name_ascii": "Opolskie"
+                                },
+                                "PL-18": {
+                                    "name": "Podkarpackie",
+                                    "name_ascii": "Podkarpackie"
+                                },
+                                "PL-20": {
+                                    "name": "Podlaskie",
+                                    "name_ascii": "Podlaskie"
+                                },
+                                "PL-22": {
+                                    "name": "Pomorskie",
+                                    "name_ascii": "Pomorskie"
+                                },
+                                "PL-24": {
+                                    "name": "Śląskie",
+                                    "name_ascii": "Slaskie"
+                                },
+                                "PL-26": {
+                                    "name": "Świętokrzyskie",
+                                    "name_ascii": "Swietokrzyskie"
+                                },
+                                "PL-28": {
+                                    "name": "Warmińsko-mazurskie",
+                                    "name_ascii": "Warminsko-mazurskie"
+                                },
+                                "PL-30": {
+                                    "name": "Wielkopolskie",
+                                    "name_ascii": "Wielkopolskie"
+                                },
+                                "PL-32": {
+                                    "name": "Zachodniopomorskie",
+                                    "name_ascii": "Zachodniopomorskie"
+                                }
+                            }
+                        },
+                        "tld": ".pl"
+                    }
+                },
+                "US": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "US",
+                        "continent": "NA",
+                        "country": "Stany Zjednoczone",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "USD",
+                                "name": "dolar amerykański",
+                                "symbol": "$"
+                            }
+                        },
+                        "fips": "US",
+                        "iso3": "USA",
+                        "iso_nr": "840",
+                        "languages": {
+                            "en_US": "angielski amerykański",
+                            "fr": "francuski",
+                            "haw": "hawajski"
+                        },
+                        "phone": "1",
+                        "postal_code_format": "#####-####",
+                        "postal_code_regex": "^\\d{5}(-\\d{4})?$",
+                        "so": "US",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "US-AK": {
+                                    "name": "Alaska",
+                                    "name_ascii": "Alaska"
+                                },
+                                "US-AL": {
+                                    "name": "Alabama",
+                                    "name_ascii": "Alabama"
+                                },
+                                "US-AR": {
+                                    "name": "Arkansas",
+                                    "name_ascii": "Arkansas"
+                                },
+                                "US-AS": {
+                                    "name": "American Samoa",
+                                    "name_ascii": "American Samoa"
+                                },
+                                "US-AZ": {
+                                    "name": "Arizona",
+                                    "name_ascii": "Arizona"
+                                },
+                                "US-CA": {
+                                    "name": "California",
+                                    "name_ascii": "California"
+                                },
+                                "US-CO": {
+                                    "name": "Colorado",
+                                    "name_ascii": "Colorado"
+                                },
+                                "US-CT": {
+                                    "name": "Connecticut",
+                                    "name_ascii": "Connecticut"
+                                },
+                                "US-DC": {
+                                    "name": "District of Columbia",
+                                    "name_ascii": "District of Columbia"
+                                },
+                                "US-DE": {
+                                    "name": "Delaware",
+                                    "name_ascii": "Delaware"
+                                },
+                                "US-FL": {
+                                    "name": "Florida",
+                                    "name_ascii": "Florida"
+                                },
+                                "US-GA": {
+                                    "name": "Georgia",
+                                    "name_ascii": "Georgia"
+                                },
+                                "US-GU": {
+                                    "name": "Guam",
+                                    "name_ascii": "Guam"
+                                },
+                                "US-HI": {
+                                    "name": "Hawaii",
+                                    "name_ascii": "Hawaii"
+                                },
+                                "US-IA": {
+                                    "name": "Iowa",
+                                    "name_ascii": "Iowa"
+                                },
+                                "US-ID": {
+                                    "name": "Idaho",
+                                    "name_ascii": "Idaho"
+                                },
+                                "US-IL": {
+                                    "name": "Illinois",
+                                    "name_ascii": "Illinois"
+                                },
+                                "US-IN": {
+                                    "name": "Indiana",
+                                    "name_ascii": "Indiana"
+                                },
+                                "US-KS": {
+                                    "name": "Kansas",
+                                    "name_ascii": "Kansas"
+                                },
+                                "US-KY": {
+                                    "name": "Kentucky",
+                                    "name_ascii": "Kentucky"
+                                },
+                                "US-LA": {
+                                    "name": "Louisiana",
+                                    "name_ascii": "Louisiana"
+                                },
+                                "US-MA": {
+                                    "name": "Massachusetts",
+                                    "name_ascii": "Massachusetts"
+                                },
+                                "US-MD": {
+                                    "name": "Maryland",
+                                    "name_ascii": "Maryland"
+                                },
+                                "US-ME": {
+                                    "name": "Maine",
+                                    "name_ascii": "Maine"
+                                },
+                                "US-MI": {
+                                    "name": "Michigan",
+                                    "name_ascii": "Michigan"
+                                },
+                                "US-MN": {
+                                    "name": "Minnesota",
+                                    "name_ascii": "Minnesota"
+                                },
+                                "US-MO": {
+                                    "name": "Missouri",
+                                    "name_ascii": "Missouri"
+                                },
+                                "US-MP": {
+                                    "name": "Northern Mariana Islands",
+                                    "name_ascii": "Northern Mariana Islands"
+                                },
+                                "US-MS": {
+                                    "name": "Mississippi",
+                                    "name_ascii": "Mississippi"
+                                },
+                                "US-MT": {
+                                    "name": "Montana",
+                                    "name_ascii": "Montana"
+                                },
+                                "US-NC": {
+                                    "name": "North Carolina",
+                                    "name_ascii": "North Carolina"
+                                },
+                                "US-ND": {
+                                    "name": "North Dakota",
+                                    "name_ascii": "North Dakota"
+                                },
+                                "US-NE": {
+                                    "name": "Nebraska",
+                                    "name_ascii": "Nebraska"
+                                },
+                                "US-NH": {
+                                    "name": "New Hampshire",
+                                    "name_ascii": "New Hampshire"
+                                },
+                                "US-NJ": {
+                                    "name": "New Jersey",
+                                    "name_ascii": "New Jersey"
+                                },
+                                "US-NM": {
+                                    "name": "New Mexico",
+                                    "name_ascii": "New Mexico"
+                                },
+                                "US-NV": {
+                                    "name": "Nevada",
+                                    "name_ascii": "Nevada"
+                                },
+                                "US-NY": {
+                                    "name": "New York",
+                                    "name_ascii": "New York"
+                                },
+                                "US-OH": {
+                                    "name": "Ohio",
+                                    "name_ascii": "Ohio"
+                                },
+                                "US-OK": {
+                                    "name": "Oklahoma",
+                                    "name_ascii": "Oklahoma"
+                                },
+                                "US-OR": {
+                                    "name": "Oregon",
+                                    "name_ascii": "Oregon"
+                                },
+                                "US-PA": {
+                                    "name": "Pennsylvania",
+                                    "name_ascii": "Pennsylvania"
+                                },
+                                "US-PR": {
+                                    "name": "Puerto Rico",
+                                    "name_ascii": "Puerto Rico"
+                                },
+                                "US-RI": {
+                                    "name": "Rhode Island",
+                                    "name_ascii": "Rhode Island"
+                                },
+                                "US-SC": {
+                                    "name": "South Carolina",
+                                    "name_ascii": "South Carolina"
+                                },
+                                "US-SD": {
+                                    "name": "South Dakota",
+                                    "name_ascii": "South Dakota"
+                                },
+                                "US-TN": {
+                                    "name": "Tennessee",
+                                    "name_ascii": "Tennessee"
+                                },
+                                "US-TX": {
+                                    "name": "Texas",
+                                    "name_ascii": "Texas"
+                                },
+                                "US-UM": {
+                                    "name": "United States Minor Outlying Islands",
+                                    "name_ascii": "United States Minor Outlying Islands"
+                                },
+                                "US-UT": {
+                                    "name": "Utah",
+                                    "name_ascii": "Utah"
+                                },
+                                "US-VA": {
+                                    "name": "Virginia",
+                                    "name_ascii": "Virginia"
+                                },
+                                "US-VI": {
+                                    "name": "Virgin Islands",
+                                    "name_ascii": "Virgin Islands"
+                                },
+                                "US-VT": {
+                                    "name": "Vermont",
+                                    "name_ascii": "Vermont"
+                                },
+                                "US-WA": {
+                                    "name": "Washington",
+                                    "name_ascii": "Washington"
+                                },
+                                "US-WI": {
+                                    "name": "Wisconsin",
+                                    "name_ascii": "Wisconsin"
+                                },
+                                "US-WV": {
+                                    "name": "West Virginia",
+                                    "name_ascii": "West Virginia"
+                                },
+                                "US-WY": {
+                                    "name": "Wyoming",
+                                    "name_ascii": "Wyoming"
+                                }
+                            }
+                        },
+                        "tld": ".us"
+                    }
+                },
+                "JP": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "INTERNATIONAL",
+                        "continent": "AS",
+                        "country": "Japonia",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "JPY",
+                                "name": "jen japoński",
+                                "symbol": "¥"
+                            }
+                        },
+                        "fips": "JA",
+                        "iso3": "JPN",
+                        "iso_nr": "392",
+                        "languages": {
+                            "ja": "japoński"
+                        },
+                        "phone": "81",
+                        "postal_code_format": "###-####",
+                        "postal_code_regex": "^\\d{3}-\\d{4}$",
+                        "so": "JP",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "JP-01": {
+                                    "name": "Hokkaido",
+                                    "name_ascii": "Hokkaido"
+                                },
+                                "JP-02": {
+                                    "name": "Aomori",
+                                    "name_ascii": "Aomori"
+                                },
+                                "JP-03": {
+                                    "name": "Iwate",
+                                    "name_ascii": "Iwate"
+                                },
+                                "JP-04": {
+                                    "name": "Miyagi",
+                                    "name_ascii": "Miyagi"
+                                },
+                                "JP-05": {
+                                    "name": "Akita",
+                                    "name_ascii": "Akita"
+                                },
+                                "JP-06": {
+                                    "name": "Yamagata",
+                                    "name_ascii": "Yamagata"
+                                },
+                                "JP-07": {
+                                    "name": "Fukushima",
+                                    "name_ascii": "Fukushima"
+                                },
+                                "JP-08": {
+                                    "name": "Ibaraki",
+                                    "name_ascii": "Ibaraki"
+                                },
+                                "JP-09": {
+                                    "name": "Tochigi",
+                                    "name_ascii": "Tochigi"
+                                },
+                                "JP-10": {
+                                    "name": "Gunma",
+                                    "name_ascii": "Gunma"
+                                },
+                                "JP-11": {
+                                    "name": "Saitama",
+                                    "name_ascii": "Saitama"
+                                },
+                                "JP-12": {
+                                    "name": "Chiba",
+                                    "name_ascii": "Chiba"
+                                },
+                                "JP-13": {
+                                    "name": "Tokyo",
+                                    "name_ascii": "Tokyo"
+                                },
+                                "JP-14": {
+                                    "name": "Kanagawa",
+                                    "name_ascii": "Kanagawa"
+                                },
+                                "JP-15": {
+                                    "name": "Niigata",
+                                    "name_ascii": "Niigata"
+                                },
+                                "JP-16": {
+                                    "name": "Toyama",
+                                    "name_ascii": "Toyama"
+                                },
+                                "JP-17": {
+                                    "name": "Ishikawa",
+                                    "name_ascii": "Ishikawa"
+                                },
+                                "JP-18": {
+                                    "name": "Fukui",
+                                    "name_ascii": "Fukui"
+                                },
+                                "JP-19": {
+                                    "name": "Yamanashi",
+                                    "name_ascii": "Yamanashi"
+                                },
+                                "JP-20": {
+                                    "name": "Nagano",
+                                    "name_ascii": "Nagano"
+                                },
+                                "JP-21": {
+                                    "name": "Gifu",
+                                    "name_ascii": "Gifu"
+                                },
+                                "JP-22": {
+                                    "name": "Shizuoka",
+                                    "name_ascii": "Shizuoka"
+                                },
+                                "JP-23": {
+                                    "name": "Aichi",
+                                    "name_ascii": "Aichi"
+                                },
+                                "JP-24": {
+                                    "name": "Mie",
+                                    "name_ascii": "Mie"
+                                },
+                                "JP-25": {
+                                    "name": "Shiga",
+                                    "name_ascii": "Shiga"
+                                },
+                                "JP-26": {
+                                    "name": "Kyoto",
+                                    "name_ascii": "Kyoto"
+                                },
+                                "JP-27": {
+                                    "name": "Osaka",
+                                    "name_ascii": "Osaka"
+                                },
+                                "JP-28": {
+                                    "name": "Hyogo",
+                                    "name_ascii": "Hyogo"
+                                },
+                                "JP-29": {
+                                    "name": "Nara",
+                                    "name_ascii": "Nara"
+                                },
+                                "JP-30": {
+                                    "name": "Wakayama",
+                                    "name_ascii": "Wakayama"
+                                },
+                                "JP-31": {
+                                    "name": "Tottori",
+                                    "name_ascii": "Tottori"
+                                },
+                                "JP-32": {
+                                    "name": "Shimane",
+                                    "name_ascii": "Shimane"
+                                },
+                                "JP-33": {
+                                    "name": "Okayama",
+                                    "name_ascii": "Okayama"
+                                },
+                                "JP-34": {
+                                    "name": "Hiroshima",
+                                    "name_ascii": "Hiroshima"
+                                },
+                                "JP-35": {
+                                    "name": "Yamaguchi",
+                                    "name_ascii": "Yamaguchi"
+                                },
+                                "JP-36": {
+                                    "name": "Tokushima",
+                                    "name_ascii": "Tokushima"
+                                },
+                                "JP-37": {
+                                    "name": "Kagawa",
+                                    "name_ascii": "Kagawa"
+                                },
+                                "JP-38": {
+                                    "name": "Ehime",
+                                    "name_ascii": "Ehime"
+                                },
+                                "JP-39": {
+                                    "name": "Kochi",
+                                    "name_ascii": "Kochi"
+                                },
+                                "JP-40": {
+                                    "name": "Fukuoka",
+                                    "name_ascii": "Fukuoka"
+                                },
+                                "JP-41": {
+                                    "name": "Saga",
+                                    "name_ascii": "Saga"
+                                },
+                                "JP-42": {
+                                    "name": "Nagasaki",
+                                    "name_ascii": "Nagasaki"
+                                },
+                                "JP-43": {
+                                    "name": "Kumamoto",
+                                    "name_ascii": "Kumamoto"
+                                },
+                                "JP-44": {
+                                    "name": "Oita",
+                                    "name_ascii": "Oita"
+                                },
+                                "JP-45": {
+                                    "name": "Miyazaki",
+                                    "name_ascii": "Miyazaki"
+                                },
+                                "JP-46": {
+                                    "name": "Kagoshima",
+                                    "name_ascii": "Kagoshima"
+                                },
+                                "JP-47": {
+                                    "name": "Okinawa",
+                                    "name_ascii": "Okinawa"
+                                }
+                            }
+                        },
+                        "tld": ".jp"
+                    }
+                },
+                "AE": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "INTERNATIONAL",
+                        "continent": "AS",
+                        "country": "Zjednoczone Emiraty Arabskie",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "AED",
+                                "name": "dirham ZEA",
+                                "symbol": "د.إ"
+                            }
+                        },
+                        "fips": "AE",
+                        "iso3": "ARE",
+                        "iso_nr": "784",
+                        "languages": {
+                            "en": "angielski",
+                            "fa": "perski",
+                            "hi": "hindi",
+                            "ur": "urdu"
+                        },
+                        "phone": "971",
+                        "postal_code_format": "",
+                        "postal_code_regex": "",
+                        "so": "AE",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "AE-AJ": {
+                                    "name": "‘Ajmān",
+                                    "name_ascii": "'Ajman"
+                                },
+                                "AE-AZ": {
+                                    "name": "Abū Z̧aby",
+                                    "name_ascii": "Abu Zaby"
+                                },
+                                "AE-DU": {
+                                    "name": "Dubayy",
+                                    "name_ascii": "Dubayy"
+                                },
+                                "AE-FU": {
+                                    "name": "Al Fujayrah",
+                                    "name_ascii": "Al Fujayrah"
+                                },
+                                "AE-RK": {
+                                    "name": "Ra’s al Khaymah",
+                                    "name_ascii": "Ra's al Khaymah"
+                                },
+                                "AE-SH": {
+                                    "name": "Ash Shāriqah",
+                                    "name_ascii": "Ash Shariqah"
+                                },
+                                "AE-UQ": {
+                                    "name": "Umm al Qaywayn",
+                                    "name_ascii": "Umm al Qaywayn"
+                                }
+                            }
+                        },
+                        "tld": ".ae"
+                    }
+                },
+                "BR": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "INTERNATIONAL",
+                        "continent": "SA",
+                        "country": "Brazylia",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "BRL",
+                                "name": "real brazylijski",
+                                "symbol": "R$"
+                            }
+                        },
+                        "fips": "BR",
+                        "iso3": "BRA",
+                        "iso_nr": "76",
+                        "languages": {
+                            "en": "angielski",
+                            "es": "hiszpański",
+                            "fr": "francuski",
+                            "pt_BR": "brazylijski portugalski"
+                        },
+                        "phone": "55",
+                        "postal_code_format": "#####-###",
+                        "postal_code_regex": "^\\d{5}-\\d{3}$",
+                        "so": "BR",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "BR-AC": {
+                                    "name": "Acre",
+                                    "name_ascii": "Acre"
+                                },
+                                "BR-AL": {
+                                    "name": "Alagoas",
+                                    "name_ascii": "Alagoas"
+                                },
+                                "BR-AM": {
+                                    "name": "Amazonas",
+                                    "name_ascii": "Amazonas"
+                                },
+                                "BR-AP": {
+                                    "name": "Amapá",
+                                    "name_ascii": "Amapa"
+                                },
+                                "BR-BA": {
+                                    "name": "Bahia",
+                                    "name_ascii": "Bahia"
+                                },
+                                "BR-CE": {
+                                    "name": "Ceará",
+                                    "name_ascii": "Ceara"
+                                },
+                                "BR-DF": {
+                                    "name": "Distrito Federal",
+                                    "name_ascii": "Distrito Federal"
+                                },
+                                "BR-ES": {
+                                    "name": "Espírito Santo",
+                                    "name_ascii": "Espirito Santo"
+                                },
+                                "BR-GO": {
+                                    "name": "Goiás",
+                                    "name_ascii": "Goias"
+                                },
+                                "BR-MA": {
+                                    "name": "Maranhão",
+                                    "name_ascii": "Maranhao"
+                                },
+                                "BR-MG": {
+                                    "name": "Minas Gerais",
+                                    "name_ascii": "Minas Gerais"
+                                },
+                                "BR-MS": {
+                                    "name": "Mato Grosso do Sul",
+                                    "name_ascii": "Mato Grosso do Sul"
+                                },
+                                "BR-MT": {
+                                    "name": "Mato Grosso",
+                                    "name_ascii": "Mato Grosso"
+                                },
+                                "BR-PA": {
+                                    "name": "Pará",
+                                    "name_ascii": "Para"
+                                },
+                                "BR-PB": {
+                                    "name": "Paraíba",
+                                    "name_ascii": "Paraiba"
+                                },
+                                "BR-PE": {
+                                    "name": "Pernambuco",
+                                    "name_ascii": "Pernambuco"
+                                },
+                                "BR-PI": {
+                                    "name": "Piauí",
+                                    "name_ascii": "Piaui"
+                                },
+                                "BR-PR": {
+                                    "name": "Paraná",
+                                    "name_ascii": "Parana"
+                                },
+                                "BR-RJ": {
+                                    "name": "Rio de Janeiro",
+                                    "name_ascii": "Rio de Janeiro"
+                                },
+                                "BR-RN": {
+                                    "name": "Rio Grande do Norte",
+                                    "name_ascii": "Rio Grande do Norte"
+                                },
+                                "BR-RO": {
+                                    "name": "Rondônia",
+                                    "name_ascii": "Rondonia"
+                                },
+                                "BR-RR": {
+                                    "name": "Roraima",
+                                    "name_ascii": "Roraima"
+                                },
+                                "BR-RS": {
+                                    "name": "Rio Grande do Sul",
+                                    "name_ascii": "Rio Grande do Sul"
+                                },
+                                "BR-SC": {
+                                    "name": "Santa Catarina",
+                                    "name_ascii": "Santa Catarina"
+                                },
+                                "BR-SE": {
+                                    "name": "Sergipe",
+                                    "name_ascii": "Sergipe"
+                                },
+                                "BR-SP": {
+                                    "name": "São Paulo",
+                                    "name_ascii": "Sao Paulo"
+                                },
+                                "BR-TO": {
+                                    "name": "Tocantins",
+                                    "name_ascii": "Tocantins"
+                                }
+                            }
+                        },
+                        "tld": ".br"
+                    }
+                }
+            }
+        },
+        "de": {
+            "collection_type": "Illuminate\\Support\\Collection",
+            "count": 249,
+            "sha256": "461ed8facebb352849324f1263420ead41fb90f72bc0808574de638359d49c84",
+            "countries": {
+                "PL": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "INTERNATIONAL",
+                        "continent": "EU",
+                        "country": "Polen",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "PLN",
+                                "name": "Polnischer Złoty",
+                                "symbol": "zł"
+                            }
+                        },
+                        "fips": "PL",
+                        "iso3": "POL",
+                        "iso_nr": "616",
+                        "languages": {
+                            "pl": "Polnisch"
+                        },
+                        "phone": "48",
+                        "postal_code_format": "##-###",
+                        "postal_code_regex": "^\\d{2}-\\d{3}$",
+                        "so": "PL",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "PL-02": {
+                                    "name": "Dolnośląskie",
+                                    "name_ascii": "Dolnoslaskie"
+                                },
+                                "PL-04": {
+                                    "name": "Kujawsko-pomorskie",
+                                    "name_ascii": "Kujawsko-pomorskie"
+                                },
+                                "PL-06": {
+                                    "name": "Lubelskie",
+                                    "name_ascii": "Lubelskie"
+                                },
+                                "PL-08": {
+                                    "name": "Lubuskie",
+                                    "name_ascii": "Lubuskie"
+                                },
+                                "PL-10": {
+                                    "name": "Łódzkie",
+                                    "name_ascii": "Lodzkie"
+                                },
+                                "PL-12": {
+                                    "name": "Małopolskie",
+                                    "name_ascii": "Malopolskie"
+                                },
+                                "PL-14": {
+                                    "name": "Mazowieckie",
+                                    "name_ascii": "Mazowieckie"
+                                },
+                                "PL-16": {
+                                    "name": "Opolskie",
+                                    "name_ascii": "Opolskie"
+                                },
+                                "PL-18": {
+                                    "name": "Podkarpackie",
+                                    "name_ascii": "Podkarpackie"
+                                },
+                                "PL-20": {
+                                    "name": "Podlaskie",
+                                    "name_ascii": "Podlaskie"
+                                },
+                                "PL-22": {
+                                    "name": "Pomorskie",
+                                    "name_ascii": "Pomorskie"
+                                },
+                                "PL-24": {
+                                    "name": "Śląskie",
+                                    "name_ascii": "Slaskie"
+                                },
+                                "PL-26": {
+                                    "name": "Świętokrzyskie",
+                                    "name_ascii": "Swietokrzyskie"
+                                },
+                                "PL-28": {
+                                    "name": "Warmińsko-mazurskie",
+                                    "name_ascii": "Warminsko-mazurskie"
+                                },
+                                "PL-30": {
+                                    "name": "Wielkopolskie",
+                                    "name_ascii": "Wielkopolskie"
+                                },
+                                "PL-32": {
+                                    "name": "Zachodniopomorskie",
+                                    "name_ascii": "Zachodniopomorskie"
+                                }
+                            }
+                        },
+                        "tld": ".pl"
+                    }
+                },
+                "US": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "US",
+                        "continent": "NA",
+                        "country": "Vereinigte Staaten",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "USD",
+                                "name": "US-Dollar",
+                                "symbol": "$"
+                            }
+                        },
+                        "fips": "US",
+                        "iso3": "USA",
+                        "iso_nr": "840",
+                        "languages": {
+                            "en_US": "American English",
+                            "fr": "Französisch",
+                            "haw": "Hawaiisch"
+                        },
+                        "phone": "1",
+                        "postal_code_format": "#####-####",
+                        "postal_code_regex": "^\\d{5}(-\\d{4})?$",
+                        "so": "US",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "US-AK": {
+                                    "name": "Alaska",
+                                    "name_ascii": "Alaska"
+                                },
+                                "US-AL": {
+                                    "name": "Alabama",
+                                    "name_ascii": "Alabama"
+                                },
+                                "US-AR": {
+                                    "name": "Arkansas",
+                                    "name_ascii": "Arkansas"
+                                },
+                                "US-AS": {
+                                    "name": "American Samoa",
+                                    "name_ascii": "American Samoa"
+                                },
+                                "US-AZ": {
+                                    "name": "Arizona",
+                                    "name_ascii": "Arizona"
+                                },
+                                "US-CA": {
+                                    "name": "California",
+                                    "name_ascii": "California"
+                                },
+                                "US-CO": {
+                                    "name": "Colorado",
+                                    "name_ascii": "Colorado"
+                                },
+                                "US-CT": {
+                                    "name": "Connecticut",
+                                    "name_ascii": "Connecticut"
+                                },
+                                "US-DC": {
+                                    "name": "District of Columbia",
+                                    "name_ascii": "District of Columbia"
+                                },
+                                "US-DE": {
+                                    "name": "Delaware",
+                                    "name_ascii": "Delaware"
+                                },
+                                "US-FL": {
+                                    "name": "Florida",
+                                    "name_ascii": "Florida"
+                                },
+                                "US-GA": {
+                                    "name": "Georgia",
+                                    "name_ascii": "Georgia"
+                                },
+                                "US-GU": {
+                                    "name": "Guam",
+                                    "name_ascii": "Guam"
+                                },
+                                "US-HI": {
+                                    "name": "Hawaii",
+                                    "name_ascii": "Hawaii"
+                                },
+                                "US-IA": {
+                                    "name": "Iowa",
+                                    "name_ascii": "Iowa"
+                                },
+                                "US-ID": {
+                                    "name": "Idaho",
+                                    "name_ascii": "Idaho"
+                                },
+                                "US-IL": {
+                                    "name": "Illinois",
+                                    "name_ascii": "Illinois"
+                                },
+                                "US-IN": {
+                                    "name": "Indiana",
+                                    "name_ascii": "Indiana"
+                                },
+                                "US-KS": {
+                                    "name": "Kansas",
+                                    "name_ascii": "Kansas"
+                                },
+                                "US-KY": {
+                                    "name": "Kentucky",
+                                    "name_ascii": "Kentucky"
+                                },
+                                "US-LA": {
+                                    "name": "Louisiana",
+                                    "name_ascii": "Louisiana"
+                                },
+                                "US-MA": {
+                                    "name": "Massachusetts",
+                                    "name_ascii": "Massachusetts"
+                                },
+                                "US-MD": {
+                                    "name": "Maryland",
+                                    "name_ascii": "Maryland"
+                                },
+                                "US-ME": {
+                                    "name": "Maine",
+                                    "name_ascii": "Maine"
+                                },
+                                "US-MI": {
+                                    "name": "Michigan",
+                                    "name_ascii": "Michigan"
+                                },
+                                "US-MN": {
+                                    "name": "Minnesota",
+                                    "name_ascii": "Minnesota"
+                                },
+                                "US-MO": {
+                                    "name": "Missouri",
+                                    "name_ascii": "Missouri"
+                                },
+                                "US-MP": {
+                                    "name": "Northern Mariana Islands",
+                                    "name_ascii": "Northern Mariana Islands"
+                                },
+                                "US-MS": {
+                                    "name": "Mississippi",
+                                    "name_ascii": "Mississippi"
+                                },
+                                "US-MT": {
+                                    "name": "Montana",
+                                    "name_ascii": "Montana"
+                                },
+                                "US-NC": {
+                                    "name": "North Carolina",
+                                    "name_ascii": "North Carolina"
+                                },
+                                "US-ND": {
+                                    "name": "North Dakota",
+                                    "name_ascii": "North Dakota"
+                                },
+                                "US-NE": {
+                                    "name": "Nebraska",
+                                    "name_ascii": "Nebraska"
+                                },
+                                "US-NH": {
+                                    "name": "New Hampshire",
+                                    "name_ascii": "New Hampshire"
+                                },
+                                "US-NJ": {
+                                    "name": "New Jersey",
+                                    "name_ascii": "New Jersey"
+                                },
+                                "US-NM": {
+                                    "name": "New Mexico",
+                                    "name_ascii": "New Mexico"
+                                },
+                                "US-NV": {
+                                    "name": "Nevada",
+                                    "name_ascii": "Nevada"
+                                },
+                                "US-NY": {
+                                    "name": "New York",
+                                    "name_ascii": "New York"
+                                },
+                                "US-OH": {
+                                    "name": "Ohio",
+                                    "name_ascii": "Ohio"
+                                },
+                                "US-OK": {
+                                    "name": "Oklahoma",
+                                    "name_ascii": "Oklahoma"
+                                },
+                                "US-OR": {
+                                    "name": "Oregon",
+                                    "name_ascii": "Oregon"
+                                },
+                                "US-PA": {
+                                    "name": "Pennsylvania",
+                                    "name_ascii": "Pennsylvania"
+                                },
+                                "US-PR": {
+                                    "name": "Puerto Rico",
+                                    "name_ascii": "Puerto Rico"
+                                },
+                                "US-RI": {
+                                    "name": "Rhode Island",
+                                    "name_ascii": "Rhode Island"
+                                },
+                                "US-SC": {
+                                    "name": "South Carolina",
+                                    "name_ascii": "South Carolina"
+                                },
+                                "US-SD": {
+                                    "name": "South Dakota",
+                                    "name_ascii": "South Dakota"
+                                },
+                                "US-TN": {
+                                    "name": "Tennessee",
+                                    "name_ascii": "Tennessee"
+                                },
+                                "US-TX": {
+                                    "name": "Texas",
+                                    "name_ascii": "Texas"
+                                },
+                                "US-UM": {
+                                    "name": "United States Minor Outlying Islands",
+                                    "name_ascii": "United States Minor Outlying Islands"
+                                },
+                                "US-UT": {
+                                    "name": "Utah",
+                                    "name_ascii": "Utah"
+                                },
+                                "US-VA": {
+                                    "name": "Virginia",
+                                    "name_ascii": "Virginia"
+                                },
+                                "US-VI": {
+                                    "name": "Virgin Islands",
+                                    "name_ascii": "Virgin Islands"
+                                },
+                                "US-VT": {
+                                    "name": "Vermont",
+                                    "name_ascii": "Vermont"
+                                },
+                                "US-WA": {
+                                    "name": "Washington",
+                                    "name_ascii": "Washington"
+                                },
+                                "US-WI": {
+                                    "name": "Wisconsin",
+                                    "name_ascii": "Wisconsin"
+                                },
+                                "US-WV": {
+                                    "name": "West Virginia",
+                                    "name_ascii": "West Virginia"
+                                },
+                                "US-WY": {
+                                    "name": "Wyoming",
+                                    "name_ascii": "Wyoming"
+                                }
+                            }
+                        },
+                        "tld": ".us"
+                    }
+                },
+                "JP": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "INTERNATIONAL",
+                        "continent": "AS",
+                        "country": "Japan",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "JPY",
+                                "name": "Japanischer Yen",
+                                "symbol": "¥"
+                            }
+                        },
+                        "fips": "JA",
+                        "iso3": "JPN",
+                        "iso_nr": "392",
+                        "languages": {
+                            "ja": "Japanisch"
+                        },
+                        "phone": "81",
+                        "postal_code_format": "###-####",
+                        "postal_code_regex": "^\\d{3}-\\d{4}$",
+                        "so": "JP",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "JP-01": {
+                                    "name": "Hokkaido",
+                                    "name_ascii": "Hokkaido"
+                                },
+                                "JP-02": {
+                                    "name": "Aomori",
+                                    "name_ascii": "Aomori"
+                                },
+                                "JP-03": {
+                                    "name": "Iwate",
+                                    "name_ascii": "Iwate"
+                                },
+                                "JP-04": {
+                                    "name": "Miyagi",
+                                    "name_ascii": "Miyagi"
+                                },
+                                "JP-05": {
+                                    "name": "Akita",
+                                    "name_ascii": "Akita"
+                                },
+                                "JP-06": {
+                                    "name": "Yamagata",
+                                    "name_ascii": "Yamagata"
+                                },
+                                "JP-07": {
+                                    "name": "Fukushima",
+                                    "name_ascii": "Fukushima"
+                                },
+                                "JP-08": {
+                                    "name": "Ibaraki",
+                                    "name_ascii": "Ibaraki"
+                                },
+                                "JP-09": {
+                                    "name": "Tochigi",
+                                    "name_ascii": "Tochigi"
+                                },
+                                "JP-10": {
+                                    "name": "Gunma",
+                                    "name_ascii": "Gunma"
+                                },
+                                "JP-11": {
+                                    "name": "Saitama",
+                                    "name_ascii": "Saitama"
+                                },
+                                "JP-12": {
+                                    "name": "Chiba",
+                                    "name_ascii": "Chiba"
+                                },
+                                "JP-13": {
+                                    "name": "Tokyo",
+                                    "name_ascii": "Tokyo"
+                                },
+                                "JP-14": {
+                                    "name": "Kanagawa",
+                                    "name_ascii": "Kanagawa"
+                                },
+                                "JP-15": {
+                                    "name": "Niigata",
+                                    "name_ascii": "Niigata"
+                                },
+                                "JP-16": {
+                                    "name": "Toyama",
+                                    "name_ascii": "Toyama"
+                                },
+                                "JP-17": {
+                                    "name": "Ishikawa",
+                                    "name_ascii": "Ishikawa"
+                                },
+                                "JP-18": {
+                                    "name": "Fukui",
+                                    "name_ascii": "Fukui"
+                                },
+                                "JP-19": {
+                                    "name": "Yamanashi",
+                                    "name_ascii": "Yamanashi"
+                                },
+                                "JP-20": {
+                                    "name": "Nagano",
+                                    "name_ascii": "Nagano"
+                                },
+                                "JP-21": {
+                                    "name": "Gifu",
+                                    "name_ascii": "Gifu"
+                                },
+                                "JP-22": {
+                                    "name": "Shizuoka",
+                                    "name_ascii": "Shizuoka"
+                                },
+                                "JP-23": {
+                                    "name": "Aichi",
+                                    "name_ascii": "Aichi"
+                                },
+                                "JP-24": {
+                                    "name": "Mie",
+                                    "name_ascii": "Mie"
+                                },
+                                "JP-25": {
+                                    "name": "Shiga",
+                                    "name_ascii": "Shiga"
+                                },
+                                "JP-26": {
+                                    "name": "Kyoto",
+                                    "name_ascii": "Kyoto"
+                                },
+                                "JP-27": {
+                                    "name": "Osaka",
+                                    "name_ascii": "Osaka"
+                                },
+                                "JP-28": {
+                                    "name": "Hyogo",
+                                    "name_ascii": "Hyogo"
+                                },
+                                "JP-29": {
+                                    "name": "Nara",
+                                    "name_ascii": "Nara"
+                                },
+                                "JP-30": {
+                                    "name": "Wakayama",
+                                    "name_ascii": "Wakayama"
+                                },
+                                "JP-31": {
+                                    "name": "Tottori",
+                                    "name_ascii": "Tottori"
+                                },
+                                "JP-32": {
+                                    "name": "Shimane",
+                                    "name_ascii": "Shimane"
+                                },
+                                "JP-33": {
+                                    "name": "Okayama",
+                                    "name_ascii": "Okayama"
+                                },
+                                "JP-34": {
+                                    "name": "Hiroshima",
+                                    "name_ascii": "Hiroshima"
+                                },
+                                "JP-35": {
+                                    "name": "Yamaguchi",
+                                    "name_ascii": "Yamaguchi"
+                                },
+                                "JP-36": {
+                                    "name": "Tokushima",
+                                    "name_ascii": "Tokushima"
+                                },
+                                "JP-37": {
+                                    "name": "Kagawa",
+                                    "name_ascii": "Kagawa"
+                                },
+                                "JP-38": {
+                                    "name": "Ehime",
+                                    "name_ascii": "Ehime"
+                                },
+                                "JP-39": {
+                                    "name": "Kochi",
+                                    "name_ascii": "Kochi"
+                                },
+                                "JP-40": {
+                                    "name": "Fukuoka",
+                                    "name_ascii": "Fukuoka"
+                                },
+                                "JP-41": {
+                                    "name": "Saga",
+                                    "name_ascii": "Saga"
+                                },
+                                "JP-42": {
+                                    "name": "Nagasaki",
+                                    "name_ascii": "Nagasaki"
+                                },
+                                "JP-43": {
+                                    "name": "Kumamoto",
+                                    "name_ascii": "Kumamoto"
+                                },
+                                "JP-44": {
+                                    "name": "Oita",
+                                    "name_ascii": "Oita"
+                                },
+                                "JP-45": {
+                                    "name": "Miyazaki",
+                                    "name_ascii": "Miyazaki"
+                                },
+                                "JP-46": {
+                                    "name": "Kagoshima",
+                                    "name_ascii": "Kagoshima"
+                                },
+                                "JP-47": {
+                                    "name": "Okinawa",
+                                    "name_ascii": "Okinawa"
+                                }
+                            }
+                        },
+                        "tld": ".jp"
+                    }
+                },
+                "AE": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "INTERNATIONAL",
+                        "continent": "AS",
+                        "country": "Vereinigte Arabische Emirate",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "AED",
+                                "name": "VAE-Dirham",
+                                "symbol": "د.إ"
+                            }
+                        },
+                        "fips": "AE",
+                        "iso3": "ARE",
+                        "iso_nr": "784",
+                        "languages": {
+                            "en": "Englisch",
+                            "fa": "Persisch",
+                            "hi": "Hindi",
+                            "ur": "Urdu"
+                        },
+                        "phone": "971",
+                        "postal_code_format": "",
+                        "postal_code_regex": "",
+                        "so": "AE",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "AE-AJ": {
+                                    "name": "‘Ajmān",
+                                    "name_ascii": "'Ajman"
+                                },
+                                "AE-AZ": {
+                                    "name": "Abū Z̧aby",
+                                    "name_ascii": "Abu Zaby"
+                                },
+                                "AE-DU": {
+                                    "name": "Dubayy",
+                                    "name_ascii": "Dubayy"
+                                },
+                                "AE-FU": {
+                                    "name": "Al Fujayrah",
+                                    "name_ascii": "Al Fujayrah"
+                                },
+                                "AE-RK": {
+                                    "name": "Ra’s al Khaymah",
+                                    "name_ascii": "Ra's al Khaymah"
+                                },
+                                "AE-SH": {
+                                    "name": "Ash Shāriqah",
+                                    "name_ascii": "Ash Shariqah"
+                                },
+                                "AE-UQ": {
+                                    "name": "Umm al Qaywayn",
+                                    "name_ascii": "Umm al Qaywayn"
+                                }
+                            }
+                        },
+                        "tld": ".ae"
+                    }
+                },
+                "BR": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "INTERNATIONAL",
+                        "continent": "SA",
+                        "country": "Brasilien",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "BRL",
+                                "name": "Brasilianischer Real",
+                                "symbol": "R$"
+                            }
+                        },
+                        "fips": "BR",
+                        "iso3": "BRA",
+                        "iso_nr": "76",
+                        "languages": {
+                            "en": "Englisch",
+                            "es": "Spanisch",
+                            "fr": "Französisch",
+                            "pt_BR": "Brazilian Portuguese"
+                        },
+                        "phone": "55",
+                        "postal_code_format": "#####-###",
+                        "postal_code_regex": "^\\d{5}-\\d{3}$",
+                        "so": "BR",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "BR-AC": {
+                                    "name": "Acre",
+                                    "name_ascii": "Acre"
+                                },
+                                "BR-AL": {
+                                    "name": "Alagoas",
+                                    "name_ascii": "Alagoas"
+                                },
+                                "BR-AM": {
+                                    "name": "Amazonas",
+                                    "name_ascii": "Amazonas"
+                                },
+                                "BR-AP": {
+                                    "name": "Amapá",
+                                    "name_ascii": "Amapa"
+                                },
+                                "BR-BA": {
+                                    "name": "Bahia",
+                                    "name_ascii": "Bahia"
+                                },
+                                "BR-CE": {
+                                    "name": "Ceará",
+                                    "name_ascii": "Ceara"
+                                },
+                                "BR-DF": {
+                                    "name": "Distrito Federal",
+                                    "name_ascii": "Distrito Federal"
+                                },
+                                "BR-ES": {
+                                    "name": "Espírito Santo",
+                                    "name_ascii": "Espirito Santo"
+                                },
+                                "BR-GO": {
+                                    "name": "Goiás",
+                                    "name_ascii": "Goias"
+                                },
+                                "BR-MA": {
+                                    "name": "Maranhão",
+                                    "name_ascii": "Maranhao"
+                                },
+                                "BR-MG": {
+                                    "name": "Minas Gerais",
+                                    "name_ascii": "Minas Gerais"
+                                },
+                                "BR-MS": {
+                                    "name": "Mato Grosso do Sul",
+                                    "name_ascii": "Mato Grosso do Sul"
+                                },
+                                "BR-MT": {
+                                    "name": "Mato Grosso",
+                                    "name_ascii": "Mato Grosso"
+                                },
+                                "BR-PA": {
+                                    "name": "Pará",
+                                    "name_ascii": "Para"
+                                },
+                                "BR-PB": {
+                                    "name": "Paraíba",
+                                    "name_ascii": "Paraiba"
+                                },
+                                "BR-PE": {
+                                    "name": "Pernambuco",
+                                    "name_ascii": "Pernambuco"
+                                },
+                                "BR-PI": {
+                                    "name": "Piauí",
+                                    "name_ascii": "Piaui"
+                                },
+                                "BR-PR": {
+                                    "name": "Paraná",
+                                    "name_ascii": "Parana"
+                                },
+                                "BR-RJ": {
+                                    "name": "Rio de Janeiro",
+                                    "name_ascii": "Rio de Janeiro"
+                                },
+                                "BR-RN": {
+                                    "name": "Rio Grande do Norte",
+                                    "name_ascii": "Rio Grande do Norte"
+                                },
+                                "BR-RO": {
+                                    "name": "Rondônia",
+                                    "name_ascii": "Rondonia"
+                                },
+                                "BR-RR": {
+                                    "name": "Roraima",
+                                    "name_ascii": "Roraima"
+                                },
+                                "BR-RS": {
+                                    "name": "Rio Grande do Sul",
+                                    "name_ascii": "Rio Grande do Sul"
+                                },
+                                "BR-SC": {
+                                    "name": "Santa Catarina",
+                                    "name_ascii": "Santa Catarina"
+                                },
+                                "BR-SE": {
+                                    "name": "Sergipe",
+                                    "name_ascii": "Sergipe"
+                                },
+                                "BR-SP": {
+                                    "name": "São Paulo",
+                                    "name_ascii": "Sao Paulo"
+                                },
+                                "BR-TO": {
+                                    "name": "Tocantins",
+                                    "name_ascii": "Tocantins"
+                                }
+                            }
+                        },
+                        "tld": ".br"
+                    }
+                }
+            }
+        },
+        "ja": {
+            "collection_type": "Illuminate\\Support\\Collection",
+            "count": 249,
+            "sha256": "0985e1b216bf3c9ba3103865216dff01ef8d7e49cdc161a08cb5378decbe0905",
+            "countries": {
+                "PL": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "INTERNATIONAL",
+                        "continent": "EU",
+                        "country": "ポーランド",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "PLN",
+                                "name": "ポーランド ズウォティ",
+                                "symbol": "zł"
+                            }
+                        },
+                        "fips": "PL",
+                        "iso3": "POL",
+                        "iso_nr": "616",
+                        "languages": {
+                            "pl": "ポーランド語"
+                        },
+                        "phone": "48",
+                        "postal_code_format": "##-###",
+                        "postal_code_regex": "^\\d{2}-\\d{3}$",
+                        "so": "PL",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "PL-02": {
+                                    "name": "Dolnośląskie",
+                                    "name_ascii": "Dolnoslaskie"
+                                },
+                                "PL-04": {
+                                    "name": "Kujawsko-pomorskie",
+                                    "name_ascii": "Kujawsko-pomorskie"
+                                },
+                                "PL-06": {
+                                    "name": "Lubelskie",
+                                    "name_ascii": "Lubelskie"
+                                },
+                                "PL-08": {
+                                    "name": "Lubuskie",
+                                    "name_ascii": "Lubuskie"
+                                },
+                                "PL-10": {
+                                    "name": "Łódzkie",
+                                    "name_ascii": "Lodzkie"
+                                },
+                                "PL-12": {
+                                    "name": "Małopolskie",
+                                    "name_ascii": "Malopolskie"
+                                },
+                                "PL-14": {
+                                    "name": "Mazowieckie",
+                                    "name_ascii": "Mazowieckie"
+                                },
+                                "PL-16": {
+                                    "name": "Opolskie",
+                                    "name_ascii": "Opolskie"
+                                },
+                                "PL-18": {
+                                    "name": "Podkarpackie",
+                                    "name_ascii": "Podkarpackie"
+                                },
+                                "PL-20": {
+                                    "name": "Podlaskie",
+                                    "name_ascii": "Podlaskie"
+                                },
+                                "PL-22": {
+                                    "name": "Pomorskie",
+                                    "name_ascii": "Pomorskie"
+                                },
+                                "PL-24": {
+                                    "name": "Śląskie",
+                                    "name_ascii": "Slaskie"
+                                },
+                                "PL-26": {
+                                    "name": "Świętokrzyskie",
+                                    "name_ascii": "Swietokrzyskie"
+                                },
+                                "PL-28": {
+                                    "name": "Warmińsko-mazurskie",
+                                    "name_ascii": "Warminsko-mazurskie"
+                                },
+                                "PL-30": {
+                                    "name": "Wielkopolskie",
+                                    "name_ascii": "Wielkopolskie"
+                                },
+                                "PL-32": {
+                                    "name": "Zachodniopomorskie",
+                                    "name_ascii": "Zachodniopomorskie"
+                                }
+                            }
+                        },
+                        "tld": ".pl"
+                    }
+                },
+                "US": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "US",
+                        "continent": "NA",
+                        "country": "アメリカ合衆国",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "USD",
+                                "name": "米ドル",
+                                "symbol": "$"
+                            }
+                        },
+                        "fips": "US",
+                        "iso3": "USA",
+                        "iso_nr": "840",
+                        "languages": {
+                            "en_US": "アメリカ英語",
+                            "fr": "フランス語",
+                            "haw": "ハワイ語"
+                        },
+                        "phone": "1",
+                        "postal_code_format": "#####-####",
+                        "postal_code_regex": "^\\d{5}(-\\d{4})?$",
+                        "so": "US",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "US-AK": {
+                                    "name": "Alaska",
+                                    "name_ascii": "Alaska"
+                                },
+                                "US-AL": {
+                                    "name": "Alabama",
+                                    "name_ascii": "Alabama"
+                                },
+                                "US-AR": {
+                                    "name": "Arkansas",
+                                    "name_ascii": "Arkansas"
+                                },
+                                "US-AS": {
+                                    "name": "American Samoa",
+                                    "name_ascii": "American Samoa"
+                                },
+                                "US-AZ": {
+                                    "name": "Arizona",
+                                    "name_ascii": "Arizona"
+                                },
+                                "US-CA": {
+                                    "name": "California",
+                                    "name_ascii": "California"
+                                },
+                                "US-CO": {
+                                    "name": "Colorado",
+                                    "name_ascii": "Colorado"
+                                },
+                                "US-CT": {
+                                    "name": "Connecticut",
+                                    "name_ascii": "Connecticut"
+                                },
+                                "US-DC": {
+                                    "name": "District of Columbia",
+                                    "name_ascii": "District of Columbia"
+                                },
+                                "US-DE": {
+                                    "name": "Delaware",
+                                    "name_ascii": "Delaware"
+                                },
+                                "US-FL": {
+                                    "name": "Florida",
+                                    "name_ascii": "Florida"
+                                },
+                                "US-GA": {
+                                    "name": "Georgia",
+                                    "name_ascii": "Georgia"
+                                },
+                                "US-GU": {
+                                    "name": "Guam",
+                                    "name_ascii": "Guam"
+                                },
+                                "US-HI": {
+                                    "name": "Hawaii",
+                                    "name_ascii": "Hawaii"
+                                },
+                                "US-IA": {
+                                    "name": "Iowa",
+                                    "name_ascii": "Iowa"
+                                },
+                                "US-ID": {
+                                    "name": "Idaho",
+                                    "name_ascii": "Idaho"
+                                },
+                                "US-IL": {
+                                    "name": "Illinois",
+                                    "name_ascii": "Illinois"
+                                },
+                                "US-IN": {
+                                    "name": "Indiana",
+                                    "name_ascii": "Indiana"
+                                },
+                                "US-KS": {
+                                    "name": "Kansas",
+                                    "name_ascii": "Kansas"
+                                },
+                                "US-KY": {
+                                    "name": "Kentucky",
+                                    "name_ascii": "Kentucky"
+                                },
+                                "US-LA": {
+                                    "name": "Louisiana",
+                                    "name_ascii": "Louisiana"
+                                },
+                                "US-MA": {
+                                    "name": "Massachusetts",
+                                    "name_ascii": "Massachusetts"
+                                },
+                                "US-MD": {
+                                    "name": "Maryland",
+                                    "name_ascii": "Maryland"
+                                },
+                                "US-ME": {
+                                    "name": "Maine",
+                                    "name_ascii": "Maine"
+                                },
+                                "US-MI": {
+                                    "name": "Michigan",
+                                    "name_ascii": "Michigan"
+                                },
+                                "US-MN": {
+                                    "name": "Minnesota",
+                                    "name_ascii": "Minnesota"
+                                },
+                                "US-MO": {
+                                    "name": "Missouri",
+                                    "name_ascii": "Missouri"
+                                },
+                                "US-MP": {
+                                    "name": "Northern Mariana Islands",
+                                    "name_ascii": "Northern Mariana Islands"
+                                },
+                                "US-MS": {
+                                    "name": "Mississippi",
+                                    "name_ascii": "Mississippi"
+                                },
+                                "US-MT": {
+                                    "name": "Montana",
+                                    "name_ascii": "Montana"
+                                },
+                                "US-NC": {
+                                    "name": "North Carolina",
+                                    "name_ascii": "North Carolina"
+                                },
+                                "US-ND": {
+                                    "name": "North Dakota",
+                                    "name_ascii": "North Dakota"
+                                },
+                                "US-NE": {
+                                    "name": "Nebraska",
+                                    "name_ascii": "Nebraska"
+                                },
+                                "US-NH": {
+                                    "name": "New Hampshire",
+                                    "name_ascii": "New Hampshire"
+                                },
+                                "US-NJ": {
+                                    "name": "New Jersey",
+                                    "name_ascii": "New Jersey"
+                                },
+                                "US-NM": {
+                                    "name": "New Mexico",
+                                    "name_ascii": "New Mexico"
+                                },
+                                "US-NV": {
+                                    "name": "Nevada",
+                                    "name_ascii": "Nevada"
+                                },
+                                "US-NY": {
+                                    "name": "New York",
+                                    "name_ascii": "New York"
+                                },
+                                "US-OH": {
+                                    "name": "Ohio",
+                                    "name_ascii": "Ohio"
+                                },
+                                "US-OK": {
+                                    "name": "Oklahoma",
+                                    "name_ascii": "Oklahoma"
+                                },
+                                "US-OR": {
+                                    "name": "Oregon",
+                                    "name_ascii": "Oregon"
+                                },
+                                "US-PA": {
+                                    "name": "Pennsylvania",
+                                    "name_ascii": "Pennsylvania"
+                                },
+                                "US-PR": {
+                                    "name": "Puerto Rico",
+                                    "name_ascii": "Puerto Rico"
+                                },
+                                "US-RI": {
+                                    "name": "Rhode Island",
+                                    "name_ascii": "Rhode Island"
+                                },
+                                "US-SC": {
+                                    "name": "South Carolina",
+                                    "name_ascii": "South Carolina"
+                                },
+                                "US-SD": {
+                                    "name": "South Dakota",
+                                    "name_ascii": "South Dakota"
+                                },
+                                "US-TN": {
+                                    "name": "Tennessee",
+                                    "name_ascii": "Tennessee"
+                                },
+                                "US-TX": {
+                                    "name": "Texas",
+                                    "name_ascii": "Texas"
+                                },
+                                "US-UM": {
+                                    "name": "United States Minor Outlying Islands",
+                                    "name_ascii": "United States Minor Outlying Islands"
+                                },
+                                "US-UT": {
+                                    "name": "Utah",
+                                    "name_ascii": "Utah"
+                                },
+                                "US-VA": {
+                                    "name": "Virginia",
+                                    "name_ascii": "Virginia"
+                                },
+                                "US-VI": {
+                                    "name": "Virgin Islands",
+                                    "name_ascii": "Virgin Islands"
+                                },
+                                "US-VT": {
+                                    "name": "Vermont",
+                                    "name_ascii": "Vermont"
+                                },
+                                "US-WA": {
+                                    "name": "Washington",
+                                    "name_ascii": "Washington"
+                                },
+                                "US-WI": {
+                                    "name": "Wisconsin",
+                                    "name_ascii": "Wisconsin"
+                                },
+                                "US-WV": {
+                                    "name": "West Virginia",
+                                    "name_ascii": "West Virginia"
+                                },
+                                "US-WY": {
+                                    "name": "Wyoming",
+                                    "name_ascii": "Wyoming"
+                                }
+                            }
+                        },
+                        "tld": ".us"
+                    }
+                },
+                "JP": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "INTERNATIONAL",
+                        "continent": "AS",
+                        "country": "日本",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "JPY",
+                                "name": "日本円",
+                                "symbol": "¥"
+                            }
+                        },
+                        "fips": "JA",
+                        "iso3": "JPN",
+                        "iso_nr": "392",
+                        "languages": {
+                            "ja": "日本語"
+                        },
+                        "phone": "81",
+                        "postal_code_format": "###-####",
+                        "postal_code_regex": "^\\d{3}-\\d{4}$",
+                        "so": "JP",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "JP-01": {
+                                    "name": "Hokkaido",
+                                    "name_ascii": "Hokkaido"
+                                },
+                                "JP-02": {
+                                    "name": "Aomori",
+                                    "name_ascii": "Aomori"
+                                },
+                                "JP-03": {
+                                    "name": "Iwate",
+                                    "name_ascii": "Iwate"
+                                },
+                                "JP-04": {
+                                    "name": "Miyagi",
+                                    "name_ascii": "Miyagi"
+                                },
+                                "JP-05": {
+                                    "name": "Akita",
+                                    "name_ascii": "Akita"
+                                },
+                                "JP-06": {
+                                    "name": "Yamagata",
+                                    "name_ascii": "Yamagata"
+                                },
+                                "JP-07": {
+                                    "name": "Fukushima",
+                                    "name_ascii": "Fukushima"
+                                },
+                                "JP-08": {
+                                    "name": "Ibaraki",
+                                    "name_ascii": "Ibaraki"
+                                },
+                                "JP-09": {
+                                    "name": "Tochigi",
+                                    "name_ascii": "Tochigi"
+                                },
+                                "JP-10": {
+                                    "name": "Gunma",
+                                    "name_ascii": "Gunma"
+                                },
+                                "JP-11": {
+                                    "name": "Saitama",
+                                    "name_ascii": "Saitama"
+                                },
+                                "JP-12": {
+                                    "name": "Chiba",
+                                    "name_ascii": "Chiba"
+                                },
+                                "JP-13": {
+                                    "name": "Tokyo",
+                                    "name_ascii": "Tokyo"
+                                },
+                                "JP-14": {
+                                    "name": "Kanagawa",
+                                    "name_ascii": "Kanagawa"
+                                },
+                                "JP-15": {
+                                    "name": "Niigata",
+                                    "name_ascii": "Niigata"
+                                },
+                                "JP-16": {
+                                    "name": "Toyama",
+                                    "name_ascii": "Toyama"
+                                },
+                                "JP-17": {
+                                    "name": "Ishikawa",
+                                    "name_ascii": "Ishikawa"
+                                },
+                                "JP-18": {
+                                    "name": "Fukui",
+                                    "name_ascii": "Fukui"
+                                },
+                                "JP-19": {
+                                    "name": "Yamanashi",
+                                    "name_ascii": "Yamanashi"
+                                },
+                                "JP-20": {
+                                    "name": "Nagano",
+                                    "name_ascii": "Nagano"
+                                },
+                                "JP-21": {
+                                    "name": "Gifu",
+                                    "name_ascii": "Gifu"
+                                },
+                                "JP-22": {
+                                    "name": "Shizuoka",
+                                    "name_ascii": "Shizuoka"
+                                },
+                                "JP-23": {
+                                    "name": "Aichi",
+                                    "name_ascii": "Aichi"
+                                },
+                                "JP-24": {
+                                    "name": "Mie",
+                                    "name_ascii": "Mie"
+                                },
+                                "JP-25": {
+                                    "name": "Shiga",
+                                    "name_ascii": "Shiga"
+                                },
+                                "JP-26": {
+                                    "name": "Kyoto",
+                                    "name_ascii": "Kyoto"
+                                },
+                                "JP-27": {
+                                    "name": "Osaka",
+                                    "name_ascii": "Osaka"
+                                },
+                                "JP-28": {
+                                    "name": "Hyogo",
+                                    "name_ascii": "Hyogo"
+                                },
+                                "JP-29": {
+                                    "name": "Nara",
+                                    "name_ascii": "Nara"
+                                },
+                                "JP-30": {
+                                    "name": "Wakayama",
+                                    "name_ascii": "Wakayama"
+                                },
+                                "JP-31": {
+                                    "name": "Tottori",
+                                    "name_ascii": "Tottori"
+                                },
+                                "JP-32": {
+                                    "name": "Shimane",
+                                    "name_ascii": "Shimane"
+                                },
+                                "JP-33": {
+                                    "name": "Okayama",
+                                    "name_ascii": "Okayama"
+                                },
+                                "JP-34": {
+                                    "name": "Hiroshima",
+                                    "name_ascii": "Hiroshima"
+                                },
+                                "JP-35": {
+                                    "name": "Yamaguchi",
+                                    "name_ascii": "Yamaguchi"
+                                },
+                                "JP-36": {
+                                    "name": "Tokushima",
+                                    "name_ascii": "Tokushima"
+                                },
+                                "JP-37": {
+                                    "name": "Kagawa",
+                                    "name_ascii": "Kagawa"
+                                },
+                                "JP-38": {
+                                    "name": "Ehime",
+                                    "name_ascii": "Ehime"
+                                },
+                                "JP-39": {
+                                    "name": "Kochi",
+                                    "name_ascii": "Kochi"
+                                },
+                                "JP-40": {
+                                    "name": "Fukuoka",
+                                    "name_ascii": "Fukuoka"
+                                },
+                                "JP-41": {
+                                    "name": "Saga",
+                                    "name_ascii": "Saga"
+                                },
+                                "JP-42": {
+                                    "name": "Nagasaki",
+                                    "name_ascii": "Nagasaki"
+                                },
+                                "JP-43": {
+                                    "name": "Kumamoto",
+                                    "name_ascii": "Kumamoto"
+                                },
+                                "JP-44": {
+                                    "name": "Oita",
+                                    "name_ascii": "Oita"
+                                },
+                                "JP-45": {
+                                    "name": "Miyazaki",
+                                    "name_ascii": "Miyazaki"
+                                },
+                                "JP-46": {
+                                    "name": "Kagoshima",
+                                    "name_ascii": "Kagoshima"
+                                },
+                                "JP-47": {
+                                    "name": "Okinawa",
+                                    "name_ascii": "Okinawa"
+                                }
+                            }
+                        },
+                        "tld": ".jp"
+                    }
+                },
+                "AE": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "INTERNATIONAL",
+                        "continent": "AS",
+                        "country": "アラブ首長国連邦",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "AED",
+                                "name": "アラブ首長国連邦ディルハム",
+                                "symbol": "د.إ"
+                            }
+                        },
+                        "fips": "AE",
+                        "iso3": "ARE",
+                        "iso_nr": "784",
+                        "languages": {
+                            "en": "英語",
+                            "fa": "ペルシア語",
+                            "hi": "ヒンディー語",
+                            "ur": "ウルドゥー語"
+                        },
+                        "phone": "971",
+                        "postal_code_format": "",
+                        "postal_code_regex": "",
+                        "so": "AE",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "AE-AJ": {
+                                    "name": "‘Ajmān",
+                                    "name_ascii": "'Ajman"
+                                },
+                                "AE-AZ": {
+                                    "name": "Abū Z̧aby",
+                                    "name_ascii": "Abu Zaby"
+                                },
+                                "AE-DU": {
+                                    "name": "Dubayy",
+                                    "name_ascii": "Dubayy"
+                                },
+                                "AE-FU": {
+                                    "name": "Al Fujayrah",
+                                    "name_ascii": "Al Fujayrah"
+                                },
+                                "AE-RK": {
+                                    "name": "Ra’s al Khaymah",
+                                    "name_ascii": "Ra's al Khaymah"
+                                },
+                                "AE-SH": {
+                                    "name": "Ash Shāriqah",
+                                    "name_ascii": "Ash Shariqah"
+                                },
+                                "AE-UQ": {
+                                    "name": "Umm al Qaywayn",
+                                    "name_ascii": "Umm al Qaywayn"
+                                }
+                            }
+                        },
+                        "tld": ".ae"
+                    }
+                },
+                "BR": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "INTERNATIONAL",
+                        "continent": "SA",
+                        "country": "ブラジル",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "BRL",
+                                "name": "ブラジル レアル",
+                                "symbol": "R$"
+                            }
+                        },
+                        "fips": "BR",
+                        "iso3": "BRA",
+                        "iso_nr": "76",
+                        "languages": {
+                            "en": "英語",
+                            "es": "スペイン語",
+                            "fr": "フランス語",
+                            "pt_BR": "Brazilian Portuguese"
+                        },
+                        "phone": "55",
+                        "postal_code_format": "#####-###",
+                        "postal_code_regex": "^\\d{5}-\\d{3}$",
+                        "so": "BR",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "BR-AC": {
+                                    "name": "Acre",
+                                    "name_ascii": "Acre"
+                                },
+                                "BR-AL": {
+                                    "name": "Alagoas",
+                                    "name_ascii": "Alagoas"
+                                },
+                                "BR-AM": {
+                                    "name": "Amazonas",
+                                    "name_ascii": "Amazonas"
+                                },
+                                "BR-AP": {
+                                    "name": "Amapá",
+                                    "name_ascii": "Amapa"
+                                },
+                                "BR-BA": {
+                                    "name": "Bahia",
+                                    "name_ascii": "Bahia"
+                                },
+                                "BR-CE": {
+                                    "name": "Ceará",
+                                    "name_ascii": "Ceara"
+                                },
+                                "BR-DF": {
+                                    "name": "Distrito Federal",
+                                    "name_ascii": "Distrito Federal"
+                                },
+                                "BR-ES": {
+                                    "name": "Espírito Santo",
+                                    "name_ascii": "Espirito Santo"
+                                },
+                                "BR-GO": {
+                                    "name": "Goiás",
+                                    "name_ascii": "Goias"
+                                },
+                                "BR-MA": {
+                                    "name": "Maranhão",
+                                    "name_ascii": "Maranhao"
+                                },
+                                "BR-MG": {
+                                    "name": "Minas Gerais",
+                                    "name_ascii": "Minas Gerais"
+                                },
+                                "BR-MS": {
+                                    "name": "Mato Grosso do Sul",
+                                    "name_ascii": "Mato Grosso do Sul"
+                                },
+                                "BR-MT": {
+                                    "name": "Mato Grosso",
+                                    "name_ascii": "Mato Grosso"
+                                },
+                                "BR-PA": {
+                                    "name": "Pará",
+                                    "name_ascii": "Para"
+                                },
+                                "BR-PB": {
+                                    "name": "Paraíba",
+                                    "name_ascii": "Paraiba"
+                                },
+                                "BR-PE": {
+                                    "name": "Pernambuco",
+                                    "name_ascii": "Pernambuco"
+                                },
+                                "BR-PI": {
+                                    "name": "Piauí",
+                                    "name_ascii": "Piaui"
+                                },
+                                "BR-PR": {
+                                    "name": "Paraná",
+                                    "name_ascii": "Parana"
+                                },
+                                "BR-RJ": {
+                                    "name": "Rio de Janeiro",
+                                    "name_ascii": "Rio de Janeiro"
+                                },
+                                "BR-RN": {
+                                    "name": "Rio Grande do Norte",
+                                    "name_ascii": "Rio Grande do Norte"
+                                },
+                                "BR-RO": {
+                                    "name": "Rondônia",
+                                    "name_ascii": "Rondonia"
+                                },
+                                "BR-RR": {
+                                    "name": "Roraima",
+                                    "name_ascii": "Roraima"
+                                },
+                                "BR-RS": {
+                                    "name": "Rio Grande do Sul",
+                                    "name_ascii": "Rio Grande do Sul"
+                                },
+                                "BR-SC": {
+                                    "name": "Santa Catarina",
+                                    "name_ascii": "Santa Catarina"
+                                },
+                                "BR-SE": {
+                                    "name": "Sergipe",
+                                    "name_ascii": "Sergipe"
+                                },
+                                "BR-SP": {
+                                    "name": "São Paulo",
+                                    "name_ascii": "Sao Paulo"
+                                },
+                                "BR-TO": {
+                                    "name": "Tocantins",
+                                    "name_ascii": "Tocantins"
+                                }
+                            }
+                        },
+                        "tld": ".br"
+                    }
+                }
+            }
+        },
+        "ar": {
+            "collection_type": "Illuminate\\Support\\Collection",
+            "count": 249,
+            "sha256": "f3a93f15b10fb3347aad0276b317da5f2d31c94b7e910afc93f0f534ab12e999",
+            "countries": {
+                "PL": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "INTERNATIONAL",
+                        "continent": "EU",
+                        "country": "بولندا",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "PLN",
+                                "name": "زلوتي بولندي",
+                                "symbol": "zł"
+                            }
+                        },
+                        "fips": "PL",
+                        "iso3": "POL",
+                        "iso_nr": "616",
+                        "languages": {
+                            "pl": "البولندية"
+                        },
+                        "phone": "48",
+                        "postal_code_format": "##-###",
+                        "postal_code_regex": "^\\d{2}-\\d{3}$",
+                        "so": "PL",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "PL-02": {
+                                    "name": "Dolnośląskie",
+                                    "name_ascii": "Dolnoslaskie"
+                                },
+                                "PL-04": {
+                                    "name": "Kujawsko-pomorskie",
+                                    "name_ascii": "Kujawsko-pomorskie"
+                                },
+                                "PL-06": {
+                                    "name": "Lubelskie",
+                                    "name_ascii": "Lubelskie"
+                                },
+                                "PL-08": {
+                                    "name": "Lubuskie",
+                                    "name_ascii": "Lubuskie"
+                                },
+                                "PL-10": {
+                                    "name": "Łódzkie",
+                                    "name_ascii": "Lodzkie"
+                                },
+                                "PL-12": {
+                                    "name": "Małopolskie",
+                                    "name_ascii": "Malopolskie"
+                                },
+                                "PL-14": {
+                                    "name": "Mazowieckie",
+                                    "name_ascii": "Mazowieckie"
+                                },
+                                "PL-16": {
+                                    "name": "Opolskie",
+                                    "name_ascii": "Opolskie"
+                                },
+                                "PL-18": {
+                                    "name": "Podkarpackie",
+                                    "name_ascii": "Podkarpackie"
+                                },
+                                "PL-20": {
+                                    "name": "Podlaskie",
+                                    "name_ascii": "Podlaskie"
+                                },
+                                "PL-22": {
+                                    "name": "Pomorskie",
+                                    "name_ascii": "Pomorskie"
+                                },
+                                "PL-24": {
+                                    "name": "Śląskie",
+                                    "name_ascii": "Slaskie"
+                                },
+                                "PL-26": {
+                                    "name": "Świętokrzyskie",
+                                    "name_ascii": "Swietokrzyskie"
+                                },
+                                "PL-28": {
+                                    "name": "Warmińsko-mazurskie",
+                                    "name_ascii": "Warminsko-mazurskie"
+                                },
+                                "PL-30": {
+                                    "name": "Wielkopolskie",
+                                    "name_ascii": "Wielkopolskie"
+                                },
+                                "PL-32": {
+                                    "name": "Zachodniopomorskie",
+                                    "name_ascii": "Zachodniopomorskie"
+                                }
+                            }
+                        },
+                        "tld": ".pl"
+                    }
+                },
+                "US": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "US",
+                        "continent": "NA",
+                        "country": "الولايات المتحدة",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "USD",
+                                "name": "دولار أمريكي",
+                                "symbol": "$"
+                            }
+                        },
+                        "fips": "US",
+                        "iso3": "USA",
+                        "iso_nr": "840",
+                        "languages": {
+                            "en_US": "American English",
+                            "fr": "الفرنسية",
+                            "haw": "لغة هاواي"
+                        },
+                        "phone": "1",
+                        "postal_code_format": "#####-####",
+                        "postal_code_regex": "^\\d{5}(-\\d{4})?$",
+                        "so": "US",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "US-AK": {
+                                    "name": "Alaska",
+                                    "name_ascii": "Alaska"
+                                },
+                                "US-AL": {
+                                    "name": "Alabama",
+                                    "name_ascii": "Alabama"
+                                },
+                                "US-AR": {
+                                    "name": "Arkansas",
+                                    "name_ascii": "Arkansas"
+                                },
+                                "US-AS": {
+                                    "name": "American Samoa",
+                                    "name_ascii": "American Samoa"
+                                },
+                                "US-AZ": {
+                                    "name": "Arizona",
+                                    "name_ascii": "Arizona"
+                                },
+                                "US-CA": {
+                                    "name": "California",
+                                    "name_ascii": "California"
+                                },
+                                "US-CO": {
+                                    "name": "Colorado",
+                                    "name_ascii": "Colorado"
+                                },
+                                "US-CT": {
+                                    "name": "Connecticut",
+                                    "name_ascii": "Connecticut"
+                                },
+                                "US-DC": {
+                                    "name": "District of Columbia",
+                                    "name_ascii": "District of Columbia"
+                                },
+                                "US-DE": {
+                                    "name": "Delaware",
+                                    "name_ascii": "Delaware"
+                                },
+                                "US-FL": {
+                                    "name": "Florida",
+                                    "name_ascii": "Florida"
+                                },
+                                "US-GA": {
+                                    "name": "Georgia",
+                                    "name_ascii": "Georgia"
+                                },
+                                "US-GU": {
+                                    "name": "Guam",
+                                    "name_ascii": "Guam"
+                                },
+                                "US-HI": {
+                                    "name": "Hawaii",
+                                    "name_ascii": "Hawaii"
+                                },
+                                "US-IA": {
+                                    "name": "Iowa",
+                                    "name_ascii": "Iowa"
+                                },
+                                "US-ID": {
+                                    "name": "Idaho",
+                                    "name_ascii": "Idaho"
+                                },
+                                "US-IL": {
+                                    "name": "Illinois",
+                                    "name_ascii": "Illinois"
+                                },
+                                "US-IN": {
+                                    "name": "Indiana",
+                                    "name_ascii": "Indiana"
+                                },
+                                "US-KS": {
+                                    "name": "Kansas",
+                                    "name_ascii": "Kansas"
+                                },
+                                "US-KY": {
+                                    "name": "Kentucky",
+                                    "name_ascii": "Kentucky"
+                                },
+                                "US-LA": {
+                                    "name": "Louisiana",
+                                    "name_ascii": "Louisiana"
+                                },
+                                "US-MA": {
+                                    "name": "Massachusetts",
+                                    "name_ascii": "Massachusetts"
+                                },
+                                "US-MD": {
+                                    "name": "Maryland",
+                                    "name_ascii": "Maryland"
+                                },
+                                "US-ME": {
+                                    "name": "Maine",
+                                    "name_ascii": "Maine"
+                                },
+                                "US-MI": {
+                                    "name": "Michigan",
+                                    "name_ascii": "Michigan"
+                                },
+                                "US-MN": {
+                                    "name": "Minnesota",
+                                    "name_ascii": "Minnesota"
+                                },
+                                "US-MO": {
+                                    "name": "Missouri",
+                                    "name_ascii": "Missouri"
+                                },
+                                "US-MP": {
+                                    "name": "Northern Mariana Islands",
+                                    "name_ascii": "Northern Mariana Islands"
+                                },
+                                "US-MS": {
+                                    "name": "Mississippi",
+                                    "name_ascii": "Mississippi"
+                                },
+                                "US-MT": {
+                                    "name": "Montana",
+                                    "name_ascii": "Montana"
+                                },
+                                "US-NC": {
+                                    "name": "North Carolina",
+                                    "name_ascii": "North Carolina"
+                                },
+                                "US-ND": {
+                                    "name": "North Dakota",
+                                    "name_ascii": "North Dakota"
+                                },
+                                "US-NE": {
+                                    "name": "Nebraska",
+                                    "name_ascii": "Nebraska"
+                                },
+                                "US-NH": {
+                                    "name": "New Hampshire",
+                                    "name_ascii": "New Hampshire"
+                                },
+                                "US-NJ": {
+                                    "name": "New Jersey",
+                                    "name_ascii": "New Jersey"
+                                },
+                                "US-NM": {
+                                    "name": "New Mexico",
+                                    "name_ascii": "New Mexico"
+                                },
+                                "US-NV": {
+                                    "name": "Nevada",
+                                    "name_ascii": "Nevada"
+                                },
+                                "US-NY": {
+                                    "name": "New York",
+                                    "name_ascii": "New York"
+                                },
+                                "US-OH": {
+                                    "name": "Ohio",
+                                    "name_ascii": "Ohio"
+                                },
+                                "US-OK": {
+                                    "name": "Oklahoma",
+                                    "name_ascii": "Oklahoma"
+                                },
+                                "US-OR": {
+                                    "name": "Oregon",
+                                    "name_ascii": "Oregon"
+                                },
+                                "US-PA": {
+                                    "name": "Pennsylvania",
+                                    "name_ascii": "Pennsylvania"
+                                },
+                                "US-PR": {
+                                    "name": "Puerto Rico",
+                                    "name_ascii": "Puerto Rico"
+                                },
+                                "US-RI": {
+                                    "name": "Rhode Island",
+                                    "name_ascii": "Rhode Island"
+                                },
+                                "US-SC": {
+                                    "name": "South Carolina",
+                                    "name_ascii": "South Carolina"
+                                },
+                                "US-SD": {
+                                    "name": "South Dakota",
+                                    "name_ascii": "South Dakota"
+                                },
+                                "US-TN": {
+                                    "name": "Tennessee",
+                                    "name_ascii": "Tennessee"
+                                },
+                                "US-TX": {
+                                    "name": "Texas",
+                                    "name_ascii": "Texas"
+                                },
+                                "US-UM": {
+                                    "name": "United States Minor Outlying Islands",
+                                    "name_ascii": "United States Minor Outlying Islands"
+                                },
+                                "US-UT": {
+                                    "name": "Utah",
+                                    "name_ascii": "Utah"
+                                },
+                                "US-VA": {
+                                    "name": "Virginia",
+                                    "name_ascii": "Virginia"
+                                },
+                                "US-VI": {
+                                    "name": "Virgin Islands",
+                                    "name_ascii": "Virgin Islands"
+                                },
+                                "US-VT": {
+                                    "name": "Vermont",
+                                    "name_ascii": "Vermont"
+                                },
+                                "US-WA": {
+                                    "name": "Washington",
+                                    "name_ascii": "Washington"
+                                },
+                                "US-WI": {
+                                    "name": "Wisconsin",
+                                    "name_ascii": "Wisconsin"
+                                },
+                                "US-WV": {
+                                    "name": "West Virginia",
+                                    "name_ascii": "West Virginia"
+                                },
+                                "US-WY": {
+                                    "name": "Wyoming",
+                                    "name_ascii": "Wyoming"
+                                }
+                            }
+                        },
+                        "tld": ".us"
+                    }
+                },
+                "JP": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "INTERNATIONAL",
+                        "continent": "AS",
+                        "country": "اليابان",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "JPY",
+                                "name": "ين ياباني",
+                                "symbol": "¥"
+                            }
+                        },
+                        "fips": "JA",
+                        "iso3": "JPN",
+                        "iso_nr": "392",
+                        "languages": {
+                            "ja": "اليابانية"
+                        },
+                        "phone": "81",
+                        "postal_code_format": "###-####",
+                        "postal_code_regex": "^\\d{3}-\\d{4}$",
+                        "so": "JP",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "JP-01": {
+                                    "name": "Hokkaido",
+                                    "name_ascii": "Hokkaido"
+                                },
+                                "JP-02": {
+                                    "name": "Aomori",
+                                    "name_ascii": "Aomori"
+                                },
+                                "JP-03": {
+                                    "name": "Iwate",
+                                    "name_ascii": "Iwate"
+                                },
+                                "JP-04": {
+                                    "name": "Miyagi",
+                                    "name_ascii": "Miyagi"
+                                },
+                                "JP-05": {
+                                    "name": "Akita",
+                                    "name_ascii": "Akita"
+                                },
+                                "JP-06": {
+                                    "name": "Yamagata",
+                                    "name_ascii": "Yamagata"
+                                },
+                                "JP-07": {
+                                    "name": "Fukushima",
+                                    "name_ascii": "Fukushima"
+                                },
+                                "JP-08": {
+                                    "name": "Ibaraki",
+                                    "name_ascii": "Ibaraki"
+                                },
+                                "JP-09": {
+                                    "name": "Tochigi",
+                                    "name_ascii": "Tochigi"
+                                },
+                                "JP-10": {
+                                    "name": "Gunma",
+                                    "name_ascii": "Gunma"
+                                },
+                                "JP-11": {
+                                    "name": "Saitama",
+                                    "name_ascii": "Saitama"
+                                },
+                                "JP-12": {
+                                    "name": "Chiba",
+                                    "name_ascii": "Chiba"
+                                },
+                                "JP-13": {
+                                    "name": "Tokyo",
+                                    "name_ascii": "Tokyo"
+                                },
+                                "JP-14": {
+                                    "name": "Kanagawa",
+                                    "name_ascii": "Kanagawa"
+                                },
+                                "JP-15": {
+                                    "name": "Niigata",
+                                    "name_ascii": "Niigata"
+                                },
+                                "JP-16": {
+                                    "name": "Toyama",
+                                    "name_ascii": "Toyama"
+                                },
+                                "JP-17": {
+                                    "name": "Ishikawa",
+                                    "name_ascii": "Ishikawa"
+                                },
+                                "JP-18": {
+                                    "name": "Fukui",
+                                    "name_ascii": "Fukui"
+                                },
+                                "JP-19": {
+                                    "name": "Yamanashi",
+                                    "name_ascii": "Yamanashi"
+                                },
+                                "JP-20": {
+                                    "name": "Nagano",
+                                    "name_ascii": "Nagano"
+                                },
+                                "JP-21": {
+                                    "name": "Gifu",
+                                    "name_ascii": "Gifu"
+                                },
+                                "JP-22": {
+                                    "name": "Shizuoka",
+                                    "name_ascii": "Shizuoka"
+                                },
+                                "JP-23": {
+                                    "name": "Aichi",
+                                    "name_ascii": "Aichi"
+                                },
+                                "JP-24": {
+                                    "name": "Mie",
+                                    "name_ascii": "Mie"
+                                },
+                                "JP-25": {
+                                    "name": "Shiga",
+                                    "name_ascii": "Shiga"
+                                },
+                                "JP-26": {
+                                    "name": "Kyoto",
+                                    "name_ascii": "Kyoto"
+                                },
+                                "JP-27": {
+                                    "name": "Osaka",
+                                    "name_ascii": "Osaka"
+                                },
+                                "JP-28": {
+                                    "name": "Hyogo",
+                                    "name_ascii": "Hyogo"
+                                },
+                                "JP-29": {
+                                    "name": "Nara",
+                                    "name_ascii": "Nara"
+                                },
+                                "JP-30": {
+                                    "name": "Wakayama",
+                                    "name_ascii": "Wakayama"
+                                },
+                                "JP-31": {
+                                    "name": "Tottori",
+                                    "name_ascii": "Tottori"
+                                },
+                                "JP-32": {
+                                    "name": "Shimane",
+                                    "name_ascii": "Shimane"
+                                },
+                                "JP-33": {
+                                    "name": "Okayama",
+                                    "name_ascii": "Okayama"
+                                },
+                                "JP-34": {
+                                    "name": "Hiroshima",
+                                    "name_ascii": "Hiroshima"
+                                },
+                                "JP-35": {
+                                    "name": "Yamaguchi",
+                                    "name_ascii": "Yamaguchi"
+                                },
+                                "JP-36": {
+                                    "name": "Tokushima",
+                                    "name_ascii": "Tokushima"
+                                },
+                                "JP-37": {
+                                    "name": "Kagawa",
+                                    "name_ascii": "Kagawa"
+                                },
+                                "JP-38": {
+                                    "name": "Ehime",
+                                    "name_ascii": "Ehime"
+                                },
+                                "JP-39": {
+                                    "name": "Kochi",
+                                    "name_ascii": "Kochi"
+                                },
+                                "JP-40": {
+                                    "name": "Fukuoka",
+                                    "name_ascii": "Fukuoka"
+                                },
+                                "JP-41": {
+                                    "name": "Saga",
+                                    "name_ascii": "Saga"
+                                },
+                                "JP-42": {
+                                    "name": "Nagasaki",
+                                    "name_ascii": "Nagasaki"
+                                },
+                                "JP-43": {
+                                    "name": "Kumamoto",
+                                    "name_ascii": "Kumamoto"
+                                },
+                                "JP-44": {
+                                    "name": "Oita",
+                                    "name_ascii": "Oita"
+                                },
+                                "JP-45": {
+                                    "name": "Miyazaki",
+                                    "name_ascii": "Miyazaki"
+                                },
+                                "JP-46": {
+                                    "name": "Kagoshima",
+                                    "name_ascii": "Kagoshima"
+                                },
+                                "JP-47": {
+                                    "name": "Okinawa",
+                                    "name_ascii": "Okinawa"
+                                }
+                            }
+                        },
+                        "tld": ".jp"
+                    }
+                },
+                "AE": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "INTERNATIONAL",
+                        "continent": "AS",
+                        "country": "الإمارات العربية المتحدة",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "AED",
+                                "name": "درهم إماراتي",
+                                "symbol": "د.إ"
+                            }
+                        },
+                        "fips": "AE",
+                        "iso3": "ARE",
+                        "iso_nr": "784",
+                        "languages": {
+                            "en": "الإنجليزية",
+                            "fa": "الفارسية",
+                            "hi": "الهندية",
+                            "ur": "الأوردية"
+                        },
+                        "phone": "971",
+                        "postal_code_format": "",
+                        "postal_code_regex": "",
+                        "so": "AE",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "AE-AJ": {
+                                    "name": "‘Ajmān",
+                                    "name_ascii": "'Ajman"
+                                },
+                                "AE-AZ": {
+                                    "name": "Abū Z̧aby",
+                                    "name_ascii": "Abu Zaby"
+                                },
+                                "AE-DU": {
+                                    "name": "Dubayy",
+                                    "name_ascii": "Dubayy"
+                                },
+                                "AE-FU": {
+                                    "name": "Al Fujayrah",
+                                    "name_ascii": "Al Fujayrah"
+                                },
+                                "AE-RK": {
+                                    "name": "Ra’s al Khaymah",
+                                    "name_ascii": "Ra's al Khaymah"
+                                },
+                                "AE-SH": {
+                                    "name": "Ash Shāriqah",
+                                    "name_ascii": "Ash Shariqah"
+                                },
+                                "AE-UQ": {
+                                    "name": "Umm al Qaywayn",
+                                    "name_ascii": "Umm al Qaywayn"
+                                }
+                            }
+                        },
+                        "tld": ".ae"
+                    }
+                },
+                "BR": {
+                    "__type": "stdClass",
+                    "properties": {
+                        "address_format": "INTERNATIONAL",
+                        "continent": "SA",
+                        "country": "البرازيل",
+                        "currency": {
+                            "__type": "stdClass",
+                            "properties": {
+                                "code": "BRL",
+                                "name": "ريال برازيلي",
+                                "symbol": "R$"
+                            }
+                        },
+                        "fips": "BR",
+                        "iso3": "BRA",
+                        "iso_nr": "76",
+                        "languages": {
+                            "en": "الإنجليزية",
+                            "es": "الإسبانية",
+                            "fr": "الفرنسية",
+                            "pt_BR": "البرتغالية البرازيلية"
+                        },
+                        "phone": "55",
+                        "postal_code_format": "#####-###",
+                        "postal_code_regex": "^\\d{5}-\\d{3}$",
+                        "so": "BR",
+                        "subdivision_iso3166": {
+                            "__type": "Illuminate\\Support\\Collection",
+                            "items": {
+                                "BR-AC": {
+                                    "name": "Acre",
+                                    "name_ascii": "Acre"
+                                },
+                                "BR-AL": {
+                                    "name": "Alagoas",
+                                    "name_ascii": "Alagoas"
+                                },
+                                "BR-AM": {
+                                    "name": "Amazonas",
+                                    "name_ascii": "Amazonas"
+                                },
+                                "BR-AP": {
+                                    "name": "Amapá",
+                                    "name_ascii": "Amapa"
+                                },
+                                "BR-BA": {
+                                    "name": "Bahia",
+                                    "name_ascii": "Bahia"
+                                },
+                                "BR-CE": {
+                                    "name": "Ceará",
+                                    "name_ascii": "Ceara"
+                                },
+                                "BR-DF": {
+                                    "name": "Distrito Federal",
+                                    "name_ascii": "Distrito Federal"
+                                },
+                                "BR-ES": {
+                                    "name": "Espírito Santo",
+                                    "name_ascii": "Espirito Santo"
+                                },
+                                "BR-GO": {
+                                    "name": "Goiás",
+                                    "name_ascii": "Goias"
+                                },
+                                "BR-MA": {
+                                    "name": "Maranhão",
+                                    "name_ascii": "Maranhao"
+                                },
+                                "BR-MG": {
+                                    "name": "Minas Gerais",
+                                    "name_ascii": "Minas Gerais"
+                                },
+                                "BR-MS": {
+                                    "name": "Mato Grosso do Sul",
+                                    "name_ascii": "Mato Grosso do Sul"
+                                },
+                                "BR-MT": {
+                                    "name": "Mato Grosso",
+                                    "name_ascii": "Mato Grosso"
+                                },
+                                "BR-PA": {
+                                    "name": "Pará",
+                                    "name_ascii": "Para"
+                                },
+                                "BR-PB": {
+                                    "name": "Paraíba",
+                                    "name_ascii": "Paraiba"
+                                },
+                                "BR-PE": {
+                                    "name": "Pernambuco",
+                                    "name_ascii": "Pernambuco"
+                                },
+                                "BR-PI": {
+                                    "name": "Piauí",
+                                    "name_ascii": "Piaui"
+                                },
+                                "BR-PR": {
+                                    "name": "Paraná",
+                                    "name_ascii": "Parana"
+                                },
+                                "BR-RJ": {
+                                    "name": "Rio de Janeiro",
+                                    "name_ascii": "Rio de Janeiro"
+                                },
+                                "BR-RN": {
+                                    "name": "Rio Grande do Norte",
+                                    "name_ascii": "Rio Grande do Norte"
+                                },
+                                "BR-RO": {
+                                    "name": "Rondônia",
+                                    "name_ascii": "Rondonia"
+                                },
+                                "BR-RR": {
+                                    "name": "Roraima",
+                                    "name_ascii": "Roraima"
+                                },
+                                "BR-RS": {
+                                    "name": "Rio Grande do Sul",
+                                    "name_ascii": "Rio Grande do Sul"
+                                },
+                                "BR-SC": {
+                                    "name": "Santa Catarina",
+                                    "name_ascii": "Santa Catarina"
+                                },
+                                "BR-SE": {
+                                    "name": "Sergipe",
+                                    "name_ascii": "Sergipe"
+                                },
+                                "BR-SP": {
+                                    "name": "São Paulo",
+                                    "name_ascii": "Sao Paulo"
+                                },
+                                "BR-TO": {
+                                    "name": "Tocantins",
+                                    "name_ascii": "Tocantins"
+                                }
+                            }
+                        },
+                        "tld": ".br"
+                    }
+                }
+            }
+        }
+    },
+    "cache_and_country_argument": {
+        "first_pl_country": "Polska",
+        "second_en_country_on_same_instance": "Polska",
+        "lowercase_country": "Poland",
+        "invalid_country_returns": {
+            "type": "Illuminate\\Support\\Collection",
+            "count": 249
+        }
+    }
+}

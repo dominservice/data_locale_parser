@@ -1,0 +1,2263 @@
+{
+    "schema": 1,
+    "values": {
+        "languages": {
+            "af": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "af_NA": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "af_ZA": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ak": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ak_GH": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "am": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "am_ET": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ar": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_AE": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_BH": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_DJ": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_DZ": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_EG": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_EH": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_ER": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_IL": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_IQ": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_JO": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_KM": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_KW": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_LB": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_LY": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_MA": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_MR": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_OM": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_PS": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_QA": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_SA": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_SD": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_SO": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_SS": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_SY": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_TD": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_TN": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "ar_YE": {
+                "root": "الجذر",
+                "azb": "South Azerbaijani"
+            },
+            "as": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "as_IN": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "az": {
+                "root": "rut dili",
+                "azb": "South Azerbaijani"
+            },
+            "az_AZ": {
+                "root": "rut dili",
+                "azb": "South Azerbaijani"
+            },
+            "az_Cyrl": {
+                "root": "rut dili",
+                "azb": "South Azerbaijani"
+            },
+            "az_Cyrl_AZ": {
+                "root": "rut dili",
+                "azb": "South Azerbaijani"
+            },
+            "az_Latn": {
+                "root": "rut dili",
+                "azb": "South Azerbaijani"
+            },
+            "az_Latn_AZ": {
+                "root": "rut dili",
+                "azb": "South Azerbaijani"
+            },
+            "be": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "be_BY": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "bg": {
+                "root": "роот",
+                "azb": "South Azerbaijani"
+            },
+            "bg_BG": {
+                "root": "роот",
+                "azb": "South Azerbaijani"
+            },
+            "bm": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "bm_Latn": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "bm_Latn_ML": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "bn": {
+                "root": "মূল",
+                "azb": "South Azerbaijani"
+            },
+            "bn_BD": {
+                "root": "মূল",
+                "azb": "South Azerbaijani"
+            },
+            "bn_IN": {
+                "root": "মূল",
+                "azb": "South Azerbaijani"
+            },
+            "bo": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "bo_CN": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "bo_IN": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "br": {
+                "root": "Root",
+                "azb": "azeri ar Su"
+            },
+            "br_FR": {
+                "root": "Root",
+                "azb": "azeri ar Su"
+            },
+            "bs": {
+                "root": "run",
+                "azb": "South Azerbaijani"
+            },
+            "bs_BA": {
+                "root": "run",
+                "azb": "South Azerbaijani"
+            },
+            "bs_Cyrl": {
+                "root": "рут",
+                "azb": "South Azerbaijani"
+            },
+            "bs_Cyrl_BA": {
+                "root": "рут",
+                "azb": "South Azerbaijani"
+            },
+            "bs_Latn": {
+                "root": "run",
+                "azb": "South Azerbaijani"
+            },
+            "bs_Latn_BA": {
+                "root": "run",
+                "azb": "South Azerbaijani"
+            },
+            "ca": {
+                "root": "arrel",
+                "azb": "South Azerbaijani"
+            },
+            "ca_AD": {
+                "root": "arrel",
+                "azb": "South Azerbaijani"
+            },
+            "ca_ES": {
+                "root": "arrel",
+                "azb": "South Azerbaijani"
+            },
+            "ca_FR": {
+                "root": "arrel",
+                "azb": "South Azerbaijani"
+            },
+            "ca_IT": {
+                "root": "arrel",
+                "azb": "South Azerbaijani"
+            },
+            "cs": {
+                "root": "Root",
+                "azb": "ázerbájdžánština (jižní)"
+            },
+            "cs_CZ": {
+                "root": "Root",
+                "azb": "ázerbájdžánština (jižní)"
+            },
+            "cy": {
+                "root": "y Gwraidd",
+                "azb": "Aserbaijaneg Deheuol"
+            },
+            "cy_GB": {
+                "root": "y Gwraidd",
+                "azb": "Aserbaijaneg Deheuol"
+            },
+            "da": {
+                "root": "rot",
+                "azb": "South Azerbaijani"
+            },
+            "da_DK": {
+                "root": "rot",
+                "azb": "South Azerbaijani"
+            },
+            "da_GL": {
+                "root": "rot",
+                "azb": "South Azerbaijani"
+            },
+            "de": {
+                "root": "Root",
+                "azb": "Südaserbaidschanisch"
+            },
+            "de_AT": {
+                "root": "Root",
+                "azb": "Südaserbaidschanisch"
+            },
+            "de_BE": {
+                "root": "Root",
+                "azb": "Südaserbaidschanisch"
+            },
+            "de_CH": {
+                "root": "Root",
+                "azb": "Südaserbaidschanisch"
+            },
+            "de_DE": {
+                "root": "Root",
+                "azb": "Südaserbaidschanisch"
+            },
+            "de_LI": {
+                "root": "Root",
+                "azb": "Südaserbaidschanisch"
+            },
+            "de_LU": {
+                "root": "Root",
+                "azb": "Südaserbaidschanisch"
+            },
+            "dz": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "dz_BT": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ee": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ee_GH": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ee_TG": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "el": {
+                "root": "Ρουτ",
+                "azb": "South Azerbaijani"
+            },
+            "el_CY": {
+                "root": "Ρουτ",
+                "azb": "South Azerbaijani"
+            },
+            "el_GR": {
+                "root": "Ρουτ",
+                "azb": "South Azerbaijani"
+            },
+            "en": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_AG": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_AI": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_AS": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_AU": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_BB": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_BE": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_BM": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_BS": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_BW": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_BZ": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_CA": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_CC": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_CK": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_CM": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_CX": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_DG": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_DM": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_ER": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_FJ": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_FK": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_FM": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_GB": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_GD": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_GG": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_GH": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_GI": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_GM": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_GU": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_GY": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_HK": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_IE": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_IM": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_IN": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_IO": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_JE": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_JM": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_KE": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_KI": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_KN": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_KY": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_LC": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_LR": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_LS": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_MG": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_MH": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_MO": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_MP": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_MS": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_MT": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_MU": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_MW": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_MY": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_NA": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_NF": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_NG": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_NR": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_NU": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_NZ": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_PG": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_PH": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_PK": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_PN": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_PR": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_PW": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_RW": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_SB": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_SC": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_SD": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_SG": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_SH": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_SL": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_SS": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_SX": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_SZ": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_TC": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_TK": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_TO": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_TT": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_TV": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_TZ": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_UG": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_UM": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_US": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_VC": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_VG": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_VI": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_VU": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_WS": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_ZA": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_ZM": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "en_ZW": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "eo": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "es": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_AR": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_BO": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_CL": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_CO": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_CR": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_CU": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_DO": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_EA": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_EC": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_ES": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_GQ": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_GT": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_HN": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_IC": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_MX": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_NI": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_PA": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_PE": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_PH": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_PR": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_PY": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_SV": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_US": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_UY": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "es_VE": {
+                "root": "raíz",
+                "azb": "South Azerbaijani"
+            },
+            "et": {
+                "root": "root",
+                "azb": "South Azerbaijani"
+            },
+            "et_EE": {
+                "root": "root",
+                "azb": "South Azerbaijani"
+            },
+            "eu": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "eu_ES": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "fa": {
+                "root": "ریشه",
+                "azb": "ترکی آذربایجانی ایران"
+            },
+            "fa_AF": {
+                "root": "ریشه",
+                "azb": "ترکی آذربایجانی ایران"
+            },
+            "fa_IR": {
+                "root": "ریشه",
+                "azb": "ترکی آذربایجانی ایران"
+            },
+            "ff": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ff_CM": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ff_GN": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ff_MR": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ff_SN": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "fi": {
+                "root": "juuri",
+                "azb": "eteläazeri"
+            },
+            "fi_FI": {
+                "root": "juuri",
+                "azb": "eteläazeri"
+            },
+            "fo": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "fo_FO": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "fr": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_BE": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_BF": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_BI": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_BJ": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_BL": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_CA": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_CD": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_CF": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_CG": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_CH": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_CI": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_CM": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_DJ": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_DZ": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_FR": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_GA": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_GF": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_GN": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_GP": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_GQ": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_HT": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_KM": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_LU": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_MA": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_MC": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_MF": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_MG": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_ML": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_MQ": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_MR": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_MU": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_NC": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_NE": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_PF": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_PM": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_RE": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_RW": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_SC": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_SN": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_SY": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_TD": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_TG": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_TN": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_VU": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_WF": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fr_YT": {
+                "root": "racine",
+                "azb": "South Azerbaijani"
+            },
+            "fy": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "fy_NL": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ga": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ga_IE": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "gd": {
+                "root": "Root",
+                "azb": "Asarbaideànais Dheasach"
+            },
+            "gd_GB": {
+                "root": "Root",
+                "azb": "Asarbaideànais Dheasach"
+            },
+            "gl": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "gl_ES": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "gu": {
+                "root": "મૂલ",
+                "azb": "દક્ષિણ ઝરબૈજાની"
+            },
+            "gu_IN": {
+                "root": "મૂલ",
+                "azb": "દક્ષિણ ઝરબૈજાની"
+            },
+            "gv": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "gv_IM": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ha": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ha_GH": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ha_Latn": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ha_Latn_GH": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ha_Latn_NE": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ha_Latn_NG": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ha_NE": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ha_NG": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "he": {
+                "root": "רוט",
+                "azb": "South Azerbaijani"
+            },
+            "he_IL": {
+                "root": "רוט",
+                "azb": "South Azerbaijani"
+            },
+            "hi": {
+                "root": "रूट",
+                "azb": "South Azerbaijani"
+            },
+            "hi_IN": {
+                "root": "रूट",
+                "azb": "South Azerbaijani"
+            },
+            "hr": {
+                "root": "korijenski",
+                "azb": "South Azerbaijani"
+            },
+            "hr_BA": {
+                "root": "korijenski",
+                "azb": "South Azerbaijani"
+            },
+            "hr_HR": {
+                "root": "korijenski",
+                "azb": "South Azerbaijani"
+            },
+            "hu": {
+                "root": "ősi",
+                "azb": "South Azerbaijani"
+            },
+            "hu_HU": {
+                "root": "ősi",
+                "azb": "South Azerbaijani"
+            },
+            "hy": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "hy_AM": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "id": {
+                "root": "Root",
+                "azb": "Azerbaijani Selatan"
+            },
+            "id_ID": {
+                "root": "Root",
+                "azb": "Azerbaijani Selatan"
+            },
+            "ig": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ig_NG": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ii": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ii_CN": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "is": {
+                "root": "rót",
+                "azb": "South Azerbaijani"
+            },
+            "is_IS": {
+                "root": "rót",
+                "azb": "South Azerbaijani"
+            },
+            "it": {
+                "root": "root",
+                "azb": "azero meridionale"
+            },
+            "it_CH": {
+                "root": "root",
+                "azb": "azero meridionale"
+            },
+            "it_IT": {
+                "root": "root",
+                "azb": "azero meridionale"
+            },
+            "it_SM": {
+                "root": "root",
+                "azb": "azero meridionale"
+            },
+            "ja": {
+                "root": "ルート",
+                "azb": "南アゼルバイジャン語"
+            },
+            "ja_JP": {
+                "root": "ルート",
+                "azb": "南アゼルバイジャン語"
+            },
+            "ka": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ka_GE": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ki": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ki_KE": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "kk": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "kk_Cyrl": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "kk_Cyrl_KZ": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "kk_KZ": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "kl": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "kl_GL": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "km": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "km_KH": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "kn": {
+                "root": "ರೂಟ್",
+                "azb": "South Azerbaijani"
+            },
+            "kn_IN": {
+                "root": "ರೂಟ್",
+                "azb": "South Azerbaijani"
+            },
+            "ko": {
+                "root": "어근",
+                "azb": "남아제르바이잔어"
+            },
+            "ko_KP": {
+                "root": "어근",
+                "azb": "남아제르바이잔어"
+            },
+            "ko_KR": {
+                "root": "어근",
+                "azb": "남아제르바이잔어"
+            },
+            "ks": {
+                "root": "روٗٹ",
+                "azb": "South Azerbaijani"
+            },
+            "ks_Arab": {
+                "root": "روٗٹ",
+                "azb": "South Azerbaijani"
+            },
+            "ks_Arab_IN": {
+                "root": "روٗٹ",
+                "azb": "South Azerbaijani"
+            },
+            "ks_IN": {
+                "root": "روٗٹ",
+                "azb": "South Azerbaijani"
+            },
+            "kw": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "kw_GB": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ky": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ky_Cyrl": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ky_Cyrl_KG": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ky_KG": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "lb": {
+                "root": "Root",
+                "azb": "Süd-Aserbaidschanesch"
+            },
+            "lb_LU": {
+                "root": "Root",
+                "azb": "Süd-Aserbaidschanesch"
+            },
+            "lg": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "lg_UG": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ln": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ln_AO": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ln_CD": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ln_CF": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ln_CG": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "lo": {
+                "root": "ລູດ",
+                "azb": "South Azerbaijani"
+            },
+            "lo_LA": {
+                "root": "ລູດ",
+                "azb": "South Azerbaijani"
+            },
+            "lt": {
+                "root": "rūt",
+                "azb": "pietų Azerbaidžano"
+            },
+            "lt_LT": {
+                "root": "rūt",
+                "azb": "pietų Azerbaidžano"
+            },
+            "lu": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "lu_CD": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "lv": {
+                "root": "sakne",
+                "azb": "South Azerbaijani"
+            },
+            "lv_LV": {
+                "root": "sakne",
+                "azb": "South Azerbaijani"
+            },
+            "mg": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "mg_MG": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "mk": {
+                "root": "корен",
+                "azb": "јужноазербејџански"
+            },
+            "mk_MK": {
+                "root": "корен",
+                "azb": "јужноазербејџански"
+            },
+            "ml": {
+                "root": "മൂലഭാഷ",
+                "azb": "South Azerbaijani"
+            },
+            "ml_IN": {
+                "root": "മൂലഭാഷ",
+                "azb": "South Azerbaijani"
+            },
+            "mn": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "mn_Cyrl": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "mn_Cyrl_MN": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "mn_MN": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "mr": {
+                "root": "रूट",
+                "azb": "South Azerbaijani"
+            },
+            "mr_IN": {
+                "root": "रूट",
+                "azb": "South Azerbaijani"
+            },
+            "ms": {
+                "root": "Root",
+                "azb": "Azerbaijan Selatan"
+            },
+            "ms_BN": {
+                "root": "Root",
+                "azb": "Azerbaijan Selatan"
+            },
+            "ms_Latn": {
+                "root": "Root",
+                "azb": "Azerbaijan Selatan"
+            },
+            "ms_Latn_BN": {
+                "root": "Root",
+                "azb": "Azerbaijan Selatan"
+            },
+            "ms_Latn_MY": {
+                "root": "Root",
+                "azb": "Azerbaijan Selatan"
+            },
+            "ms_Latn_SG": {
+                "root": "Root",
+                "azb": "Azerbaijan Selatan"
+            },
+            "ms_MY": {
+                "root": "Root",
+                "azb": "Azerbaijan Selatan"
+            },
+            "ms_SG": {
+                "root": "Root",
+                "azb": "Azerbaijan Selatan"
+            },
+            "mt": {
+                "root": "Għerq",
+                "azb": "South Azerbaijani"
+            },
+            "mt_MT": {
+                "root": "Għerq",
+                "azb": "South Azerbaijani"
+            },
+            "my": {
+                "root": "မူလရင်းမြစ်",
+                "azb": "South Azerbaijani"
+            },
+            "my_MM": {
+                "root": "မူလရင်းမြစ်",
+                "azb": "South Azerbaijani"
+            },
+            "nb": {
+                "root": "rot",
+                "azb": "South Azerbaijani"
+            },
+            "nb_NO": {
+                "root": "rot",
+                "azb": "South Azerbaijani"
+            },
+            "nb_SJ": {
+                "root": "rot",
+                "azb": "South Azerbaijani"
+            },
+            "nd": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "nd_ZW": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ne": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ne_IN": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ne_NP": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "nl": {
+                "root": "Root",
+                "azb": "Zuid-Azerbeidzjaans Arabisch"
+            },
+            "nl_AW": {
+                "root": "Root",
+                "azb": "Zuid-Azerbeidzjaans Arabisch"
+            },
+            "nl_BE": {
+                "root": "Root",
+                "azb": "Zuid-Azerbeidzjaans Arabisch"
+            },
+            "nl_BQ": {
+                "root": "Root",
+                "azb": "Zuid-Azerbeidzjaans Arabisch"
+            },
+            "nl_CW": {
+                "root": "Root",
+                "azb": "Zuid-Azerbeidzjaans Arabisch"
+            },
+            "nl_NL": {
+                "root": "Root",
+                "azb": "Zuid-Azerbeidzjaans Arabisch"
+            },
+            "nl_SR": {
+                "root": "Root",
+                "azb": "Zuid-Azerbeidzjaans Arabisch"
+            },
+            "nl_SX": {
+                "root": "Root",
+                "azb": "Zuid-Azerbeidzjaans Arabisch"
+            },
+            "nn": {
+                "root": "rot",
+                "azb": "South Azerbaijani"
+            },
+            "nn_NO": {
+                "root": "rot",
+                "azb": "South Azerbaijani"
+            },
+            "no": {
+                "root": "rot",
+                "azb": "South Azerbaijani"
+            },
+            "no_NO": {
+                "root": "rot",
+                "azb": "South Azerbaijani"
+            },
+            "om": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "om_ET": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "om_KE": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "or": {
+                "root": "ମୂଳ",
+                "azb": "South Azerbaijani"
+            },
+            "or_IN": {
+                "root": "ମୂଳ",
+                "azb": "South Azerbaijani"
+            },
+            "os": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "os_GE": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "os_RU": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "pa": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "pa_Arab": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "pa_Arab_PK": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "pa_Guru": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "pa_Guru_IN": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "pa_IN": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "pa_PK": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "pl": {
+                "root": "język rdzenny",
+                "azb": "południowoazerski"
+            },
+            "pl_PL": {
+                "root": "język rdzenny",
+                "azb": "południowoazerski"
+            },
+            "ps": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ps_AF": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "pt": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "pt_AO": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "pt_BR": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "pt_CV": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "pt_GW": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "pt_MO": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "pt_MZ": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "pt_PT": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "pt_ST": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "pt_TL": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "qu": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "qu_BO": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "qu_EC": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "qu_PE": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "rm": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "rm_CH": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "rn": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "rn_BI": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ro": {
+                "root": "root",
+                "azb": "South Azerbaijani"
+            },
+            "ro_MD": {
+                "root": "root",
+                "azb": "South Azerbaijani"
+            },
+            "ro_RO": {
+                "root": "root",
+                "azb": "South Azerbaijani"
+            },
+            "ru": {
+                "root": "корневой язык",
+                "azb": "South Azerbaijani"
+            },
+            "ru_BY": {
+                "root": "корневой язык",
+                "azb": "South Azerbaijani"
+            },
+            "ru_KG": {
+                "root": "корневой язык",
+                "azb": "South Azerbaijani"
+            },
+            "ru_KZ": {
+                "root": "корневой язык",
+                "azb": "South Azerbaijani"
+            },
+            "ru_MD": {
+                "root": "корневой язык",
+                "azb": "South Azerbaijani"
+            },
+            "ru_RU": {
+                "root": "корневой язык",
+                "azb": "South Azerbaijani"
+            },
+            "ru_UA": {
+                "root": "корневой язык",
+                "azb": "South Azerbaijani"
+            },
+            "rw": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "rw_RW": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "se": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "se_FI": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "se_NO": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "se_SE": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "sg": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "sg_CF": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "sh": {
+                "root": "Rut",
+                "azb": "South Azerbaijani"
+            },
+            "sh_BA": {
+                "root": "Rut",
+                "azb": "South Azerbaijani"
+            },
+            "si": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "si_LK": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "sk": {
+                "root": "koreň",
+                "azb": "South Azerbaijani"
+            },
+            "sk_SK": {
+                "root": "koreň",
+                "azb": "South Azerbaijani"
+            },
+            "sl": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "sl_SI": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "sn": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "sn_ZW": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "so": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "so_DJ": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "so_ET": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "so_KE": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "so_SO": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "sq": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "sq_AL": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "sq_MK": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "sq_XK": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "sr": {
+                "root": "Рут",
+                "azb": "South Azerbaijani"
+            },
+            "sr_BA": {
+                "root": "Рут",
+                "azb": "South Azerbaijani"
+            },
+            "sr_Cyrl": {
+                "root": "Рут",
+                "azb": "South Azerbaijani"
+            },
+            "sr_Cyrl_BA": {
+                "root": "Рут",
+                "azb": "South Azerbaijani"
+            },
+            "sr_Cyrl_ME": {
+                "root": "Рут",
+                "azb": "South Azerbaijani"
+            },
+            "sr_Cyrl_RS": {
+                "root": "Рут",
+                "azb": "South Azerbaijani"
+            },
+            "sr_Cyrl_XK": {
+                "root": "Рут",
+                "azb": "South Azerbaijani"
+            },
+            "sr_Latn": {
+                "root": "Rut",
+                "azb": "South Azerbaijani"
+            },
+            "sr_Latn_BA": {
+                "root": "Rut",
+                "azb": "South Azerbaijani"
+            },
+            "sr_Latn_ME": {
+                "root": "Rut",
+                "azb": "South Azerbaijani"
+            },
+            "sr_Latn_RS": {
+                "root": "Rut",
+                "azb": "South Azerbaijani"
+            },
+            "sr_Latn_XK": {
+                "root": "Rut",
+                "azb": "South Azerbaijani"
+            },
+            "sr_ME": {
+                "root": "Рут",
+                "azb": "South Azerbaijani"
+            },
+            "sr_RS": {
+                "root": "Рут",
+                "azb": "South Azerbaijani"
+            },
+            "sr_XK": {
+                "root": "Рут",
+                "azb": "South Azerbaijani"
+            },
+            "sv": {
+                "root": "rot",
+                "azb": "sydazerbadjanska"
+            },
+            "sv_AX": {
+                "root": "rot",
+                "azb": "sydazerbadjanska"
+            },
+            "sv_FI": {
+                "root": "rot",
+                "azb": "sydazerbadjanska"
+            },
+            "sv_SE": {
+                "root": "rot",
+                "azb": "sydazerbadjanska"
+            },
+            "sw": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "sw_CD": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "sw_KE": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "sw_TZ": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "sw_UG": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ta": {
+                "root": "ரூட்",
+                "azb": "South Azerbaijani"
+            },
+            "ta_IN": {
+                "root": "ரூட்",
+                "azb": "South Azerbaijani"
+            },
+            "ta_LK": {
+                "root": "ரூட்",
+                "azb": "South Azerbaijani"
+            },
+            "ta_MY": {
+                "root": "ரூட்",
+                "azb": "South Azerbaijani"
+            },
+            "ta_SG": {
+                "root": "ரூட்",
+                "azb": "South Azerbaijani"
+            },
+            "te": {
+                "root": "రూట్",
+                "azb": "South Azerbaijani"
+            },
+            "te_IN": {
+                "root": "రూట్",
+                "azb": "South Azerbaijani"
+            },
+            "th": {
+                "root": "รูท",
+                "azb": "อาเซอร์ไบจานใต้"
+            },
+            "th_TH": {
+                "root": "รูท",
+                "azb": "อาเซอร์ไบจานใต้"
+            },
+            "ti": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ti_ER": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ti_ET": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "tl": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "tl_PH": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "to": {
+                "root": "lea fakaʻilonga-tefito",
+                "azb": "lea fakaʻasapaisani-tonga"
+            },
+            "to_TO": {
+                "root": "lea fakaʻilonga-tefito",
+                "azb": "lea fakaʻasapaisani-tonga"
+            },
+            "tr": {
+                "root": "Köken",
+                "azb": "Güney Azerice"
+            },
+            "tr_CY": {
+                "root": "Köken",
+                "azb": "Güney Azerice"
+            },
+            "tr_TR": {
+                "root": "Köken",
+                "azb": "Güney Azerice"
+            },
+            "ug": {
+                "root": "غول تىل",
+                "azb": "South Azerbaijani"
+            },
+            "ug_Arab": {
+                "root": "غول تىل",
+                "azb": "South Azerbaijani"
+            },
+            "ug_Arab_CN": {
+                "root": "غول تىل",
+                "azb": "South Azerbaijani"
+            },
+            "ug_CN": {
+                "root": "غول تىل",
+                "azb": "South Azerbaijani"
+            },
+            "uk": {
+                "root": "корінь",
+                "azb": "South Azerbaijani"
+            },
+            "uk_UA": {
+                "root": "корінь",
+                "azb": "South Azerbaijani"
+            },
+            "ur": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ur_IN": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "ur_PK": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "uz": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "uz_AF": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "uz_Arab": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "uz_Arab_AF": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "uz_Cyrl": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "uz_Cyrl_UZ": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "uz_Latn": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "uz_Latn_UZ": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "uz_UZ": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "vi": {
+                "root": "Tiếng Root",
+                "azb": "South Azerbaijani"
+            },
+            "vi_VN": {
+                "root": "Tiếng Root",
+                "azb": "South Azerbaijani"
+            },
+            "yi": {
+                "root": "Root",
+                "azb": "דרום אַזערביידזשאַניש"
+            },
+            "yo": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "yo_BJ": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "yo_NG": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "zh": {
+                "root": "根语言",
+                "azb": "South Azerbaijani"
+            },
+            "zh_CN": {
+                "root": "根语言",
+                "azb": "South Azerbaijani"
+            },
+            "zh_HK": {
+                "root": "根语言",
+                "azb": "South Azerbaijani"
+            },
+            "zh_Hans": {
+                "root": "根语言",
+                "azb": "South Azerbaijani"
+            },
+            "zh_Hans_CN": {
+                "root": "根语言",
+                "azb": "South Azerbaijani"
+            },
+            "zh_Hans_HK": {
+                "root": "根语言",
+                "azb": "South Azerbaijani"
+            },
+            "zh_Hans_MO": {
+                "root": "根语言",
+                "azb": "South Azerbaijani"
+            },
+            "zh_Hans_SG": {
+                "root": "根语言",
+                "azb": "South Azerbaijani"
+            },
+            "zh_Hant": {
+                "root": "根語言",
+                "azb": "南亞塞拜然文"
+            },
+            "zh_Hant_HK": {
+                "root": "根語言",
+                "azb": "南亞塞拜然文"
+            },
+            "zh_Hant_MO": {
+                "root": "根語言",
+                "azb": "南亞塞拜然文"
+            },
+            "zh_Hant_TW": {
+                "root": "根語言",
+                "azb": "南亞塞拜然文"
+            },
+            "zh_MO": {
+                "root": "根语言",
+                "azb": "South Azerbaijani"
+            },
+            "zh_SG": {
+                "root": "根语言",
+                "azb": "South Azerbaijani"
+            },
+            "zh_TW": {
+                "root": "根语言",
+                "azb": "South Azerbaijani"
+            },
+            "zu": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            },
+            "zu_ZA": {
+                "root": "Root",
+                "azb": "South Azerbaijani"
+            }
+        }
+    }
+}
