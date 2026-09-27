@@ -4,23 +4,24 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/dominservice/data_locale_parser.svg?style=flat-square)](https://packagist.org/packages/dominservice/data_locale_parser)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 
-Data Locale Parser is a package for Laravel 9, 10, 11, 12 and 13, which lists all countries, currencies and languages, with names and ISO 3166-1 codes in all languages and data formats.
+Data Locale Parser is a package for Laravel 13 which lists countries, currencies and languages with names and ISO 3166-1 codes in multiple languages and data formats.
 
 ## Compatibility
 
 | Package version | Supported Laravel versions | PHP |
 |-----|-----|-----|
+| `4.x` | `13.32+` | `^8.3` |
 | `3.x` | `9.x`, `10.x`, `11.x`, `12.x`, `13.x` | `^8.0.2` |
 | `< 3.0.0` | legacy releases | see the `composer.json` in the selected tag |
 
-Version `3.x` is the officially supported release line for Laravel 9 through 13.
+Version `4.x` is the current release line for DominPress and Laravel 13. Use `3.x` only for applications that still require an older Laravel version.
 
 ## Installation
 
 Require package via Composer:
 
 ```bash
-composer require dominservice/data_locale_parser:^3.0
+composer require dominservice/data_locale_parser:^4.0
 ```
 
 ## Usage

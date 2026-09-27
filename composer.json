@@ -1,7 +1,7 @@
 {
     "name": "dominservice/data_locale_parser",
     "type": "library",
-    "description": "Data Locale Parser is a package for Laravel 9 | 10 | 11 | 12 | 13, which lists all countries, currencies and languages, with names and ISO 3166 codes in all languages and data formats.",
+    "description": "Data Locale Parser for Laravel 13, with countries, currencies and languages in multiple locales and formats.",
     "keywords": ["laravel", "php", "currencies", "languages", "countries", "data parser", "country list", "currencies list", "languages list", "umpirsky"],
     "homepage": "https://github.com/dominservice/data_locale_parser",
     "license": "MIT",
@@ -13,15 +13,15 @@
         }
     ],
     "require": {
-        "php": "^8.0.2",
+        "php": "^8.3",
         "ext-intl": "*",
         "ext-mbstring": "*",
-        "laravel/framework": "^9.0|^10.0|^11.0|^12.0|^13.0",
+        "laravel/framework": "^13.32",
         "arcreative/php-address-format": "^0.0.2"
     },
     "require-dev": {
-        "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0|^11.0",
-        "phpunit/phpunit": "^9.6|^10.5|^11.0|^12.0"
+        "orchestra/testbench": "^11.3",
+        "phpunit/phpunit": "^13.3"
     },
     "autoload": {
         "psr-4": {
